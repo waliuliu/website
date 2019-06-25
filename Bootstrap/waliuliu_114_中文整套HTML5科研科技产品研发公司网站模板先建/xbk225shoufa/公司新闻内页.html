@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+    <title>LKEP国际学术交流之走进广东省人民医院心研所</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=1024">
+<link rel="stylesheet" href="template/zh-cn/css/global.css">
+
+<link rel="stylesheet" href="template/zh-cn/css/layout.css">
+
+<script src="template/zh-cn/js/jquery-1.11.2.min.js"></script>
+<script src="template/zh-cn/js/jquery.easing.1.3.js"></script>
+<!--[if IE]>
+    <script type="text/javascript" src="template/zh-cn/js/html5.js"></script>
+    <script src="/api.html5media.info/1.1.8/html5media.min.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+    <script type="text/javascript" src="template/zh-cn/js/DD_belatedPNG_0.0.8a.min.js"></script>
+    <script>
+        DD_belatedPNG.fix('*');
+    </script>
+<![endif]-->
+<script>
+$(document).ready(function(){
+	//------友情链接弹出
+	var olian = $('#chaining_con');
+	var timer = null;
+	$('#chaining').on('click', function(){
+		olian.stop().slideToggle(500);
+	}).hover(function(){
+		clearTimeout(timer);
+	},function(){
+		timer = setTimeout(function(){
+			if (olian.css('display') != 'none') {
+				olian.slideUp();
+			}
+		},1500)
+	})
+	if($('#con_nav').size()>0){
+		var navTop = $('#con_nav').offset().top + $('#con_nav').height();
+		var navOff = 0;
+		$(window).on('scroll',function(){
+			if ($(window).scrollTop() > navTop && !navOff) {
+				$('#con_nav').addClass('fixed');
+				navOff = 1;
+			}else if($(window).scrollTop() < navTop && navOff){
+				$('#con_nav').removeClass('fixed');
+				navOff = 0;
+			}
+		})
+	}
+
+    //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
+    $(function(){  
+        $(window).scroll(function(){  
+            if ($(window).scrollTop()>100){  
+                $("#get_top").fadeIn(850);  
+            }  
+            else  
+            {  
+                $("#get_top").fadeOut(850);  
+            }  
+        });  
+        //当点击跳转链接后，回到页面顶部位置  
+        $("#get_top").click(function(){  
+            $('body,html').animate({scrollTop:0},1000);  
+            return false;  
+        });  
+    });  
+})
+</script>
+</head>
+
+<body>
+    
+  
+<button id="get_top"></button>
+<header id="header">
+    <a href="" id="logo"></a>
+    <nav id="nav">
+        <ul>
+            <li><a href="">首页</a><i></i></li>
+            <li><a href="product/index.aspx">产品介绍</a><i></i></li>
+            <li><a href="r_d/index.aspx">研发创新</a><i></i></li>
+            <li class="cur"><a href="news/n1/index.aspx">新闻资讯</a><i></i></li>
+            <li><a href="irm/n1/index.aspx">投资者关系</a><i></i></li>
+            <li><a href="about/index.aspx">关于我们</a><i></i></li>
+            <li><a href="hr/jobs/index.aspx">招聘职位</a><i></i></li>
+        </ul>
+        <div class="search">
+        <script>
+		function checkform(){
+			if($('#keywords').val()==''){
+				$('#keywords').focus();
+				return false;
+			}
+			return true;
+		}
+		</script>
+        	<form action="search.aspx" onsubmit="return checkform()">
+            	<input type="hidden" name="moduleid" value="2,34,35,36" />
+        		<input type="text" name="keywords" id="keywords" placeholder="搜索">
+        		<input type="submit" value=">">
+        	</form>
+        </div>
+    </nav>
+    <div id="zy">
+        <a href="en">EN</a>
+    </div>
+</header>
+
+
+	<section id="con_banner">
+		<img src="upload/2015/0820/18450882zl.jpg" />
+	</section>
+
+    
+    
+<section id="con_nav">
+    <ul>
+        <li class="cur"><a href="news/n1/index.aspx">先健新闻</a><b></b></li>
+        <li><a href="news/n2/index.aspx">公司动态</a><b></b></li>
+        <li><a href="news/n3/index.aspx">会议中心</a><b></b></li>
+        <li><a href="news/n4/index.aspx">视频中心</a><b></b></li>
+    </ul>
+</section>
+
+	<section id="news">
+		<div id="news_box">
+        	<div class="news_title">
+            LKEP国际学术交流之走进广东省人民医院心研所
+            </div>
+            <div class="news_con">
+        	<p style="text-align: justify;">医学无国界，交流促发展。2017年3月13日至15日，先健科技公司LKEP(LifeTech Knowledge Exchange Program)国际学术交流项目邀请阿根廷当地著名的心血管专家走进广东省人民医院心研所，与国内顶尖专家就先心病介入治疗进行国际友好学术交流。</p><p><br/></p><p style="text-align: center;"><img src="upload/2017/0320/191940j2z6.jpg" style="width: 600px; height: 451px;" title="1.jpg" width="600" height="451" border="0" hspace="0" vspace="0"></p><p>&nbsp;</p><p style="text-align: justify;">阿根廷医生一行受到了先健科技公司和广东省人民医院心研所的热烈欢迎。3月13日下午，广东省人民医院心研所的张智伟主任首先就此次国际学术交流活动致开幕词。张主任对阿根廷医生的到访以及先健科技公司对此次国际学术交流活动的组织表示感谢，并表示国际学术交流有利于拓宽视野，促进医疗技术水平的提升与发展。</p><p><br/></p><p style="text-align: center;"><img src="upload/2017/0320/1921nh424j.jpg" title="2.jpg" width="600" height="451" border="0" hspace="0" vspace="0" style="white-space: normal; width: 600px; height: 451px;"></p><p>&nbsp;</p><p style="text-align: justify;">接下来，张主任与阿根廷医生分享了其在腹周部室间隔缺损介入治疗上的临床经验和操作技巧，以及其在膜周部室间隔缺损介入治疗上的器械选择和应用心得。随后，先健科技公司临床支持经理，来自美国的Mark McDonough先生在以《超声及仪器技术进展》为主题的演讲中与大家分享了他在临床超声领域深厚的经验积累，并向大家仔细的讲解了如何利用超声影像技术对结构性心脏疾病进行诊断与识别。最后，远道而来的阿根廷医生通过案例分享的形式向大家介绍了其在先心病介入治疗上的经验以及相关器械的使用心得，并肯定了先健科技公司的先心病封堵器柔软的特性，在应用于室间隔封堵时能够有效降低三度传导阻滞。</p><p><br/></p><p style="text-align: justify;">3月14日，张智伟主任向阿根廷专家演示了七台先天性心脏病介入手术，包括两台房间隔缺损封堵手术、三台室间隔缺损封堵手术和两台动脉导管未闭封堵手术。七台手术全部使用先健科技公司自主研发的封堵器产品。其中一位先心病人情况较为复杂，为室间隔多孔缺损且缺损位置非常接近主动脉瓣。面对该挑战性病例张主任十分娴熟的将先健科技室间隔封堵器植入病人缺损位置，并巧妙的避开了病人的主动脉瓣。术后造影显示，病人室间隔封堵完全，无残余分流。张主任精湛的医术和先健科技产品卓越的性能是手术成功的重要保证，阿根廷医生一行对先健科技公司产品在先心病治疗中的优势给予了高度评价。</p><p><br/></p><p style="text-align: center;"><img src="upload/2017/0320/192186h0vn.jpg" title="3.jpg" width="600" height="451" border="0" hspace="0" vspace="0" style="white-space: normal; width: 600px; height: 451px;"></p><p style="text-align: center;"><img src="upload/2017/0320/1920t268n4.jpg" title="4.jpg" width="600" height="600" border="0" hspace="0" vspace="0" style="white-space: normal; width: 600px; height: 600px;">&nbsp;</p><p><br/></p><p style="text-align: justify;">手术演示结束后，张智伟主任还饶有兴趣的为四位阿根廷医生取起了中文名，并将名字的涵义题字进行赠与。双方均表示此次学术交流非常成功，希望将来能够进一步深化学术交流与合作，积极促进中国与拉美地区在心血管微创介入领域的技术进步和科学发展。</p><p>&nbsp;</p><p style="text-align: center;"><img src="upload/2017/0320/1920n82j4p.jpg" title="5.jpg" width="600" height="451" border="0" hspace="0" vspace="0" style="white-space: normal; width: 600px; height: 451px;"></p><p><br/></p><p style="text-align: justify;">为期三天的学术交流活动在友好、轻松的氛围下圆满结束。作为国际学术交流的使者，先健科技公司一直致力于为全球临床专家搭建心血管微创介入学术交流平台，让宝贵的医学经验和诊疗技巧得以分享和传播，让更多国家和地区的医生掌握行业前沿技术和诊疗技巧，从而让更多的患者获得安全有效的治疗。</p><p><br/></p><p>关于LKEP：</p><p style="text-align: justify;">LifeTech Knowledge Exchange Program，简称LKEP，始于2012年，是先健科技公司面向全球临床专家搭建的心血管微创介入学术交流平台，旨在世界范围内分享和传播宝贵的医学经验和诊疗技巧，促进心血管微创介入领域前沿科学的发展。目前，先健科技公司一共为中国、希腊、土耳其、俄罗斯、哈萨克斯坦、印尼、泰国、马来西亚、阿根廷等多个国家和地区的心血管介入专家成功举办近40场LKEP国际学术交流活动，覆盖200多名专业人士。通过LKEP平台，让来自世界各国的专家们打破地域、文化、语言等障碍，相互学习、共同进步，升华友谊，共同推动全球心血管微创介入领域医疗技术水平的发展。</p><p><br/></p>
+            </div>
+        </div>
+	</section>
+
+    <footer>
+		<section id="foot_nav">
+			<div id="foot_box">
+				<div class="foot_nav_fl">
+					<a href="fuzhulanmu/241.aspx">法律声明</a><i>|</i><a href="fuzhulanmu/410.aspx">联系我们</a><i>|</i><a href="hr/index.aspx">人才招聘</a><i>|</i><a href="fuzhulanmu/242.aspx">网站地图</a>
+				</div>
+				<div class="foot_nav_fr">
+					<a href=""><img src="template/zh-cn/img/index21.png" alt=""></a><a href=""><img src="template/zh-cn/img/index22.png" alt=""></a> --><a href=""><img src="template/zh-cn/img/index23.png" alt=""></a>
+				</div>
+			</div>
+		</section>
+		<section id="foot_con">
+			<div id="foot_box">
+				<div class="code">
+					<aside>
+						<img src="template/zh-cn/img/index24.jpg" alt="">
+						<p>先健科技官方微信</p>
+					</aside>
+					<aside>
+						<img src="template/zh-cn/img/index25.jpg" alt="">
+						<p>先健医刊</p>
+					</aside>
+				</div>
+				<div class="chaining">
+					<h2>友情链接</h2>
+					<aside id="chaining">
+						友情链接...
+						<ul id="chaining_con">
+							<li><a href="＃" target="_blank">其他子公司链接</a></li>
+							<li><a href="http://www.smallseashell.com" target="_blank">smallseashell</a></li>
+						</ul>
+						<i></i>
+					</aside>
+				</div>
+			</div>
+		</section>
+		<section id="copyright">
+			2008-2015 版权所有 粤ICP备09037700号<br />
+  
+		</section>
+	</footer>
+
+
+<!--<style>
+	.tanchuang_mask{
+		position: fixed;
+		top: 0;
+		left:0;
+		right:0;
+		bottom:0;
+		z-index: 10000;
+		background:#000;
+		opacity: .8;
+	}
+.tanchuang{
+	width:1000px;
+	height:450px;
+
+	background: url(template/zh-cn/img/tanchuang.jpg) no-repeat;
+	position:fixed;
+	top: 100px;
+	left: 100px;
+	z-index: 10005;
+}
+.tanchuang .close{
+ position: absolute;
+ right:15px;
+ top: 15px;
+ color: #666667;
+}
+.tanchuang span{
+ position: absolute;
+ bottom:15px;
+ right: 15px;
+ color: #666667;
+}
+.tanchuang .close:hover{
+	color: #0068b7;
+}
+</style>-->
+
+<div class="tanchuang">
+	<a href="#." class="close">X</a>
+	<span>8s</span>
+</div>
+<div class="tanchuang_mask"></div>
+
+<script>
+	$(function(e){
+			$('.tanchuang').css('left',( $(window).width() -  $('.tanchuang').width() ) / 2 );
+			$('.tanchuang').css('top',( $(window).height() -  $('.tanchuang').height() ) / 2 );
+$('.tanchuang .close').click(function(e){
+	e.preventDefault();
+	$('.tanchuang').hide();
+	$('.tanchuang_mask').hide();
+});
+			var t_total=8;
+		var tanchuang_interval=	window.setInterval (function(){
+				t_total--;
+ $('.tanchuang span').html(t_total+'s');
+ if(t_total<=0){
+	 $('.tanchuang').hide();
+	$('.tanchuang_mask').hide();
+window.clearInterval (tanchuang_interval);
+ }
+			},1000);
+	})
+</script>
+</body>
+</html>
+

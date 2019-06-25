@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+    <title>招聘职位</title>
+    <meta name="keywords" content="招聘职位" />
+    <meta name="description" content="招聘职位" />
+    <meta name="viewport" content="width=1024">
+<link rel="stylesheet" href="template/zh-cn/css/global.css">
+
+<link rel="stylesheet" href="template/zh-cn/css/layout.css">
+
+<script src="template/zh-cn/js/jquery-1.11.2.min.js"></script>
+<script src="template/zh-cn/js/jquery.easing.1.3.js"></script>
+<!--[if IE]>
+    <script type="text/javascript" src="template/zh-cn/js/html5.js"></script>
+    <script src="/api.html5media.info/1.1.8/html5media.min.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+    <script type="text/javascript" src="template/zh-cn/js/DD_belatedPNG_0.0.8a.min.js"></script>
+    <script>
+        DD_belatedPNG.fix('*');
+    </script>
+<![endif]-->
+<script>
+$(document).ready(function(){
+	//------友情链接弹出
+	var olian = $('#chaining_con');
+	var timer = null;
+	$('#chaining').on('click', function(){
+		olian.stop().slideToggle(500);
+	}).hover(function(){
+		clearTimeout(timer);
+	},function(){
+		timer = setTimeout(function(){
+			if (olian.css('display') != 'none') {
+				olian.slideUp();
+			}
+		},1500)
+	})
+	if($('#con_nav').size()>0){
+		var navTop = $('#con_nav').offset().top + $('#con_nav').height();
+		var navOff = 0;
+		$(window).on('scroll',function(){
+			if ($(window).scrollTop() > navTop && !navOff) {
+				$('#con_nav').addClass('fixed');
+				navOff = 1;
+			}else if($(window).scrollTop() < navTop && navOff){
+				$('#con_nav').removeClass('fixed');
+				navOff = 0;
+			}
+		})
+	}
+
+    //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
+    $(function(){  
+        $(window).scroll(function(){  
+            if ($(window).scrollTop()>100){  
+                $("#get_top").fadeIn(850);  
+            }  
+            else  
+            {  
+                $("#get_top").fadeOut(850);  
+            }  
+        });  
+        //当点击跳转链接后，回到页面顶部位置  
+        $("#get_top").click(function(){  
+            $('body,html').animate({scrollTop:0},1000);  
+            return false;  
+        });  
+    });  
+})
+</script>
+	<script>
+	
+	    $(document).ready(function(){
+			$('#job_fl').find('li').on('click', function(){
+				$(this).addClass('cur').siblings().removeClass('cur');
+				$('.job_con').hide().eq($(this).index()).fadeIn();
+			}).eq(0).trigger('click');
+	
+			$("#job_fl li:last").css('borderBottom',0);
+	
+	
+			$('.zp_a').on('click', function(){
+				$('.job_fixed').slideDown(500);
+				$('#formid').val($(this).attr('formid'));				
+			})
+			$('#job-no').on('click',function(){
+				$('.job_fixed').slideUp(500);
+			})
+			
+			$('#form_job').submit(function(){
+				if($('#truename').val()==''){
+					$('#truename').focus();
+					return false;
+				}
+				if($('#file').val()==''){
+					alert('请上传附件');
+					return false;
+				}
+				return true;
+			})
+
+	        // $("html,body").animate({scrollTop:$(".news_bt").offset().top},600);
+	    })
+	</script>
+</head>
+<body>
+	
+  
+<button id="get_top"></button>
+<header id="header">
+    <a href="" id="logo"></a>
+    <nav id="nav">
+        <ul>
+            <li><a href="">首页</a><i></i></li>
+            <li><a href="product/index.aspx">产品介绍</a><i></i></li>
+            <li><a href="r_d/index.aspx">研发创新</a><i></i></li>
+            <li><a href="news/n1/index.aspx">新闻资讯</a><i></i></li>
+            <li><a href="irm/n1/index.aspx">投资者关系</a><i></i></li>
+            <li><a href="about/index.aspx">关于我们</a><i></i></li>
+            <li class="cur"><a href="hr/jobs/index.aspx">招聘职位</a><i></i></li>
+        </ul>
+        <div class="search">
+        <script>
+		function checkform(){
+			if($('#keywords').val()==''){
+				$('#keywords').focus();
+				return false;
+			}
+			return true;
+		}
+		</script>
+        	<form action="search.aspx" onsubmit="return checkform()">
+            	<input type="hidden" name="moduleid" value="2,34,35,36" />
+        		<input type="text" name="keywords" id="keywords" placeholder="搜索">
+        		<input type="submit" value=">">
+        	</form>
+        </div>
+    </nav>
+    <div id="zy">
+        <a href="en">EN</a>
+    </div>
+</header>
+
+
+	<section id="con_banner">
+		<img src="upload/2015/0918/1140h68008.jpg" />
+	</section>
+
+       
+<section id="con_nav">
+    <ul>
+        <li class="cur"><a href="hr/jobs/index.aspx">招聘职位</a><b></b></li>
+        <li><a href="hr/fuli.aspx">公司福利</a><b></b></li>
+        <li><a href="hr/yuangongpeixun/index.aspx">员工培训</a><b></b></li>
+        <li><a href="hr/yuangongfengcai/index.aspx">员工风采</a><b></b></li>
+    </ul>
+</section>
+
+
+	<section id="news">
+		<div id="news_box">
+			<!-- <div class="news_bt">
+				<h2>职位列表</h2>
+				<aside>Job Lists</aside>
+			</div> -->
+			<ul id="board_title">
+        		<li><a href="hr/jobs/shengchanguanli/index.aspx">研发</a></li>
+        		<li><a href="hr/jobs/caiwu/index.aspx">财务</a></li>
+			</ul>
+			<div class="job">
+				<ul id="job_fl">
+					<li>助理工程师</li>
+					<li>法规注册经理</li>
+					<li>会计</li>
+				</ul>
+				<div class="job_con">
+					<div>
+						<p>岗位职责：</p>
+						<p>1. 协助项目工程师进行新产品设计、开发，生产工艺制定，相关模具、治具的开发，相关测试方案的制定及实施；</p><p>2. 协助项目工程师进行产品结构与工艺的改进；</p><p>3. 协助项目工程师完成产品开发、改进的技术文件编写与交付工作；</p><p>4. 协助项目工程师进行产品的技术文件维护；</p><p>5. 负责部门的会议组织，会议记录及会议决定的实施监督。</p><p><br/></p>
+						<p>任职要求：</p>
+						<p>1.学历水平：大专及以上；</p><p>2.专业：机械设计或机械制造专业或模具制造；</p><p>3.工作经验：两年以上机械加工或机械设计相关工作经验；</p><p>4.技能要求：</p><p><span style="font-size: 13px;">扎实的机械专业知识，熟识常用金属材料的机械性能，熟悉相关金属材料性能的测试方法，能运用机械相关理论知识解决实际生产中的问题；</span></p><p>有机械加工实际经验，熟练使用常用的机械绘图软件，有扎实的二维、三维绘图功底；</p><p>大学英语四级以上优先，能熟练使用常用办公软件；</p><p>有编写技术文件经验的优先；</p><p>5.素质要求：<span style="font-size: 13px;">学习能力、动手能力、沟通能力、执行力、解决问题能力、计划能力、创新意识、团队精神、责任心、勤奋、成就导向。</span></p><p><br/></p>
+						<a class="zp_a" href="javascript:;" formid="4">立即应聘</a>
+					</div>
+				</div>
+				<div class="job_con">
+					<div>
+						<p>岗位职责：</p>
+						<p>1. 规划产品注册的路径和最优战略，就产品注册事务与CFDA咨询与沟通，确保注册申报审批（包括 &nbsp;临床评价，生物评价，测试，体考等）的顺利进行。</p><p>2. 关注医疗器械法规及监管动态，收集行业相关信息，提供产品生命周期所需的法规与标准，维护产品的合法性。</p><p>3. 组织产品注册申报资料的撰写、整理、审核，依据法定程序办理注册申报。</p><p>4. 根据公司战略目标和部门业务规划，制定并实施个人能力提升规划，保证业务能力和综合素质的持续提高。</p><p><br/></p>
+						<p>任职要求：</p>
+						<p>1. 学历要求：本科以上，电子信息，生物医学，临床医学等相关专业。</p><p>2. 工作经验：三年以上相关行业工作经验。</p><p>3. 技能要求：熟悉医疗器械注册流程，了解相关法规和标准；英语读写说能力强；具有较好的组织和沟通能力；能熟练使用word, excel, PPT等办公软件和网络资源。</p><p>4. 素质要求：综合素质强，善于沟通，工作积极，良好的自我学习能力。</p><p>5. 其他要求：有有源医疗器械注册经验者优先，有跨国公司工作经验者优先。</p><p>6. 工作地点：深圳最佳，可以考虑在北京或上海。</p><p><br/></p>
+						<a class="zp_a" href="javascript:;" formid="5">立即应聘</a>
+					</div>
+				</div>
+				<div class="job_con">
+					<div>
+						<p>岗位职责：</p>
+						<p>1. 正确处理海外销售人员的费用审核，并每月出具相关的财务报表，保证财务数据的准确性、及时性；<br/></p><p>2. 审核海外出口订单，监控海外客户的信用情况，定期对客户的信用额度进行评估，优化公司的信用管理政策；</p><p>3. 备案出口信用保险系统，确保公司出口及时收到货款；&nbsp;</p><p>4. 完善相关工作的财务管理制度。</p><p><br/></p><p><br/></p>
+						<p>任职要求：</p>
+						<p>1.学历水平：本科及以上学历；</p><p>2.专业：财经类相关专业；</p><p>3.语言要求：具有流利的英文沟通和书写能力</p><p>4.工作经验：有一年以上财务工作经验，具有应收账款或总账等账务处理的经验，熟悉企业会计准则；</p><p>5.技能要求：</p><p>能熟练操作用友财务软件，建立账套；</p><p>熟悉ERP操作流程；</p><p><span style="font-size: 13px;">计算机操作熟练；</span></p><p>6.素质要求：<span style="font-size: 13px;">个性开朗，善于沟通，工作积极主动，能承受一定的工作压力；</span></p><p><br/></p>
+						<a class="zp_a" href="javascript:;" formid="">立即应聘</a>
+					</div>
+				</div>
+			</div>
+			<div class="job_fixed"><form name="form_job" id="form_job" action="formsave.aspx"  method="post" enctype="multipart/form-data"><input type="hidden" name="formid" id="formid" value="" />
+				<div>
+					<h2>上传您的简历 <i id="job-no"></i></h2>
+					<article>
+						<label>姓名：</label><input placeholder="请输入姓名" type="text" name="truename" id="truename">
+					</article>
+					<article>
+						<label>简历：</label><input type="file" id="file" name="file">
+					</article>
+					<input type="submit" value="确认">
+				</div></form>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<section id="foot_nav">
+			<div id="foot_box">
+				<div class="foot_nav_fl">
+					<a href="fuzhulanmu/241.aspx">法律声明</a><i>|</i><a href="fuzhulanmu/410.aspx">联系我们</a><i>|</i><a href="hr/index.aspx">人才招聘</a><i>|</i><a href="fuzhulanmu/242.aspx">网站地图</a>
+				</div>
+				<div class="foot_nav_fr">
+					<a href=""><img src="template/zh-cn/img/index21.png" alt=""></a><a href=""><img src="template/zh-cn/img/index22.png" alt=""></a> --><a href=""><img src="template/zh-cn/img/index23.png" alt=""></a>
+				</div>
+			</div>
+		</section>
+		<section id="foot_con">
+			<div id="foot_box">
+				<div class="code">
+					<aside>
+						<img src="template/zh-cn/img/index24.jpg" alt="">
+						<p>先健科技官方微信</p>
+					</aside>
+					<aside>
+						<img src="template/zh-cn/img/index25.jpg" alt="">
+						<p>先健医刊</p>
+					</aside>
+				</div>
+				<div class="chaining">
+					<h2>友情链接</h2>
+					<aside id="chaining">
+						友情链接...
+						<ul id="chaining_con">
+							<li><a href="＃" target="_blank">其他子公司链接</a></li>
+							<li><a href="http://www.smallseashell.com" target="_blank">smallseashell</a></li>
+						</ul>
+						<i></i>
+					</aside>
+				</div>
+			</div>
+		</section>
+		<section id="copyright">
+			2008-2015 版权所有 粤ICP备09037700号<br />
+  
+		</section>
+	</footer>
+
+
+<!--<style>
+	.tanchuang_mask{
+		position: fixed;
+		top: 0;
+		left:0;
+		right:0;
+		bottom:0;
+		z-index: 10000;
+		background:#000;
+		opacity: .8;
+	}
+.tanchuang{
+	width:1000px;
+	height:450px;
+
+	background: url(template/zh-cn/img/tanchuang.jpg) no-repeat;
+	position:fixed;
+	top: 100px;
+	left: 100px;
+	z-index: 10005;
+}
+.tanchuang .close{
+ position: absolute;
+ right:15px;
+ top: 15px;
+ color: #666667;
+}
+.tanchuang span{
+ position: absolute;
+ bottom:15px;
+ right: 15px;
+ color: #666667;
+}
+.tanchuang .close:hover{
+	color: #0068b7;
+}
+</style>-->
+
+<div class="tanchuang">
+	<a href="#." class="close">X</a>
+	<span>8s</span>
+</div>
+<div class="tanchuang_mask"></div>
+
+<script>
+	$(function(e){
+			$('.tanchuang').css('left',( $(window).width() -  $('.tanchuang').width() ) / 2 );
+			$('.tanchuang').css('top',( $(window).height() -  $('.tanchuang').height() ) / 2 );
+$('.tanchuang .close').click(function(e){
+	e.preventDefault();
+	$('.tanchuang').hide();
+	$('.tanchuang_mask').hide();
+});
+			var t_total=8;
+		var tanchuang_interval=	window.setInterval (function(){
+				t_total--;
+ $('.tanchuang span').html(t_total+'s');
+ if(t_total<=0){
+	 $('.tanchuang').hide();
+	$('.tanchuang_mask').hide();
+window.clearInterval (tanchuang_interval);
+ }
+			},1000);
+	})
+</script>
+    
+</body>
+</html>

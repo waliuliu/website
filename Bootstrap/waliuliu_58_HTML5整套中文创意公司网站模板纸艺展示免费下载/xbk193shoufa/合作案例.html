@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>合作案例</title>
+    <meta name="keywords" content="合作案例" />
+    <meta name="description" content="合作案例" />
+        <meta charset="UTF-8">
+	<meta name="baidu-site-verification" content="AgSgPyT94L" />
+    <link rel="stylesheet" href="template/zh-cn/css/normalize.css">
+    <link rel="stylesheet" href="template/zh-cn/css/style.css">
+    <link rel="stylesheet" href="template/zh-cn/css/swiper.min.css">
+    <script src="template/zh-cn/js/jquery-1.12.4.min.js"></script>
+    <script src="template/zh-cn/js/zhiyi.js"></script>
+    <script src="template/zh-cn/js/swiper.jquery.min.js"></script>
+    <link rel="shortcut icon" href='template/zh-cn/img/icon/logo.ico' type="image/x-icon">
+
+    <script src="template/zh-cn/js/jquery.easing.min.js"></script>
+    <script src="template/zh-cn/js/jquery.mixitup.js"></script> 
+
+    <style>
+        .case-list li {
+            display: none;
+        }
+    </style>
+    <script>
+        $(function(){
+            $('.sec-ul').each(function(){
+                if($(this).find('li').size()<1)
+                {
+                    $(this).remove();
+                }
+
+            })
+            $('.sec-ul').hide();
+            $('.main-ul li p').click(function(){
+                $('.sec-ul').slideUp();
+                $('.main-ul li p').removeClass('slide');
+                if($(this).next('.sec-ul').is(":hidden")){
+                      $(this).next('.sec-ul').slideDown();
+                     $(this).addClass('slide');
+                }else{
+                    $(this).removeClass('slide');
+                    $(this).next('.sec-ul').slideUp();
+                }
+              
+            });
+               // MixItUp plugin
+           $('.case-list ul').mixitup({  effects: ['fade'],
+                easing: 'snap',
+
+            });
+        })
+    </script>
+</head>
+
+<body>
+    
+    <div class="head-nav">
+        <div class="container content">
+            <ul class="pull-left nav-ul01">
+              <li><a href="about/index.aspx">关于纸艺展示</a></li>
+              <li><a href="case/index.aspx" class="on">合作案例</a></li>
+              <li><a href="product/index.aspx">产品</a></li>
+            </ul>
+            <!--<li style="height:90px;">
+                    <a href="index.html " class="index-logo"><img src="img/icon/logo.png " alt=" "></a>
+                </li>-->
+            <ul class="pull-right nav-ul02">
+              <li><a href="why/index.aspx">为什么选择 “纸艺”</a></li>
+              <li><a href="faq/index.aspx">答疑解惑</a></li>
+              <li ><a href="contact.aspx">联系我们</a></li>
+            </ul>
+            <div class="logo"><a href="" ><img src="template/zh-cn/img/icon/logo.png " alt=" "></a></div>
+        </div>
+    </div>
+<style>
+    .color{color:#a1cc51 !important;}
+</style>
+    <div class="now">
+    <div class="container">
+    <a href="">首页</a> <span>－</span> <a href="case/index.aspx" class="current">合作案例</a>
+        
+    </div>
+</div>
+<script>
+if($('.now .container a').size()>2)
+{
+	if($('.now .container a').last().attr('href')==$('.now .container a').eq(1).attr('href')){
+		$('.now .container a').last().remove();
+		$('.now .container span').last().remove();
+	}
+}
+</script>
+    <div class="container">
+        <div class="pull-left case-title">
+            <h3>合作地区</h3>
+            <ul class="main-ul">
+                <li class="world filter" data-filter="">
+                    <p><a href="javascript:;">全球</a></p>
+                </li>
+                
+                <li>
+                    <p><a href="javascript:;">亚洲</a></p>
+                    <ul class="sec-ul">
+                        
+                        <li class="filter" data-filter="c446"><a href="javascript:;">中国</a></li>
+                        
+                        <li class="filter" data-filter="c502"><a href="javascript:;">韩国</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li>
+                    <p><a href="javascript:;">大洋洲</a></p>
+                    <ul class="sec-ul">
+                        
+                    </ul>
+                </li>
+                
+                <li>
+                    <p><a href="javascript:;">非洲</a></p>
+                    <ul class="sec-ul">
+                        
+                    </ul>
+                </li>
+                
+                <li>
+                    <p><a href="javascript:;">南美洲</a></p>
+                    <ul class="sec-ul">
+                        
+                    </ul>
+                </li>
+                
+                <li>
+                    <p><a href="javascript:;">欧洲</a></p>
+                    <ul class="sec-ul">
+                        
+                    </ul>
+                </li>
+                
+                <li>
+                    <p><a href="javascript:;">北美洲</a></p>
+                    <ul class="sec-ul">
+                        
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+        <script type="text/javascript">
+        var datafilter='';
+        $('.main-ul li ul li').each(function(){
+            datafilter+=' '+$(this).attr('data-filter');
+        })
+        $('.world').attr('data-filter',datafilter);
+        </script>
+        <div class="pull-left case-list ">
+            <h3>您会成为我们下一个品牌成功案例吗？</h3>
+            <p>(部分案例，点击LOGO可查看详情)</p>
+            <ul class="content ">
+                
+                <li class="c502 mix " style="display:block">
+                    <a href="case/asia/korea/20161108/891.aspx">
+                        <img src="upload/2016/1108/115284j0p2.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c502 mix " style="display:block">
+                    <a href="case/asia/korea/20161108/890.aspx">
+                        <img src="upload/2016/1108/11260jf846.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c446 mix " style="display:block">
+                    <a href="case/asia/china/20161108/889.aspx">
+                        <img src="upload/2016/1108/11260jf846.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c441 mix " style="display:block">
+                    <a href="case/oceania/20161108/888.aspx">
+                        <img src="upload/2016/1108/11206bnz0f.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c442 mix " style="display:block">
+                    <a href="case/africa/20161108/887.aspx">
+                        <img src="upload/2016/1108/11194hvp0d.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c443 mix " style="display:block">
+                    <a href="case/southamerica/20161108/886.aspx">
+                        <img src="upload/2016/1108/1119j0x6r6.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c444 mix " style="display:block">
+                    <a href="case/europe/20161108/885.aspx">
+                        <img src="upload/2016/1108/11194xzll8.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c445 mix " style="display:block">
+                    <a href="case/northamerica/20161108/884.aspx">
+                        <img src="upload/2016/1108/111900r6df.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c445 mix " style="display:block">
+                    <a href="case/northamerica/20161108/883.aspx">
+                        <img src="upload/2016/1108/11188dp0b8.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c444 mix " style="display:block">
+                    <a href="case/europe/20161108/882.aspx">
+                        <img src="upload/2016/1108/1118084flf.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c443 mix " style="display:block">
+                    <a href="case/southamerica/20161108/881.aspx">
+                        <img src="upload/2016/1108/1118px4ll6.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c442 mix " style="display:block">
+                    <a href="case/africa/20161108/880.aspx">
+                        <img src="upload/2016/1108/1118n6j226.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c441 mix " style="display:block">
+                    <a href="case/oceania/20161108/879.aspx">
+                        <img src="upload/2016/1108/11172z2n8h.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c446 mix " style="display:block">
+                    <a href="case/asia/china/20161108/878.aspx">
+                        <img src="upload/2016/1108/111704tdd2.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c441 mix " style="display:block">
+                    <a href="case/oceania/20161108/877.aspx">
+                        <img src="upload/2016/1108/1111vbt2pp.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c440 mix " style="display:block">
+                    <a href="case/asia/20161108/876.aspx">
+                        <img src="upload/2016/1108/1110h66p6h.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c440 mix " style="display:block">
+                    <a href="case/asia/20161108/875.aspx">
+                        <img src="upload/2016/1108/11104lrnr8.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c444 mix " style="display:block">
+                    <a href="case/europe/20161108/874.aspx">
+                        <img src="upload/2016/1108/110406d846.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c443 mix " style="display:block">
+                    <a href="case/southamerica/20161108/873.aspx">
+                        <img src="upload/2016/1108/11038h2t04.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c442 mix " style="display:block">
+                    <a href="case/africa/20161021/835.aspx">
+                        <img src="upload/2016/1021/10392j2hz6.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c441 mix " style="display:block">
+                    <a href="case/oceania/20161021/834.aspx">
+                        <img src="upload/2016/1021/1037f8dvv0.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+                <li class="c446 mix " style="display:block">
+                    <a href="case/asia/china/20161020/812.aspx">
+                        <img src="template/zh-cn/img/logo2_01.png" />
+                        <div class="hover-green">
+                        <img src="template/zh-cn/img/icon/jia.png" alt="">
+                       </div>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="brush"></div>
+    </div>
+
+    <div class="foot ">
+	<div class="foot-nav container ">
+		<a href="about/index.aspx">关于纸艺展示</a><a href="case/index.aspx">合作案例</a><a href="product/index.aspx">产品</a><a href="why/index.aspx">为什么选择 “纸艺”</a><a href="faq/index.aspx">答疑解惑</a><a href="contact.aspx">联系我们</a>
+		<select class="pull-right " id="lang_select">
+                <option value="">中文</option>
+                <option value="http://popdisplay.me/">English</option>
+              </select><script type="text/javascript">
+                $('#lang_select').change(function(){
+                  window.location.href=$(this).val();
+                })
+              </script>
+	</div>
+	<div class="copy ">
+		<p class="txt-center container ">Copyright © 2016 POPdisplay All Rights Reserved 粤ICP备12005035号</p>
+	</div>
+</div>
+<div class="fixed">
+	<!--<a href="javascript:;"><img src="img/icon/QQ.png" alt=""></a>-->
+	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=443074454&site=qq&menu=yes" alt="点击我联系在线客服" title="点击我联系在线客服"><img border="0" src="template/zh-cn/img/icon/QQ.png" />
+		<p>在线客服</p>
+	</a>
+	<div class="totop"><img src="template/zh-cn/img/icon/to-top.png" alt=""></div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "/hm.baidu.com/hm.js?36cae4242993a989542bfb4043fd4041";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+
+</html>
+

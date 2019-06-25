@@ -1,0 +1,154 @@
+
+/* 企业简介的内容页 */
+
+.lisad{ position:relative; height:178px;}
+.lisad img{height:178px; position:absolute; left:50%; margin-left:-969px;}
+
+
+.gsqy{ margin-top:20px; height:412px; overflow:hidden;font-size:15px;line-height:200%;}
+
+.gsqyleft{ width:285px; height:412px;}
+.gsqyleft img{ width:285px; height:412px;}
+
+.gsqyright{ margin-left:25px; width:790px;}
+.jjtel{ font-size:20px; color:#3c3c3d; line-height:30px; text-align:center;}
+
+.jjwen{ line-height:36px; margin-top:20px;}
+.jjwen p{ text-indent:2em;}
+
+
+.jjy{ margin-top:20px; background:url(../image/nyxt.png) repeat-x left top; width:1100px; padding-top:20px; margin-bottom:10px;}
+.jjy ul li{ float:left; width:365px; padding-top:217px;}
+
+.jjy ul li:hover{ cursor:pointer;}
+.jjy ul li.aj1{ background:url(../image/kk1b.png) no-repeat center top;}
+.jjy ul li.aj2{ background:url(../image/kk2b.png) no-repeat center top;}
+.jjy ul li.aj3{ background:url(../image/kk3b.png) no-repeat center top;}
+
+.jjy ul li.aj1:hover{ background:url(../image/kk1h.png) no-repeat center top;}
+.jjy ul li.aj2:hover{ background:url(../image/kk2h.png) no-repeat center top;}
+.jjy ul li.aj3:hover{ background:url(../image/kk3h.png) no-repeat center top;}
+
+.jjy ul li p{ text-align:center;}
+.pj1{ font-size:18px; font-weight:bold; color:#2e2e2e;}
+.pj2{ line-height:20px; letter-spacing:-1px;}
+
+
+
+.newlistw{ padding:50px 50px 50px 50px; background:#FFF; margin-top:10px;}
+
+.newlistw ul li{ border-bottom:1px dashed #CCC; padding-bottom:20px; margin-top:20px; margin-bottom:10px; height:105px;}
+.newpic{ width:152px; height:102px;}
+.newpic img{ width:150px; height:100px; border:1px solid #FFF;}
+.newpic img:hover{ border:1px solid #97292c;}
+
+.newtxt{ width:800px; margin-left:30px;}
+.newptel{ line-height:26px;}
+.newptel a{ font-size:16px; color:#333;}
+.newptel a:hover{ color:#97292c;}
+
+.newpwen{ line-height:18px; height:36px; overflow:hidden; color:#666;}
+.newptime{ line-height:40px; color:#999;}
+
+
+.newntel{   color:#4e4e4e;
+    font-family: "Microsoft YaHei";
+    font-size: 26px;
+    padding-bottom: 20px;
+    text-align: center;}
+	
+.newtelx{ border-bottom:1px dashed #CCC; line-height:25px;}	
+.newtelx font{color:#4e4e4e; padding-left:5px;}
+
+.newcontext{ width:960px; line-height:25px; overflow:hidden; padding:20px 20px 10px 20px; color:#4e4e4e;font-size:15px;}
+.newcontext p{ text-indent:2em;}
+.newcontext img{max-width:960px;}
+
+.prdsx{ padding-left:5px; line-height:25px; color:#333; font-size:14px;}
+.newtelx font.prdprice{ color:#F00; font-size:14px;}
+.pwz{ margin-left:20px;}
+.prdimg{ width:800px; overflow:hidden; margin:auto; margin-top:20px; overflow:hidden; text-align:center; position:relative;}
+.prdimg img{max-width:800px;}
+
+/* 案例展示列表页 */
+
+
+
+
+
+/* 案例展示列表页 */
+
+
+
+.casetel{ height:40px; line-height:35px; background:url(../image/nyxt.png) repeat-x left bottom;}
+.casetel p{ font-weight:bold; font-size:20px; padding-left:5px; letter-spacing:1px; color:#4e4e4e;}
+
+.casesamll{ margin-top:10px; background:none; height:25px; overflow:hidden;}
+.casesamll a{ height:25px; background:#d8d8d8; color:#4e4e4e; padding:0 15px; line-height:25px; display:block; float:left; margin:0 10px 0 5px;}
+.casesamll a.one{background:#12244a; color:#FFF;}
+.casesamll a:hover{background:#12244a; color:#FFF;}
+
+/* main */
+.main{width:1100px;margin:10px auto;padding:20px 0; overflow:hidden;}
+
+.ProductList{overflow:hidden;}
+.ProductList li{float:left;margin-right:70px;width:320px;height:328px;background-color:#FAFAFA;overflow:hidden;}
+.ProductList .unit{position:relative;z-index:4;height:333px;}
+.ProductList .hoverline{display:none;height:4px;width:100%;background-color:#12244a;position:absolute;top:0;left:0;}
+.ProductList .images{display:block;height:222px;width:320px;overflow:hidden;}
+.ProductList .images img{display:block; height:222px; width:320px;}
+.ProductList h1{text-align:center;padding-top:6px; font-size:18px; font-weight:normal;}
+.ProductList h1 a:hover{ color:#F00;}
+.ProductList dl{padding:4px 30px 10px 30px;}
+.ProductList dd{overflow:hidden;height:65px; overflow:hidden;line-height:22px;}
+.view{position:absolute;z-index:500;left:0;bottom:-60px;width:100%;height:59px;background-color:#FAFAFA;font-size:14px;font-family:"\5FAE\8F6F\96C5\9ED1";border-bottom:5px solid #ccc;}
+.view .left{padding-left:30px;}
+.view .right{background-color:#12244a;color:#fff;display:block;height:30px;line-height:30px;width:80px;text-align:center;}
+.view .right span{font-family:"\5B8B\4F53";font-size:16px;padding-left:6px;}
+.view .right:hover{background-color:#97292c;}
+
+/* allProduct */
+.allProduct{position:relative;z-index:2;}
+.productTab{position:absolute;top:-68px;right:0;height:32px;padding-top:8px;z-index:9999;}
+.productTab li{float:left;color:#fff;background-color:#c68d43;margin-left:20px;height:24px;line-height:24px;font-family:"\5B8B\4F53";font-size:14px;border-radius:14px;}
+.productTab li:hover{background-color:#2d2d2d;}
+.productTab li.select{background-color:#2d2d2d;}
+.productTab  a{display:block;color:#fff;padding:0 30px;border-radius:14px;}
+.allProduct .ProductList{width:1170px;}
+.allProduct li{margin-bottom:20px;}
+.loadMore{width:100%;height:40px;border-top:1px solid #C68D43;position:relative;z-index:2;}
+.loadMore a{position:absolute;height:40px;line-height:40px;text-align:center;width:140px;color:#fff;background-color:#C68D43;left:45%;top:-20px;font-size:14px;}
+.loadMore a:hover{background-color:#2d2d2d;}
+
+/* isotope */
+.isotope-item{z-index:2}
+.isotope-hidden.isotope-item{pointer-events:none;z-index:1}
+.isotope,.isotope .isotope-item{
+	-webkit-transition-duration:0.8s;
+	-moz-transition-duration:0.8s;
+	-ms-transition-duration:0.8s;
+	-o-transition-duration:0.8s;
+	transition-duration:0.8s
+}
+.isotope{
+	-webkit-transition-property:height, width;
+	-moz-transition-property:height, width;
+	-ms-transition-property:height, width;
+	-o-transition-property:height, width;
+	transition-property:height, width
+}
+.isotope .isotope-item{
+	-webkit-transition-property:
+	-webkit-transform, opacity;
+	-moz-transition-property:-moz-transform, opacity;
+	-ms-transition-property: -ms-transform, opacity;
+	-o-transition-property:top, left, opacity;
+	transition-property:transform, opacity
+}
+.isotope.no-transition,.isotope.no-transition .isotope-item,.isotope .isotope-item.no-transition{
+	-webkit-transition-duration:0s;
+	-moz-transition-duration:0s;
+	-ms-transition-duration:0s;
+	-o-transition-duration:0s;
+	transition-duration:0s
+}

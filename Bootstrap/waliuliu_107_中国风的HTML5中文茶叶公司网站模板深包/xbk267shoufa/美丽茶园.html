@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>茶.视界</title>
+<meta name="keywords" content="深宝茶文化" />
+<meta name="description" content="茶.视界" />
+<meta name="viewport" content="width=1010" />
+<link href="template/zh-cn/css/css.css" type="text/css" rel="stylesheet" />
+<link href="template/zh-cn/css/jquery.jscrollpane.css" type="text/css" rel="stylesheet" />
+<script src="template/zh-cn/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/jquery.easing.min.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/dd_belatedpng.js" type="text/javascript"></script>
+<!--[if lt IE 7 ]>
+<script>
+    DD_belatedPNG.fix('div,img,a'); 
+</script>
+<![endif]-->
+<script src="template/zh-cn/js/jquery.jscrollpane.min.js" type="text/javascript"></script>
+<style>
+.jspScrollable {outline: none}
+</style>
+<style>
+html,body{ overflow:hidden}
+body { background:#2e2224}
+.wh_detail .left { width: 193px;margin-left: 34px;background:url(template/zh-cn/images/left_head_bg_1.jpg) left top repeat-y;overflow: hidden;}
+.wh_detail .left .logo { background:url(template/zh-cn/images/logo.png) left top no-repeat;}
+.wh_detail .left .wh_logo { margin-left:44px;}
+.wh_detail .left .wh_head { margin-left:44px; width:92px; }
+.channel_name { margin-top:40px; margin-left:44px;}
+.channel_name span.zh { color:#333333;}
+.channel_name span.en { color:#2f2224;}
+</style>
+</head>
+
+<body style="position:relative">
+<div class="wh_detail">
+
+    <div class="left">
+        
+<div class="logo"><a href=""></a></div>
+        <div class="channel_name">
+        <span class="zh">茶&nbsp;·&nbsp;视界</span>
+        <span class="en">Tea  Horizon</span>
+        </div>
+        <div class="wh_head"><ul>
+    <li class="current"><a href="#" rel="1">美丽茶园</a></li>
+    <li ><a href="#" rel="2">精湛技术</a></li>
+    <li ><a href="#" rel="3">茶与生活</a></li>
+    <li ><a href="#" rel="4">魅力茶人</a></li></ul>
+        </div>
+        <div class="zdh">
+<div class="zdh_t">主导航MENU</div>
+<div class="link"><a href="about/index.aspx" class="nol">走进深宝</a><a href="brand/index.aspx">深宝品牌</a><a href="news/index.aspx">深宝动态</a><a href="teaculture/index.aspx">茶&nbsp;·&nbsp;视界</a><a href="qywh/index.aspx">企业文化</a><a href="investor/index.aspx">投资者关系</a><a href="hr/index.aspx">人力资源</a><a href="contact/index.aspx">联系我们</a></div>
+</div>
+<script>
+$('.zdh').hover(function(){
+	$(this).find('.link').show();
+},function(){
+	$(this).find('.link').hide();
+});
+function resetlink(){
+	var linkheight=172;
+	var linkbottom=$(window).height()-$('.zdh').offset().top;
+	if(linkheight>linkbottom){
+		$('.zdh .link').css({'top':-(linkheight-linkbottom)+'px'});
+		$('.zdh .link').addClass('link_bg');
+	}else{
+		$('.zdh .link').css({'top':'0px'});
+		$('.zdh .link').removeClass('link_bg');
+	}
+}
+	$(window).resize(function(){
+		resetlink()
+	});
+	resetlink();
+</script>
+    </div>
+    
+    <div class="right" style="background:none">
+    	<div class="img">
+        	<div class="img_list">
+            	<div rel="1"><img src="template/zh-cn/images/wh_img_2.jpg" width="282" height="484" /></div>
+            	<div rel="2"><img src="template/zh-cn/images/wh_img_3.jpg" width="282" height="484" /></div>
+            	<div rel="3"><img src="template/zh-cn/images/wh_img_5.jpg" width="282" height="484" /></div>
+            	<div rel="4"><img src="upload/2014/0523/2002t824d8.jpg" width="282" height="484" /></div>
+            </div>
+        </div>
+        <div class="txt">
+        	<div class="txt_list">
+                <div class="txt_1" rel="1" style="background:none; background:url(template/zh-cn/images/wh_txt_2.png) right top no-repeat; position:relative"><a href="teaculture/mhcy/index.aspx" style=" display:block; width:24px; height:55px; background:url(template/zh-cn/images/enter.jpg) left top no-repeat; position:absolute; left:110px; top:168px"></a></div>
+                <div class="txt_2" rel="2" style="background:none; background:url(template/zh-cn/images/wh_txt_3.png) right top no-repeat; position:relative"><a href="teaculture/zhybhc/index.aspx" style=" display:block; width:24px; height:55px; background:url(template/zh-cn/images/enter.jpg) left top no-repeat; position:absolute; left:90px; top:168px"></a></div>
+                <div class="txt_3" rel="3" style="background:none; background:url(template/zh-cn/images/wh_txt_5.png) right top no-repeat; position:relative"><a href="teaculture/csh/index.aspx" style=" display:block; width:24px; height:55px; background:url(template/zh-cn/images/enter.jpg) left top no-repeat; position:absolute; left:45px; top:168px"></a></div>
+                <div class="txt_4" rel="4" style="background:none; background:url(template/zh-cn/images/wh_txt_6.png) right top no-repeat; position:relative"><a href="teaculture/mlcs/index.aspx" style=" display:block; width:24px; height:55px; background:url(template/zh-cn/images/enter.jpg) left top no-repeat; position:absolute; left:90px; top:168px"></a></div>
+            </div>
+        </div>
+        <div class="prev_next"><a href="#" class="prev"></a><a href="#" class="next"></a></div>
+    </div>
+
+<div class="copy">Copyright&copy;2014 ShenBao</div>
+<script>
+$(function(){
+	if($('#scroll').size()>0){
+		$('#scroll').jScrollPane({
+			verticalDragMinHeight: 66,
+			verticalDragMaxHeight: 66,
+			autoReinitialise: true
+		});
+	}
+});
+</script>
+</div>
+
+</body>
+</html>
+<script>
+var imglist=$('.wh_detail .right .img .img_list');
+var oldimglist=imglist.clone();
+var ww,wh,oldimgsize=imgsize=imglist.find('div').size();
+var showheight=108+25;
+var txtlist=$('.wh_detail .right .txt .txt_list');
+var oldtxtlist=txtlist.clone();
+
+var nextbtn=function(){
+	$('.prev_next .next').stop().animate({'height':118},500,function(){
+		$(this).height(98);
+		nextbtn();
+	});
+}
+$(function(){
+	for(var i=imgsize;i>0;i--){
+		oldimglist.find('div[rel='+i+']').clone().prependTo(imglist);
+		oldtxtlist.find('div[rel='+i+']').clone().prependTo(txtlist);
+	}
+	for(var i=0;i<imgsize;i++){
+		oldimglist.find('div[rel='+i+']').clone().appendTo(imglist);
+		oldtxtlist.find('div[rel='+i+']').clone().appendTo(txtlist);
+	}
+	
+	imglist=$('.wh_detail .right .img .img_list');
+	imgsize=imglist.find('div').size();
+	
+	imglist.find('div').eq(3).height(509);
+	imglist.css({'top':-(484*oldimgsize-showheight+25)+'px'});
+ 
+	
+	function resize(){
+		ww=$(window).width();
+		wh=$(window).height();
+		$('.wh_detail,.wh_detail .left,.wh_detail .right,.wh_detail .right .img,.wh_detail .right .txt ,.wh_detail .right .txt .txt_list div').height(wh);
+		
+		imglist.height(imgsize*484+25);
+		txtlist.height(imgsize*wh);
+	}
+	$(window).resize(function(){
+		resize()
+	});
+	resize();
+	 
+	txtlist.css({'top':-(wh*oldimgsize)+'px'});
+	
+	$('.wh_head a').click(function(){
+		var rel=parseInt($(this).attr('rel'));
+		$('.wh_detail .right .txt .txt_list div').stop().animate({'opacity':0},600);
+		$('.wh_detail .right .txt .txt_'+rel).stop().animate({'opacity':1},1200);
+		$('.wh_head li').removeClass('current');
+		$(this).parent().addClass('current');
+		imglist.find('div').stop().animate({'height':484},600);
+		imglist.find('div').eq(rel-1+(oldimgsize-1)).stop().animate({'height':484+25},600);
+		imglist.stop().animate({'top':-(484*(rel+(oldimgsize-1))-showheight+25)+'px'},600);
+		//alert(rel);
+		txtlist.stop().animate({'top':-(wh*(rel+(oldimgsize-1)))+'px'},600);
+		
+	})
+	$('.prev').click(function(){
+		if($('.wh_head .current').prev('li').size()>0){
+			$('.wh_head .current').prev('li').children('a').click();
+		}else{
+			var rel=parseInt($('.wh_head a').last().attr('rel'));
+			$('.wh_detail .right .txt .txt_list div').stop().animate({'opacity':0},600);
+			$('.wh_detail .right .txt .txt_'+rel).stop().animate({'opacity':1},1200);
+			$('.wh_head li').removeClass('current');
+			$('.wh_head li').last().addClass('current');
+			
+			rel=rel-1;
+			imglist.find('div').stop().animate({'height':484},600);
+			imglist.find('div').eq(rel-1).stop().animate({'height':484+25},600);
+			imglist.stop().animate({'top':-(484*(rel)-showheight+25)+'px'},600,function(){
+				imglist.find('div').height(484);
+				imglist.find('div').eq(oldimgsize+rel-1).height(509);
+				imglist.css({'top':-(484*(oldimgsize+rel)-showheight+25)+'px'});
+			});
+			
+			txtlist.stop().animate({'top':-(wh*(rel))+'px'},600,function(){
+				txtlist.css({'top':-(wh*(oldimgsize+rel))+'px'});
+			}); 
+		}
+		return false;
+	});
+	$('.next').click(function(){
+		if($('.wh_head .current').next('li').size()>0){
+			$('.wh_head .current').next('li').children('a').click();
+		}else{
+			var rel=parseInt($('.wh_head a').eq(0).attr('rel'));
+			$('.wh_detail .right .txt .txt_list div').stop().animate({'opacity':0},600);
+			$('.wh_detail .right .txt .txt_'+rel).animate({'opacity':1},1200);
+			$('.wh_head li').removeClass('current');
+			$('.wh_head li').eq(0).addClass('current');
+			
+			rel=oldimgsize*2-1;
+			imglist.find('div').stop().animate({'height':484},600);
+			imglist.find('div').eq(rel).stop().animate({'height':484+25},600);
+			imglist.stop().animate({'top':-(484*(rel+1)-showheight+25)+'px'},600,function(){
+				imglist.find('div').height(484);
+				imglist.find('div').eq(5).height(509);
+				imglist.css({'top':-(484*oldimgsize-showheight+25)+'px'});
+			});
+			
+			txtlist.stop().animate({'top':-(wh*(rel+1))+'px'},600,function(){
+				txtlist.css({'top':-(wh*oldimgsize)+'px'});
+			});
+		}
+		return false;
+	});
+	
+	$('.prev_next .next').hover(function(){
+		$(this).stop().animate({'height':108},300,function(){ 
+		});
+	},function(){
+		$(this).stop().animate({'height':98},300,function(){ 
+		});
+	});
+	//nextbtn();
+});
+</script>

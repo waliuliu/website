@@ -1,0 +1,162 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+<title>武当山珍</title>
+<link rel="stylesheet" type="text/css" href="Public/Home/css/comm.css">
+
+    <link rel="stylesheet" type="text/css" href="Public/Home/css/lisw.css">
+
+
+<style type="text/css">
+  body, td, th {font-family: "Microsoft YaHei", "DejaVu Sans", "Lucida Grande", Tahoma, "Hiragino Sans GB";}
+  body{overflow-x:hidden;overflow-y: auto;}
+</style>
+<script type="text/javascript" src="Public/Home/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="Public/Home/js/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="Public/Home/js/commond.js"></script>
+
+</head>
+<body>
+	<!-- 头部 -->
+	<!--[if lte IE 6]>
+<script src="Public/Home/js/ppy.js" type="text/javascript"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('div, ul, img, li, input , a');
+</script>
+<![endif]-->
+<script type="text/javascript">
+    /*
+     **************
+     *头部导航效果
+     **************
+     */
+    window.onload = function () {
+        var oDiv = document.getElementById('nav');
+        var aStrong = oDiv.getElementsByTagName('strong');
+        var aA = oDiv.getElementsByTagName('a');
+        var iTarget = oDiv.getElementsByTagName('li')[0].offsetHeight;
+
+        for (var i = 0; i < aStrong.length; i++) {
+            aA[i].style.width = aStrong[i].style.width = aStrong[i].getElementsByTagName('span')[0].offsetWidth + 'px';
+            aStrong[i].style.position = 'absolute';
+            aStrong[i].style.top = aStrong[i].style.left = 0;
+
+            aStrong[i].onmouseover = function () {
+                startMove(this, -iTarget);
+            };
+
+            aStrong[i].onmouseout = function () {
+                startMove(this, 0);
+            };
+
+        }
+
+    };
+
+    function startMove(obj, target) {
+        clearInterval(obj.iTime);
+        obj.iTime = setInterval(function () {
+            if (obj.offsetTop == target) {
+                clearInterval(obj.iTime);
+            } else {
+                var iSpeed = (target - obj.offsetTop) / 4;
+                iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+                obj.style.top = obj.offsetTop + iSpeed + 'px';
+            }
+
+        }, 30);
+
+    }
+
+    /*产品导航*/
+    jQuery(document).ready(function () {
+        $(".newp ul li").hover(function () {
+            $(this).children(".atm").slideUp(300);
+        }, function () {
+            $(this).children(".atm").slideDown(200);
+            $(this).children(".atm").finish();
+        });
+        $(".xmlist a").removeClass("one");
+        $(".xmlist a").mouseenter(function () {
+        })
+    });
+</script>
+<body>
+    <div class="headtop">
+        <div class="headtopn">
+            <div class="logo left"><a href="index.php?s=/Home/Index/index.html"><img src="Public/Home/images/logo.jpg"></a></div>
+            <div class="menulist left">
+                <div id="nav">
+                    <ul>
+                        <li>
+                                <a href="index.php?s=/Home/Index/index.html" target="_self"><strong> <span>首页</span> <span class="active">首页</span> </strong></a>
+                            </li><li>
+                                <a href="index.php?s=/Home/Index/summary.html" target="_self"><strong> <span>公司概况</span> <span class="active">公司概况</span> </strong></a>
+                            </li><li>
+                                <a href="index.php?s=/Home/Index/product.html" target="_self"><strong> <span>产品介绍</span> <span class="active">产品介绍</span> </strong></a>
+                            </li><li>
+                                <a href="index.php?s=/Home/Index/newlist.html" target="_self"><strong> <span>新闻中心</span> <span class="active">新闻中心</span> </strong></a>
+                            </li><li>
+                                <a href="index.php?s=/Home/Index/recruitmentlist.html" target="_self"><strong> <span>人才招聘</span> <span class="active">人才招聘</span> </strong></a>
+                            </li><li>
+                                <a href="index.php?s=/Home/Index/contact.html" target="_self"><strong> <span>联系我们</span> <span class="active">联系我们</span> </strong></a>
+                            </li>                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+	<!-- /头部 -->
+	
+	<!-- 主体 -->
+	
+    <div class="lisad"><img src="Public/Home/images/bann.jpg"></div>
+    <div class="counter">
+        <div class="casetel">
+            <p>关于我们</p>
+        </div>
+        <div class="gsqy">
+            <div class="gsqyleft left"><img src="Uploads/Picture/2015-04-22/553755faad335.png"></div>
+            <div class="gsqyright left">
+                <div class="jjtel">联系方式</div>
+                <p>
+	湖北省十堰市东风大道7号
+</p>
+<p>
+	tel:0719-<span style="line-height:1.5;">8768658&nbsp;</span>
+</p>            </div>
+            <div class="clear"></div>
+        </div>
+
+        <!-- 三元开始-->
+
+        <div class="jjy">
+            <ul>
+                <li class="aj1">
+                    <p class="pj1">经营范围 ：</p>
+                    <p class="pj2">不锈钢工程、钢结构工程（设计、生产、安装）。 </p>
+                </li>
+                <li class="aj2">
+                    <p class="pj1">公司理念 ：</p>
+                    <p class="pj2">专业、谨慎、诚信 ；团队合作、积极进取；经营以诚为准；管理以人为本</p>
+                </li>
+                <li class="aj3">
+                    <p class="pj1">工程质量政策 ：</p>
+                    <p class="pj2">品質為先、提高效率、工程交期準確、客戶滿意。 </p>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+
+	<!-- /主体 -->
+
+	<!-- 底部 -->
+	<!--新闻动态结束-->
+    <div class="dblist"> Copyright @ 2011 All Rights Reserved 武当山珍 版权所有 鄂ICP备14007570号 </div>
+    
+    
+	<!-- /底部 -->
+</body>
+</html>

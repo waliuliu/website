@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=1010" />
+<link href="template/zh-cn/css/css.css" type="text/css" rel="stylesheet" />
+<link href="template/zh-cn/css/jquery.jscrollpane.css" type="text/css" rel="stylesheet" />
+<script src="template/zh-cn/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/jquery.easing.min.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/dd_belatedpng.js" type="text/javascript"></script>
+<!--[if lt IE 7 ]>
+<script>
+    DD_belatedPNG.fix('div,img,a'); 
+</script>
+<![endif]-->
+<script src="template/zh-cn/js/jquery.jscrollpane.min.js" type="text/javascript"></script>
+<style>
+.jspScrollable {outline: none}
+</style>
+</head>
+
+<style>
+.pp .right .info_txt .pp_list .pp_list_one { margin-right:25px;}
+</style>
+<body>
+<div class="wrapper">
+
+<div class="wh_detail pp">
+
+    <div class="left">
+        
+<div class="logo"><a href=""></a></div>
+        <div class="channel_name">
+        <span class="zh">深宝品牌</span>
+        <span class="en">Brand</span>
+        </div>
+        <div class="pp_head"><ul>
+    <li class="current"><a href="brand/jufangyong/index.aspx">聚芳永</a></li>
+    <li ><a href="brand/fht/index.aspx">福海堂</a></li>
+    <li ><a href="brand/jd/index.aspx">金雕</a></li>
+    <li ><a href="brand/sb/index.aspx">深宝</a></li>
+    <li ><a href="brand/sj/index.aspx">三井</a></li></ul>
+        </div>
+        <div class="zdh">
+<div class="zdh_t">主导航MENU</div>
+<div class="link"><a href="about/index.aspx" class="nol">走进深宝</a><a href="brand/index.aspx">深宝品牌</a><a href="news/index.aspx">深宝动态</a><a href="teaculture/index.aspx">茶&nbsp;·&nbsp;视界</a><a href="qywh/index.aspx">企业文化</a><a href="investor/index.aspx">投资者关系</a><a href="hr/index.aspx">人力资源</a><a href="contact/index.aspx">联系我们</a></div>
+</div>
+<script>
+$('.zdh').hover(function(){
+	$(this).find('.link').show();
+},function(){
+	$(this).find('.link').hide();
+});
+function resetlink(){
+	var linkheight=172;
+	var linkbottom=$(window).height()-$('.zdh').offset().top;
+	if(linkheight>linkbottom){
+		$('.zdh .link').css({'top':-(linkheight-linkbottom)+'px'});
+		$('.zdh .link').addClass('link_bg');
+	}else{
+		$('.zdh .link').css({'top':'0px'});
+		$('.zdh .link').removeClass('link_bg');
+	}
+}
+	$(window).resize(function(){
+		resetlink()
+	});
+	resetlink();
+</script>
+    </div>
+    
+    <div class="right">
+    	<div class="info_txt" style="padding-top:55px;"><div class="nowchannelname">深宝品牌/</div>
+        <div id="scroll"><div class="pr40">
+        
+        	<div class="pp_imglogo"><img src="upload/2014/0519/11112t4zlf.png" /></div>
+            <div class="pp_intro">        聚芳永，始创于1901年。
+       清光绪年间，居士高鹤年居士为周游参佛悟禅求佛，遍访名山。一日疲惫困顿一日，途经徽州婺源一农舍时，疲乏困顿，舍主善心人热心奉以上自焙清茶，饮高鹤年品罢，感心静神爽，灵台清明，顿悟禅理。感念茶之奇韵与主人善心，留诗赞曰：“汇聚芬芳袭永恒”。居士走后，农舍之主王庭芳为使更多人能在绿茶的清香中怡情悦性，静心安身发扬茶禅，精心专研焙茶工艺，扩种大茶园种植，在清光绪二十七年(1901年)于词坑创立「聚芳永」茶号，经年之后成成为徽州府茶行之首，自此煊赫四方。 </div>
+            
+            <div class="pp_list" style="padding-top:30px;">
+            	
+                <div class="pp_list_one" style="text-align:left"><img src="upload/2014/0525/2226ll4hr6.jpg" /><br />聚芳永2015明前特级龙井茶叶<br /></div>
+                
+                <div class="pp_list_one" style="text-align:left"><img src="upload/2014/1118/15010bp2ht.jpg" /><br />聚芳永正宗特级云南勐海普洱茶<br /></div>
+                
+                <div class="pp_list_one" style="text-align:left"><img src="upload/2014/0526/1055646082.jpg" /><br />聚芳永西湖龙井明前特级新茶<br /></div>
+                <div class="clear"></div>
+            </div><div class="clear"></div>
+            
+            
+        </div></div></div>
+    </div>
+     
+<div class="copy">Copyright&copy;2014 ShenBao</div>
+<script>
+$(function(){
+	if($('#scroll').size()>0){
+		$('#scroll').jScrollPane({
+			verticalDragMinHeight: 66,
+			verticalDragMaxHeight: 66,
+			autoReinitialise: true
+		});
+	}
+});
+</script>
+</div>
+
+</div>
+</body>
+</html>
+<script>
+var ww,wh;
+
+	function resize(){
+		ww=$(window).width();
+		wh=$(window).height();
+		$('.wh_detail,.wh_detail .left,.wh_detail .right,.wh_detail .right .info_thumb').height(wh);
+		$('.wh_detail .right .info_txt').height(wh-55);
+		$('#scroll').height(wh-55-80);
+		 
+	}
+	$(window).resize(function(){
+		resize()
+	});
+	resize();
+</script>
+

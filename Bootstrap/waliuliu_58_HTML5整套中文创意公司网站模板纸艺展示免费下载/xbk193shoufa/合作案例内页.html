@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>LG</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+    <meta charset="UTF-8">
+	<meta name="baidu-site-verification" content="AgSgPyT94L" />
+    <link rel="stylesheet" href="template/zh-cn/css/normalize.css">
+    <link rel="stylesheet" href="template/zh-cn/css/style.css">
+    <link rel="stylesheet" href="template/zh-cn/css/swiper.min.css">
+    <script src="template/zh-cn/js/jquery-1.12.4.min.js"></script>
+    <script src="template/zh-cn/js/zhiyi.js"></script>
+    <script src="template/zh-cn/js/swiper.jquery.min.js"></script>
+    <link rel="shortcut icon" href='template/zh-cn/img/icon/logo.ico' type="image/x-icon">
+</head>
+<body>
+    
+    <div class="head-nav">
+        <div class="container content">
+            <ul class="pull-left nav-ul01">
+              <li><a href="about/index.aspx">关于纸艺展示</a></li>
+              <li><a href="case/index.aspx" class="on">合作案例</a></li>
+              <li><a href="product/index.aspx">产品</a></li>
+            </ul>
+            <!--<li style="height:90px;">
+                    <a href="index.html " class="index-logo"><img src="img/icon/logo.png " alt=" "></a>
+                </li>-->
+            <ul class="pull-right nav-ul02">
+              <li><a href="why/index.aspx">为什么选择 “纸艺”</a></li>
+              <li><a href="faq/index.aspx">答疑解惑</a></li>
+              <li ><a href="contact.aspx">联系我们</a></li>
+            </ul>
+            <div class="logo"><a href="" ><img src="template/zh-cn/img/icon/logo.png " alt=" "></a></div>
+        </div>
+    </div>
+<style>
+    .color{color:#a1cc51 !important;}
+</style>
+    <div class="now">
+    <div class="container">
+    <a href="">首页</a> <span>－</span> <a href="case/index.aspx">合作案例</a> <span>－</span> <a href="case/asia/index.aspx">亚洲</a> <span>－</span> <a href="case/asia/korea/index.aspx" class="current">韩国</a>
+        
+    </div>
+</div>
+<script>
+if($('.now .container a').size()>2)
+{
+	if($('.now .container a').last().attr('href')==$('.now .container a').eq(1).attr('href')){
+		$('.now .container a').last().remove();
+		$('.now .container span').last().remove();
+	}
+}
+</script>
+    <div class="container content case-detail">
+        <div class="pull-left detail-img"><img /></div>
+        <div class="pull-right detail">
+          
+            <h3 style="font-size:16px;margin:20px 0;text-align:left;padding-left:30px;">合作品牌</h3>
+            <img src="upload/2016/1108/11260jf846.png" alt="">
+            <p class="txt-center" style="font-size:18px;margin:20px 0;">LG</p>
+            <span >韩国</span>
+        </div>
+    </div>
+    <div class="container">
+        <div style="margin:30px 0;">
+            
+            <div class="case-slide">
+                <div class="swiper-container ">
+                <div class="swiper-wrapper">
+                    
+               </div>
+                </div>
+               
+                 <div class="swiper-button-prev button"><</div>
+                <div class="swiper-button-next button">></div>
+               
+            </div>
+            <script>
+                var mySwiper = new Swiper('.swiper-container',{
+                 slidesPerView : 7,
+                 nextButton: '.swiper-button-next',
+                 prevButton: '.swiper-button-prev',          
+                })
+$('.swiper-slide').click(function(){
+       var imgUrl=$(this).find('img').attr('src');
+       $('.detail-img img').attr('src',imgUrl);
+    })
+$('.swiper-slide').eq(0).click();
+            </script>
+        </div>
+    </div>
+    <p class="container tishi">
+        我们献上深深的歉意。但为了防止案例图片被盗窃，保护好客户的版权。我们不得不对案例图片做了技术的处理，请您理解。
+    </p>
+    <div class="yaoqiu">
+        <div class="container">
+            <ul class="content" style="margin-right:-5%;">
+                <li class="pull-left">
+                    <h3> 客户要求</h3>
+                  <ol>
+                  
+                  </ol>
+                </li>
+                 <li class="pull-left">
+                    <h3> 我们的解决方案</h3>
+                  <ol>
+                  
+                  </ol> 
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="foot ">
+	<div class="foot-nav container ">
+		<a href="about/index.aspx">关于纸艺展示</a><a href="case/index.aspx">合作案例</a><a href="product/index.aspx">产品</a><a href="why/index.aspx">为什么选择 “纸艺”</a><a href="faq/index.aspx">答疑解惑</a><a href="contact.aspx">联系我们</a>
+		<select class="pull-right " id="lang_select">
+                <option value="">中文</option>
+                <option value="http://popdisplay.me/">English</option>
+              </select><script type="text/javascript">
+                $('#lang_select').change(function(){
+                  window.location.href=$(this).val();
+                })
+              </script>
+	</div>
+	<div class="copy ">
+		<p class="txt-center container ">Copyright © 2016 POPdisplay All Rights Reserved 粤ICP备12005035号</p>
+	</div>
+</div>
+<div class="fixed">
+	<!--<a href="javascript:;"><img src="img/icon/QQ.png" alt=""></a>-->
+	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=443074454&site=qq&menu=yes" alt="点击我联系在线客服" title="点击我联系在线客服"><img border="0" src="template/zh-cn/img/icon/QQ.png" />
+		<p>在线客服</p>
+	</a>
+	<div class="totop"><img src="template/zh-cn/img/icon/to-top.png" alt=""></div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "/hm.baidu.com/hm.js?36cae4242993a989542bfb4043fd4041";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+
+</html>

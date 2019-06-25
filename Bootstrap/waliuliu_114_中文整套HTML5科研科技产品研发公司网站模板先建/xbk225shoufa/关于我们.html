@@ -1,0 +1,939 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+    <title>关于我们</title>
+    <meta name="keywords" content="关于我们" />
+    <meta name="description" content="关于我们" />
+    <meta name="viewport" content="width=1024">
+<link rel="stylesheet" href="template/zh-cn/css/global.css">
+
+<link rel="stylesheet" href="template/zh-cn/css/layout.css">
+
+<script src="template/zh-cn/js/jquery-1.11.2.min.js"></script>
+<script src="template/zh-cn/js/jquery.easing.1.3.js"></script>
+<!--[if IE]>
+    <script type="text/javascript" src="template/zh-cn/js/html5.js"></script>
+    <script src="/api.html5media.info/1.1.8/html5media.min.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+    <script type="text/javascript" src="template/zh-cn/js/DD_belatedPNG_0.0.8a.min.js"></script>
+    <script>
+        DD_belatedPNG.fix('*');
+    </script>
+<![endif]-->
+<script>
+$(document).ready(function(){
+	//------友情链接弹出
+	var olian = $('#chaining_con');
+	var timer = null;
+	$('#chaining').on('click', function(){
+		olian.stop().slideToggle(500);
+	}).hover(function(){
+		clearTimeout(timer);
+	},function(){
+		timer = setTimeout(function(){
+			if (olian.css('display') != 'none') {
+				olian.slideUp();
+			}
+		},1500)
+	})
+	if($('#con_nav').size()>0){
+		var navTop = $('#con_nav').offset().top + $('#con_nav').height();
+		var navOff = 0;
+		$(window).on('scroll',function(){
+			if ($(window).scrollTop() > navTop && !navOff) {
+				$('#con_nav').addClass('fixed');
+				navOff = 1;
+			}else if($(window).scrollTop() < navTop && navOff){
+				$('#con_nav').removeClass('fixed');
+				navOff = 0;
+			}
+		})
+	}
+
+    //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
+    $(function(){  
+        $(window).scroll(function(){  
+            if ($(window).scrollTop()>100){  
+                $("#get_top").fadeIn(850);  
+            }  
+            else  
+            {  
+                $("#get_top").fadeOut(850);  
+            }  
+        });  
+        //当点击跳转链接后，回到页面顶部位置  
+        $("#get_top").click(function(){  
+            $('body,html').animate({scrollTop:0},1000);  
+            return false;  
+        });  
+    });  
+})
+</script>
+    <script>
+	$(document).ready(function(){
+		$('#board_title02').find('li').on('click', function(){
+			$(this).addClass('cur').siblings().removeClass('cur');
+			$('.board_con').hide().eq($(this).index()).fadeIn();
+		}).eq(0).trigger('click');
+
+		$('#process_title').find('li').on('click', function(){
+			$(this).addClass('cur').siblings().removeClass('cur');
+			$('.process_con').hide().eq($(this).index()).fadeIn();
+		}).eq(0).trigger('click');
+
+		// $('.board_con').each(function(){
+		// 	var This = $(this);
+		// 	This.find("li").on('mouseenter',function(){
+		// 		$(this).addClass('act').siblings().removeClass('act');
+		// 		This.find('.board_cat').hide().eq($(this).index()).fadeIn();
+		// 	}).eq(0).trigger('mouseenter');
+		// })
+
+		// //------第一个
+		// var bNow = 0;
+		// var oBrand = $('#board_cut01');
+		// var aLi = oBrand.find('li');
+		// var num = aLi.size();
+		// var bPage = Math.ceil(aLi.size()/4);
+		// oBrand.css('width',bPage*100+'%');
+		// aLi.css("width", 250);
+		// $('#prev').on('click',function(){
+		// 	bNow--;
+		// 	if (bNow < 0) bNow = bPage -1;
+		// 	oBrand.stop().animate({left:bNow*-100+'%'},600);
+		// })
+		// $('#next').on('click',function(){
+		// 	bNow++;
+		// 	if (bNow > bPage -1) bNow = 0;
+		// 	oBrand.stop().animate({left:bNow*-100+'%'},600);
+		// })
+
+		// //------第第二个
+		// var bANow = 0;
+		// var oABrand = $('#board_cut02');
+		// var aLiA = oABrand.find('li');
+		// var numA = aLiA.size();
+		// var bAPage = Math.ceil(aLiA.size()/4);
+		// oABrand.css('width',bAPage*100+'%');
+		// aLiA.css("width", 250);
+		// $('#prev').on('click',function(){
+		// 	bANow--;
+		// 	if (bANow < 0) bANow = bAPage -1;
+		// 	oABrand.stop().animate({left:bANow*-100+'%'},600);
+		// })
+		// $('#next').on('click',function(){
+		// 	bANow++;
+		// 	if (bANow > bAPage -1) bANow = 0;
+		// 	oABrand.stop().animate({left:bANow*-100+'%'},600);
+		// })
+
+		// //------第三个
+		// var bBBNow = 0;
+		// var oBBrand = $('#board_cut03');
+		// var aLiB = oBBrand.find('li');
+		// var numB = aLiB.size();
+		// var bBPage = Math.ceil(aLiB.size()/4);
+		// oBBrand.css('width',bBPage*100+'%');
+		// aLiB.css("width", 250);
+		// $('#prev').on('click',function(){
+		// 	bBBNow--;
+		// 	if (bBBNow < 0) bBBNow = bBPage -1;
+		// 	oBBrand.stop().animate({left:bBBNow*-100+'%'},600);
+		// })
+		// $('#next').on('click',function(){
+		// 	bBBNow++;
+		// 	if (bBBNow > bBPage -1) bBBNow = 0;
+		// 	oBBrand.stop().animate({left:bBBNow*-100+'%'},600);
+		// })
+
+		$('#con_nav').find('li').on('click', function(){
+			$(this).addClass('cur').siblings().removeClass('cur');
+			var iTop = $('.about_'+$(this).index()).offset().top;
+			$('html,body').stop().animate({scrollTop:iTop});
+		})
+
+		var navTop = $('#con_nav').offset().top + $('#con_nav').height();
+		var navOff = 0;
+		$(window).on('scroll',function(){
+			if ($(window).scrollTop() > navTop && !navOff) {
+				$('#con_nav').addClass('fixed');
+				navOff = 1;
+			}else if($(window).scrollTop() < navTop && navOff){
+				$('#con_nav').removeClass('fixed');
+				navOff = 0;
+			}
+		})
+
+		$('.process_cut').each(function(){
+			$(this).find('li').each(function(index){
+				if (index == 1) $(this).css('marginTop', 120);
+
+				if ((index+1)%2 == 0) {
+					$(this).addClass('process_fr');
+				}
+			}).eq(-1).css('marginBottom', 0);
+		})
+
+		//-----------------历程js
+		var lic = 0;
+	    var licID = $('#process_title');
+	    var licXs = Math.ceil(licID.find('li').size()/3);
+	    licID.css('width',licXs*100+'%');
+	    $('#process_prev').on('click',function(){
+	     lic--;
+	     if (lic < 0) lic = licXs -1;
+	     licID.stop().animate({left:lic*-100+'%'},600);
+	    })
+	    $('#process_next').on('click',function(){
+	        lic++;
+	        if (lic > licXs -1) lic = 0;
+	        licID.stop().animate({left:lic*-100+'%'},600);
+	    })
+	})
+	</script>
+</head>
+
+<body>
+    
+  
+<button id="get_top"></button>
+<header id="header">
+    <a href="" id="logo"></a>
+    <nav id="nav">
+        <ul>
+            <li><a href="">首页</a><i></i></li>
+            <li><a href="product/index.aspx">产品介绍</a><i></i></li>
+            <li><a href="r_d/index.aspx">研发创新</a><i></i></li>
+            <li><a href="news/n1/index.aspx">新闻资讯</a><i></i></li>
+            <li><a href="irm/n1/index.aspx">投资者关系</a><i></i></li>
+            <li class="cur"><a href="about/index.aspx">关于我们</a><i></i></li>
+            <li><a href="hr/jobs/index.aspx">招聘职位</a><i></i></li>
+        </ul>
+        <div class="search">
+        <script>
+		function checkform(){
+			if($('#keywords').val()==''){
+				$('#keywords').focus();
+				return false;
+			}
+			return true;
+		}
+		</script>
+        	<form action="search.aspx" onsubmit="return checkform()">
+            	<input type="hidden" name="moduleid" value="2,34,35,36" />
+        		<input type="text" name="keywords" id="keywords" placeholder="搜索">
+        		<input type="submit" value=">">
+        	</form>
+        </div>
+    </nav>
+    <div id="zy">
+        <a href="en">EN</a>
+    </div>
+</header>
+
+
+	<section id="con_banner">
+		<img src="upload/2015/0820/18458jt2v8.jpg" />
+	</section>
+
+	<section id="con_nav">
+		<ul>
+			<li class="cur">公司介绍<b></b></li>
+			<li>企业文化<b></b></li>
+			<li>董事局及高级管理层<b></b></li>
+			<li>发展历程<b></b></li>
+			<li>市场营销<b></b></li>
+			<li>制造品管<b></b></li>
+		</ul>
+	</section>
+
+	<section id="company" class="about_0">
+		<div id="company_con">
+			<h2>公司介绍</h2>
+			<aside><!-- Company Information --></aside>
+			<div><p style="text-align: justify;"><span style="text-align: justify;"><span style="text-align: justify;">先健科技（深圳）有限公司成立于1999年，随后在香港、印度、荷兰、法国、俄罗斯、美国、北京、上海、广州、深圳成立了多个子公司和销售办事处。</span>先健科技公司(1302.HK)是业内领先的心血管微创介入医疗器械供应商，集研发、制造和销售于一体，其高品质的、具自主知识产权的创新型产品畅销全球多个国家，分销商网络广泛覆盖欧洲、南美洲、亚洲、非洲等地，目前为全球第二大、金砖四国最大的先心病封堵器供应商。2011年11月，先健科技公司于香港联合交易所成功上市。2012年10月，先健科技公司与全球顶尖医疗器械公司美国美敦力公司建立战略合作关系，美敦力成为先健科技公司的战略股东。双方于2014年扩大战略合作，共同致力于在中国推出世界一流品质的先健科技自有品牌植入式心脏起搏器产品。</span></p><p style="text-align: justify;">&nbsp; &nbsp; &nbsp;</p><p style="text-align: justify;">秉承着对质量和创新的不懈追求，先健科技公司率先通过欧盟DEKRA公告机构的ISO13485：2003质量体系认证，通过中国医疗器械生产质量管理规范检查，符合[2014]64《医疗器械生产质量管理规范》要求。公司于2008年被评为“国家级高新技术企业”，拥有“博士后科研工作站”，“国家地方联合工程试验室”等高水平科研资质，承担国家“十五”科技攻关课题、国家“973”计划和国家“863”计划等政府科研项目共计50余项。截止2016年6月30日，公司共有5个产品获CFDA批准为创新医疗器械，成为目前中国获CFDA批准创新医疗器械最多的医疗器械企业。&nbsp;</p><p style="text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p><p style="text-align: justify;">未来，先健科技公司将继续以创新为灵魂，合作为基石，担当为态度，执行为准则，认可为目标，为全球医生和患者提供优秀的创新型心血管微创介入医疗器械产品，并将以不断丰富的产品组合，不断提升的质量水平，不断完善的医患服务，推动全球医疗事业的卓越发展。</p><p><br/></p></div>
+		</div>
+	</section>
+
+	<section id="culture" class="about_1">
+		<div class="wrap">
+			<h2>企业文化</h2>
+			<aside><!-- Corporate Culture --></aside>
+            <h3><span style="color: rgb(0, 176, 240); font-size: 20px;">[愿景]</span></h3><p>成为心血管领域全球领先企业</p><p><br/></p><h3><span style="color: rgb(0, 176, 240); font-size: 20px;">[使命]</span></h3><p>为全球医生和患者提供安全创新的心血管医疗器械。</p><p><br/></p><h3><span style="color: rgb(0, 176, 240); font-size: 20px;">[文化理念]</span></h3><p><strong>创新</strong><br/>以创新为灵魂，不断探寻新思路与新方法，追求更新的技术和更好的质量管理体系，对产品、工艺、技术、管理模式进行持续改进与突破。<br/><br/> <strong>合作</strong><br/>以合作为基石，以团队利益及目标优先，通过公司各部门高效沟通与通力合作，以及与医学专家、经销商、供应商之间的互动，生产品质精良的医疗器械产品。<br/><br/><strong>担当</strong><br/>以担当为态度，每一位先健人积极发挥主人翁意识，以公司发展为己任，以患者生命质量为最高目标，不断提高工作效能，促进行业技术与产业进步。<br/><br/><strong>执行</strong><br/>以执行为准则，强化执行意识，端正执行态度，形成企业的系统执行力，最终形成目标明确、注重实现、简洁高效、监督有力的执行文化。<br/><br/><strong>认可</strong><br/>以认可为目标，以尊重为基础，促进企业、员工和医生的共同发展，实现企业与员工的相互认可，赢得外部客户及公众对先健的信赖。</p>
+		</div>
+	</section>
+
+	<section id="board" class="about_2">
+		<h2>董事局及高级管理层</h2>
+		<aside><!-- Board of Directors --></aside>
+		<ul id="board_title02">
+			<li class="cur">执行董事</li>
+			<li>非执行董事</li>
+			<li>独立非执行董事</li>
+			<li>高级管理层</li>
+		</ul>
+		<div id="board_box">
+        
+			<div class="board_con">
+				<div class="board_con_ccc">
+					<ul id="board_cut01">
+						<li >
+							<picture><img src="upload/2015/0821/14050p2486.png" /></picture>
+							<div>
+								<h3>谢粤辉先生</h3>
+								<p>执行董事</p>
+								<section class="board_cat">
+									谢粤辉先生为本集团行政总裁。有20多年的管理经验，其中，在医疗器械行业有10多年的经验。曾任深圳市汇世邦科技有限公司总经理和主席、中国南方证劵投资经理、深圳市汇华集团国内贸易部经理。1991年获得昆明理工学院学士学位，2006年获得清华大学EMBA。
+								</section>
+							</div>
+						</li>
+						<li>
+							<picture><img src="upload/2015/0906/18450td66r.jpg" /></picture>
+							<div>
+								<h3>刘剑雄先生</h3>
+								<p>执行董事</p>
+								<section class="board_cat">
+									刘剑雄先生为本集团执行董事。在财务和会计方面有近20年的经验。曾任深圳斯伦贝谢电子系统有限公司财务总监、中华电力集团可再生能源部的中国财务总监、AnyDATA Group大中华区公司财务总监。1990 年毕业于中山大学，2004 年获得英国格拉摩根大学工商管理硕士学位。自1997 年起即为特许公认会计师公会会员，并自1999 年起为注册税务师。
+								</section>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="board_con">
+				<div class="board_con_ccc">
+					<ul id="board_cut02">
+						<li >
+							<picture></picture>
+							<div>
+								<h3>Cleary 先生</h3>
+								<p>非执行董事</p>
+								<section class="board_cat">
+									Cleary 先生，55 岁，取得科羅拉多学院的生物学学士学位。Cleary 先生于资本市场投资、并购、企业管理及业务发展方面拥有逾 20 年经验。彼现任 Medtronic  plc.（「美敦力」，本公司主要股东，定义见联交所证券上市规则（「上市规则」））的企业发展的副总裁。于加入美敦力前，自2011年至2014年，Cleary 先生任职于 Alesia  Capital  Services  LLC，向财富 500 强公司（包括美敦力）提供咨询及财务分析服务。自1995年至2011年，Cleary 先生任职于 GE  Capital  Corporation（「GE  Capital」），领导并购团队，该并购团队完成涉及逾 200 项全球交易的收购。 Cleary 先生因其在并购方面的优秀表现而于2005年获得 GE  Capital 主席奖 (GE Capital Chairman’s Award) 並为通用电气企业发展高级领导委员会 (General Electric Business Development Senior Leadership Council) 成员。
+								</section>
+							</div>
+						</li>
+						<li>
+							<picture></picture>
+							<div>
+								<h3>Monaghan Shawn Del先生</h3>
+								<p>非执行董事</p>
+								<section class="board_cat">
+									Monaghan Shawn Del先生为本集团非执行董事。现任Medtronic,Inc.心脏节律和心力衰竭（CRHF）事业部业务发展及策略副总裁，负责美敦力与本公司CRHF方面的合作联络。2011年任美敦力冠状动脉和结构性心脏病事业部副总裁兼体外治疗总经理；2008年任美敦力心血管外科国内商业运作副总裁及美敦力全球运营副总裁；2002年在美敦力亚太区任财务总监。1983年获得堪萨斯大学会计及商务专业理学士学位，1988年获得芝加哥大学工商管理硕士学位。
+								</section>
+							</div>
+						</li>
+						<li>
+							<picture></picture>
+							<div>
+								<h3>邬建辉先生</h3>
+								<p>非执行董事</p>
+								<section class="board_cat">
+									邬建辉先生为本集团非执行董事。在会计及公司管理方面有20多年的经验。1992年加入立信大华会计师事务所并在1997年晋升为合伙人，自2010年起担任深圳市政协委员，自2009年起担任河海大学商学院兼职硕士生导师，自2010年起担任中山大学国际商学院兼职导师及金陵科技大学客座教授。1992年获得上海财经大学学士学位，2005年获得北京大学工商管理硕士学位。
+								</section>
+							</div>
+						</li>
+						<li>
+							<picture></picture>
+							<div>
+								<h3>姜峰先生</h3>
+								<p>非执行董事</p>
+								<section class="board_cat">
+									姜峰先生为本集团非执行董事。现任中国医疗器械行业协会常务副会长、国家医疗器械产业技术创新联盟理事长、教育部生物医学工程专业教育指导委员会副主任、中国仪器仪表学会常务理事兼医疗器械分会理事长、中国生物医学工程学会、中国生物材料学会及中国医学教授协会常务理事、浙江大学研究员兼浙大生物医学技术评估中心主任及中国医疗器械资讯杂志社社长。1985年获得第四军医大学学士学位，1995年获得第四军医大学临床外科学博士学位，2007年获得清华大学EMBA学位。
+								</section>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="board_con">
+				<div class="board_con_ccc">
+					<ul id="board_cut03">
+						<li >
+							<picture></picture>
+							<div>
+								<h3>梁显治先生</h3>
+								<p>独立非执行董事</p>
+								<section class="board_cat">
+									梁显治先生为本集团独立非执行董事。在财务及会计方面有丰富的经验。曾任中国珠海联合国际学院财务规划及发展部董事总经理、Shenzhen Alclear Consulting Limited董事、创维数码控股有限公司集团财务总监及公司秘书。1977年获得香港浸会学院工商管理文凭，1981年获得德州大学硕士学位，2007年获得香港公开大学学位。自1982年起为德州注册会计师公会及香港会计师公会会员，自1982年起为特许公认会计师公会(ACCA)会员。
+								</section>
+							</div>
+						</li>
+						<li>
+							<picture></picture>
+							<div>
+								<h3>周庚申先生</h3>
+								<p>独立非执行董事</p>
+								<section class="board_cat">
+									周庚申先生为本集团独立非执行董事。在信息科技工程方面有20多年的经验。1989年至今，在中国长城计算机集团（深圳）公司历任多项职务，现为长城计算机董事兼行政总裁。曾获2007年品牌中国年度人物、2008年及2010年中国信息产业年度经济人物。1989年获得清华大学精密仪器系学士学位，2009年获得清华大学工商管理硕士学位。
+								</section>
+							</div>
+						</li>
+						<li>
+							<picture></picture>
+							<div>
+								<h3>周路明</h3>
+								<p>独立非执行董事</p>
+								<section class="board_cat">
+									周路明先生为本集团独立非执行董事。现任太空科技南方研究院院长。1984年于中南民族大学任教；1992年于深圳市科技局任职，历任法规处处长、办公室主任、计划处处长等职；2001年担任深圳清华研究院副院长；2004年担任深圳市科技局副局长；2008年担任深圳市科协主席。1984年毕业于华中师范大学物理系，2005年获得清华大学EMBA学位。
+								</section>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="board_con">
+				<div class="board_con_ccc">
+					<ul id="board_cut04">
+						<li >
+							<picture></picture>
+							<div>
+								<h3>谢粤辉先生</h3>
+								<p>行政总裁</p>
+								<section class="board_cat">
+									谢粤辉先生为本集团行政总裁。有20多年的管理经验，其中，在医疗器械行业有10多年的经验。曾任深圳市汇世邦科技有限公司总经理和主席、中国南方证劵投资经理、深圳市汇华集团国内贸易部经理。1991年获得昆明理工学院学士学位，2006年获得清华大学EMBA。
+								</section>
+							</div>
+						</li>
+						<li>
+							<picture></picture>
+							<div>
+								<h3>张德元先生</h3>
+								<p>首席技术官</p>
+								<section class="board_cat">
+									张德元先生为本集团首席技术官。在材料研发方面有20 多年的经验。曾任江西科学院应用物理研究所副所长及激光研发中心主任、国家863 计划材料表面技术研究开发中心研发部部长。1990年获得东南大学硕士学位，2001 年获得北京科技大学博士学位，2003 年取得中国科学院研究员资格。2000 年，因其在科学研究方面的卓越成就获得了国务院特别津贴。
+								</section>
+							</div>
+						</li>
+						<li>
+							<picture></picture>
+							<div>
+								<h3>刘剑雄先生</h3>
+								<p>首席财务官及公司秘书</p>
+								<section class="board_cat">
+									刘剑雄先生为本集团首席财务官及公司秘书。在财务和会计方面有近20 年的经验。曾任深圳斯伦贝谢电子系统有限公司财务总监、中华电力集团可再生能源部的中国财务总监、AnyDATA Group大中华区公司财务总监。1990 年毕业于中山大学，2004 年获得英国格拉摩根大学工商管理硕士学位。自1997 年起即为特许公认会计师公会会员，并自1999 年起为注册税务师。
+								</section>
+							</div>
+						</li>
+						<li>
+							<picture></picture>
+							<div>
+								<h3>韩江波先生</h3>
+								<p>首席运营官</p>
+								<section class="board_cat">
+									韩江波先生为本集团首席运营官。有20多年管理经验，其中包括逾14年在不同国家跨国公司的整体、运营、工程及研发管理经验，历任总经理兼法人代表，高级运营总监，运营总监等职务。有关跨国公司包括：Power-One/ABB/Bel Fuse(China)，EPCOS(Singapore)，Sonion(Vietnam)及Hewlett-Packard(Singapore)。韩先生持有南洋理工大学（新加坡）机械工程博士学位、西安交通大学工程力学硕士学位，曾获中国机械工业部颁发的杰出青年科学家奖。
+								</section>
+							</div>
+						</li>
+						<li>
+							<picture></picture>
+							<div>
+								<h3>曾乐朋先生</h3>
+								<p>首席医学官</p>
+								<section class="board_cat">
+									曾乐朋先生拥有超过15年的医疗器械行业工作经验，在设计、规划、执行和管理有源医疗器械相关临床实验及产品开发、注册方面有丰富的经验。在美国美敦力股份有限公司心脏节律疾病管理部门拥有超过9年的工作经验。曾乐朋先生持有明尼苏达大学生物医学工程系博士学位，清华大学电机工程系生物医学工程专业硕士学位及学士学位。
+								</section>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+		</div>
+		<!-- <div class="button">
+			<button id="prev"></button><button id="next"></button>
+		</div> -->
+	</section>
+
+	<section id="process" class="about_3">
+		<h2>发展历程</h2>
+		<aside><!-- Development History --></aside>
+		<div id="process_box">
+			<div>
+				<ul id="process_title">
+					<li class="cur">2015</li>
+					<li>2014</li>
+					<li>2013</li>
+					<li>2012</li>
+					<li>2011</li>
+					<li>2010</li>
+					<li>2009</li>
+					<li>2008</li>
+					<li>2006</li>
+					<li>2003</li>
+					<li>2001</li>
+					<li>1999</li>
+				</ul>
+			</div>
+			<button id="process_prev"></button><button id="process_next"></button>
+		</div>
+		<i id="process_line"></i>
+		<div class="wrap">
+        
+			<div class="process_con">
+				<b class="line_b"></b>
+				<b class="line_y"></b>
+				<b class="line_x"></b>
+				<ul class="process_cut">
+					<li>
+						<!--<span>2015-10-16</span>-->
+						<h3>2015年</h3>
+						<p>国家创新医疗器械LAmbre™左心耳封堵器临床研究试验在国内完成入组</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-10-16</span>-->
+						<h3>2015年</h3>
+						<p>先健科技获纳入恒生指数系列成分股</p>
+						<b></b>
+					</li>
+				</ul>
+			</div>
+        
+			<div class="process_con">
+				<b class="line_b"></b>
+				<b class="line_y"></b>
+				<b class="line_x"></b>
+				<ul class="process_cut">
+					<li>
+						<!--<span>2015-10-16</span>-->
+						<h3>2014年</h3>
+						<p>“高端介入医疗器械研发和产业化基地”项目获得发改委批复</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-10-16</span>-->
+						<h3>2014年</h3>
+						<p>“室间隔缺损介入治疗新器械新技术及其临床应用”技术获得2014年度国家技术发明二等奖</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-10-16</span>-->
+						<h3>2014年</h3>
+						<p>左心耳封堵器、可吸收药物洗脱冠脉支架系统批准为创新医疗器械，先健科技成为唯一一家拥有两项创新通道产品的公司</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-10-16</span>-->
+						<h3>2014年</h3>
+						<p>美敦力向先健科技开放欧洲营销网络，CeraFlex成为首个进入西方医疗器械主流市场的中国品牌</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-10-16</span>-->
+						<h3>2014年</h3>
+						<p>普惠研制的人工生物心脏瓣膜在中国成功上市</p>
+						<b></b>
+					</li>
+				</ul>
+			</div>
+        
+			<div class="process_con">
+				<b class="line_b"></b>
+				<b class="line_y"></b>
+				<b class="line_x"></b>
+				<ul class="process_cut">
+					<li>
+						<!--<span>2015-08-16</span>-->
+						<h3>2013年11月</h3>
+						<p>先健科技获批——介入医疗生物技术及系统国家地方联合工程实验室和广东省工程研发中心</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-11</span>-->
+						<h3>2013年11月</h3>
+						<p>先健科技成功由港交所创业板转主板上市</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-11</span>-->
+						<h3>2013年5月</h3>
+						<p>LawMax™ Dilator获得FDA批准</p>
+						<b></b>
+					</li>
+				</ul>
+			</div>
+        
+			<div class="process_con">
+				<b class="line_b"></b>
+				<b class="line_y"></b>
+				<b class="line_x"></b>
+				<ul class="process_cut">
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2012年</h3>
+						<p>美敦力公司完成对先健科技公司的战略投资</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2012年</h3>
+						<p>Spider™ PFO、HeartR™ 封堵器、Cera® & CeraFlex™ PFO与LawMax™ Dilator荣获CE认证</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2012年</h3>
+						<p>先健科技Cera®陶瓷膜（纳米结构氮化钛）封堵器系列取得中国注册证</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2012年</h3>
+						<p>国务院发展研究中心领导莅临先健科技考察调研</p>
+						<b></b>
+					</li>
+				</ul>
+			</div>
+        
+			<div class="process_con">
+				<b class="line_b"></b>
+				<b class="line_y"></b>
+				<b class="line_x"></b>
+				<ul class="process_cut">
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2011年</h3>
+						<p>CCTV黄金节目《焦点访谈》走进先健：创新—两条腿走路</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2011年</h3>
+						<p>Fustar™可调弯鞘获得FDA批准</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2011年</h3>
+						<p>"全降解血管支架材料关键技术及产品研发" 项目获得国家高技术研究发展计划（863计划）资助</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2011年</h3>
+						<p>CeraFlex™系列封堵器及血管塞获得CE认证</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2011年</h3>
+						<p>欧洲子公司成立</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2011年</h3>
+						<p>先健在香港交易所成功上市</p>
+						<b></b>
+					</li>
+				</ul>
+			</div>
+        
+			<div class="process_con">
+				<b class="line_b"></b>
+				<b class="line_y"></b>
+				<b class="line_x"></b>
+				<ul class="process_cut">
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2010年</h3>
+						<p>SeQure™管腔抓捕系统获得FDA批准（第一个获得FDA批准的产品）</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2010年</h3>
+						<p>Fustar™可调弯鞘、Cera™血管塞、Acumark™测量球囊导管、SeQure ™抓捕器及Cera™筛孔ASD封堵器获得CE认证</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2010年</h3>
+						<p>先健在德国和法国进行Spider™ PFO的临床试验（首次在欧洲进行临床试验）</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2010年</h3>
+						<p>先健经中国人力资源和社会保障部以及博士后管委会批准为"博士后科研工作站"并开始招收首批博士后研究人员</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2010年</h3>
+						<p>先健董事长向胡锦涛主席汇报先健产品研发和企业发展情况</p>
+						<b></b>
+					</li>
+				</ul>
+			</div>
+        
+			<div class="process_con">
+				<b class="line_b"></b>
+				<b class="line_y"></b>
+				<b class="line_x"></b>
+				<ul class="process_cut">
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2009年</h3>
+						<p>PBPV球囊、镍钛合金腔静脉滤器(VCF)及Cera™ ASD、VSD、PDA封堵器获得CE认证</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2009年</h3>
+						<p>"具有纳米修饰的心血管植入器件材料" 项目和 "可控式人造主动脉弓覆膜支架的研究与应用"项目分别获得国家重点基础研究发展计划（973计划）及国家高技术研究发展计划（863计划）资助</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2009年</h3>
+						<p>"生物可吸收复合材料大血管支架的研究"项目被纳入广东省产学研合作项目</p>
+						<b></b>
+					</li>
+				</ul>
+			</div>
+        
+			<div class="process_con">
+				<b class="line_b"></b>
+				<b class="line_y"></b>
+				<b class="line_x"></b>
+				<ul class="process_cut">
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2008年</h3>
+						<p>Aegisy™腔静脉滤器获得CE认证（第一个获得CE认证的产品）</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2008年</h3>
+						<p>先健印度子公司成立</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2008年</h3>
+						<p>先健被评为"国家级高新技术企业"</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2008年</h3>
+						<p>先健收购北京市普惠生物医学工程有限公司及深圳市擎源医疗器械有限公司</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2008年</h3>
+						<p>先健获得欧洲ISO 13485: 2003和MDD认证</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2008年</h3>
+						<p>"表面改性的金属生物可吸收血管支架"项目获得广东省医疗器械重大研究专项资助</p>
+						<b></b>
+					</li>
+				</ul>
+			</div>
+        
+			<div class="process_con">
+				<b class="line_b"></b>
+				<b class="line_y"></b>
+				<b class="line_x"></b>
+				<ul class="process_cut">
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2006年</h3>
+						<p>兰馨亚洲风险投资进入先健，公司更名为先健科技（深圳）有限公司</p>
+						<b></b>
+					</li>
+				</ul>
+			</div>
+        
+			<div class="process_con">
+				<b class="line_b"></b>
+				<b class="line_y"></b>
+				<b class="line_x"></b>
+				<ul class="process_cut">
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2003年</h3>
+						<p>先健被评为"深圳市高新技术企业"</p>
+						<b></b>
+					</li>
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2003年</h3>
+						<p>先健获得ISO9001及ISO13485(YY/T0287)认证</p>
+						<b></b>
+					</li>
+				</ul>
+			</div>
+        
+			<div class="process_con">
+				<b class="line_b"></b>
+				<b class="line_y"></b>
+				<b class="line_x"></b>
+				<ul class="process_cut">
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>2001年</h3>
+						<p>HeartR™ 封堵器和Supporter™ 冠脉支架获得中国注册证</p>
+						<b></b>
+					</li>
+				</ul>
+			</div>
+        
+			<div class="process_con">
+				<b class="line_b"></b>
+				<b class="line_y"></b>
+				<b class="line_x"></b>
+				<ul class="process_cut">
+					<li>
+						<!--<span>2015-08-17</span>-->
+						<h3>1999年</h3>
+						<p>深圳市先健科技发展有限公司成立</p>
+						<b></b>
+					</li>
+				</ul>
+			</div>
+        
+		</div>
+	</section>
+
+	<section id="board" class="about_4">
+		<div class="wrap">
+			<h2>市场营销</h2>
+			<aside><!-- Marketing --></aside>
+            <p>先健科技拥有庞大的销售网络，由全球180多个经销商组成。其中，130多个中国国内经销商，覆盖全中国主要省份和自治区；50多个国际经销商，覆盖了欧洲、北美洲、南美洲、亚洲及非洲的主要人口大国。<br/><br/>先健科技，将进一步专注于建设在高新技术医疗器械市场中的领导地位，计划进一步渗透人口众多的成熟市场。<br/><br/></p><div class="about_map"><div><p class="xian"><span class="orange">50多个</span><span class="hui">国外经销商</span></p><p><span class="blue">130多个</span><span class="hui">国内经销商</span></p></div></div><p><br/>先健科技的营销团队由医学专业成员组成，团队组织进行内部销售培训及经销商管理，制定最佳行业准则，寻找市场机会、反馈销售表现以及维护客户关系，同时亦与医生及医院直接互动，确保先健科技的品牌及产品广为医疗器械行业认可。<br/><br/>先健科技的品牌价值是建立在专业教育、循证医学和知识共享的基础上。目前，先健科技已成立了学术交流平台（LKEP——Lifetech Knowledge Exchange Program），该跨国平台旨在促进各国临床专家学术交流。先健科技已在全球设立了多家临床交流中心，自2011年该项目启动至今，已成功组织了多次交流活动，吸引了来自欧洲、南美洲、亚洲的临床专家进行现场手术技术分享，实现了跨国学术交流的实践平台。截止2014年底，LKEP一共在10个国家22个城市成功举行了超过40场交流活动，参与医生人数多达200多人。举办了首届亚洲VSD workshop 和 首届亚洲外周血管workshop融合同台手术、讲课发言、圆桌讨论等多元化形式的国际合作交流平台。<br/><br/>同时，先健科技致力于通过专业培训及患者教育计划来推广产品，分别在巴西、意大利、印度、希腊以及中国的北京、上海、广州、哈尔滨、天津、广西等地，建立了多个先天性心脏病介入治疗国际培训中心，提高医生手术技能的同时，还培养了病人对疾病的认知。</p>
+		</div>
+	</section>
+
+	<section id="culture" class="about_5">
+		<div class="wrap">
+			<h2>制造品管</h2>
+			<aside><!-- Manufacturing and Quality Control --></aside>
+            <p style="text-align: left;"><img src="upload/2015/0825/1942626f24.png" title="未标题-1.png"></p><p><strong><span style="color: rgb(0, 176, 240);"><br/></span></strong></p><p><strong><span style="color: rgb(0, 176, 240);">质量方针：“我们承诺符合法规要求，提高质量管理体系的有效性，为全球医生和患者提供安全创新的心血管医疗器械。”</span></strong></p><p><strong><span style="color: rgb(0, 176, 240);"><br/></span></strong></p><p style="text-align: left;">公司制造系统秉承，高标准质量意识，高度服从，高效执行的理念，汇集了一批从一线操作工到各级专业技术及管理团队的高素质严要求的员工。<br/><br/>大家深切懂得公司从事的是高尚而又高风险的植入性医疗行业，质量保证对公司声誉影响和患者健康安全的重要性。持续开展的QCC及金点子培养了全员参与改善的质量及成本控制意识。<br/><br/>逐步完善的跨产品多技能培训机制及储备梯队管理人员制度，是公司持续发展的强大动力和保障。<br/><br/>公司完善的流程及系统化管理模式，先进的设备设施，灵活而快速的生产方式是获得客户满意度和订单个性化需求的坚强基石。<br/></p><p><br/></p>
+		</div>
+	</section>
+
+
+    <footer>
+		<section id="foot_nav">
+			<div id="foot_box">
+				<div class="foot_nav_fl">
+					<a href="fuzhulanmu/241.aspx">法律声明</a><i>|</i><a href="fuzhulanmu/410.aspx">联系我们</a><i>|</i><a href="hr/index.aspx">人才招聘</a><i>|</i><a href="fuzhulanmu/242.aspx">网站地图</a>
+				</div>
+				<div class="foot_nav_fr">
+					<a href=""><img src="template/zh-cn/img/index21.png" alt=""></a><a href=""><img src="template/zh-cn/img/index22.png" alt=""></a> --><a href=""><img src="template/zh-cn/img/index23.png" alt=""></a>
+				</div>
+			</div>
+		</section>
+		<section id="foot_con">
+			<div id="foot_box">
+				<div class="code">
+					<aside>
+						<img src="template/zh-cn/img/index24.jpg" alt="">
+						<p>先健科技官方微信</p>
+					</aside>
+					<aside>
+						<img src="template/zh-cn/img/index25.jpg" alt="">
+						<p>先健医刊</p>
+					</aside>
+				</div>
+				<div class="chaining">
+					<h2>友情链接</h2>
+					<aside id="chaining">
+						友情链接...
+						<ul id="chaining_con">
+							<li><a href="＃" target="_blank">其他子公司链接</a></li>
+							<li><a href="http://www.smallseashell.com" target="_blank">smallseashell</a></li>
+						</ul>
+						<i></i>
+					</aside>
+				</div>
+			</div>
+		</section>
+		<section id="copyright">
+			2008-2015 版权所有 粤ICP备09037700号<br />
+  
+		</section>
+	</footer>
+
+
+<!--<style>
+	.tanchuang_mask{
+		position: fixed;
+		top: 0;
+		left:0;
+		right:0;
+		bottom:0;
+		z-index: 10000;
+		background:#000;
+		opacity: .8;
+	}
+.tanchuang{
+	width:1000px;
+	height:450px;
+
+	background: url(template/zh-cn/img/tanchuang.jpg) no-repeat;
+	position:fixed;
+	top: 100px;
+	left: 100px;
+	z-index: 10005;
+}
+.tanchuang .close{
+ position: absolute;
+ right:15px;
+ top: 15px;
+ color: #666667;
+}
+.tanchuang span{
+ position: absolute;
+ bottom:15px;
+ right: 15px;
+ color: #666667;
+}
+.tanchuang .close:hover{
+	color: #0068b7;
+}
+</style>-->
+
+<div class="tanchuang">
+	<a href="#." class="close">X</a>
+	<span>8s</span>
+</div>
+<div class="tanchuang_mask"></div>
+
+<script>
+	$(function(e){
+			$('.tanchuang').css('left',( $(window).width() -  $('.tanchuang').width() ) / 2 );
+			$('.tanchuang').css('top',( $(window).height() -  $('.tanchuang').height() ) / 2 );
+$('.tanchuang .close').click(function(e){
+	e.preventDefault();
+	$('.tanchuang').hide();
+	$('.tanchuang_mask').hide();
+});
+			var t_total=8;
+		var tanchuang_interval=	window.setInterval (function(){
+				t_total--;
+ $('.tanchuang span').html(t_total+'s');
+ if(t_total<=0){
+	 $('.tanchuang').hide();
+	$('.tanchuang_mask').hide();
+window.clearInterval (tanchuang_interval);
+ }
+			},1000);
+	})
+</script>
+</body>
+</html>
+

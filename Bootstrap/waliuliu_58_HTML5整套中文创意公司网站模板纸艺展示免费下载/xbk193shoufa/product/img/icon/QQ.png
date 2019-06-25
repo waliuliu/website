@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>404页面</title>
+</head>
+<style>
+	body,
+	html {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		font-family: 'Microsoft YaHei'
+	}
+	
+	h1,
+	p,
+	ul,
+	li {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.found {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background: url('img/404bg.png');
+		color: #666;
+	}
+	
+	.txt {
+		width: 1000px;
+		min-width: 1000px;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 10%;
+	}
+	
+	.txt h1 {
+		font-weight: normal;
+		font-size: 36px;
+	}
+	.found_a a {
+		display: inline-block;
+		width: 120px;
+		line-height: 40px;
+		margin-right: 20px;
+		margin-top: 40px;
+		color: #808080;
+		text-decoration: none;
+		border: 1px solid #808080;
+		border-radius: 20px;
+		text-align: center;
+	}
+	
+	.txt .copy {
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		padding: 0;
+		margin: 0;
+		border-top: 1px solid #cac7bf;
+		color: #808080;
+		text-align: center;
+		line-height: 60px;
+	}
+	
+	.txt ul li {}
+</style>
+
+<body>
+	<div class="found">
+		<div class="txt">
+			<img src="img/404.png" alt="">
+			<h1>对不起，你访问的页面出错了 !</h1>
+			<p style="font-size:16px;">我们正在查找你所查看的网页，请返回等待信息.....</p>
+			<p class="found_a clear">
+				<a href="/">返回首页</a></li>
+				<a href="#" onclick="javascript:history.Go(-1);">返回上一页</a>
+
+			</p>
+			<p class="copy">Copyright © 2016 POPdisplay All Rights Reserved 粤ICP备12005035号</p>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0; padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details,summary,picture{display:block;}
+table{border-collapse:collapse; border-spacing:0;}
+caption,th{text-align:left; font-weight:normal;}
+html,body,img,iframe,abbr{border:0;}
+i,em{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+sup,sub{font-size:12px;}
+textarea{overflow:auto; resize:none;}
+label{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,b{font-weight:normal; display:block;}
+a,a:hover{text-decoration:none;}
+a{color:#666; -webkit-transition:0.3s; -moz-transition:0.3s; transition:0.3s;}
+a:hover{color:#1993d7;}
+body,textarea,input,button,select,keygen,legend{font:14px/1.5 'Microsoft YaHei', 'Microsoft YaHei UI', 'WenQuanYi Micro Hei', Arial, sans-serif,\5b8b\4f53; color:#666; outline:0;}
+html{font-size:10px;}
+body{position:relative; background:#fff; -webkit-transition:none !important; -moz-transition:none !important; -ms-transition:none !important; -o-transition:none !important;}
+input[type=submit]{cursor:pointer;}
+
+.clear{zoom:1;}
+.clear:after{content:''; width:0; height:0; display:block; clear:both;}
+.wrap{width:1200px; margin:40px auto; overflow:hidden;}
+.title{font-size:26px; color:#1993d7; text-align:center;}
+.title_en{font-size:22px; color:#999; text-align:center;}
+
+#header{width:100%; background:url(../img/nav_bg.jpg) repeat-x bottom;}
+#header section{position:relative; width:1200px; margin:auto;}
+#logo{float:left; width:323px; height:79px; position:absolute; left:0; top:8px;}
+#nav{float:right;}
+#nav ul{overflow:hidden;}
+#nav ul li{float:left; margin:0 15px;}
+#nav ul li a{display:block; height:79px; text-align:center; line-height:79px; background:url(../img/nav_j_h.png) no-repeat center right; padding-right:15px;}
+#nav ul li a span{ color:#09F}
+#nav ul li a:hover,#nav ul li.act a{color:#1993d7; background-image:url(../img/nav_j_h_a.png);}
+
+
+footer{background:#464542; overflow:hidden;}
+footer section{width:1200px; margin:auto; height:45px; line-height:45px; font-size:11px;}
+footer section summary{float:left;}
+footer section summary a{color:#bfbfbf; margin-right:15px;}
+footer section summary a:hover{color:#fff;}
+footer section p{float:right; color:#bfbfbf;}
+footer section p a{color:#bfbfbf;}
+footer section p a:hover{color:#fff;}

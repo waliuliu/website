@@ -1,0 +1,262 @@
+@charset "utf-8";
+/* CSS Document */
+/*头部样式*/
+.logo{margin:39px 0;float:left; width:315px;}
+.search{ float:right; display:inline-block; width:225px;display:inline;height:29px;}
+.right_wrap{ float:right; width:630px; }
+.top{padding-top:20px; height:30px;}
+.top p{font-size:13px;color:#333;padding-left:95px; display:inline; float:left; width:300px;}
+
+.top span{color:#e6212a;font-weight:bold;}
+.nav{ padding-top:50px;}
+.nav li{float:left;font-size:15px;font-weight:bold;color:#000; padding-left:30px;display:inline; height: 53px;}
+.nav a.cur,.nav a:hover {color:#d9242a;border-bottom:3px solid #d9242a; padding-bottom: 5px;display: inline-block;}
+.search_text{padding-left:10px;margin-left:10px;float:right;background:url(../webimages/search_bg.jpg) no-repeat left top;height:29px;line-height:29px;width:173px;outline:0;margin-right: -1px;}
+.search_button{float:right;background:url(../webimages/submit.jpg) no-repeat left top;cursor:pointer;height:29px;width:30px;}
+.banner{width:100%;margin:0 auto;background: #640105;text-align: center;position: relative; overflow: hidden;}
+.investor{width:1024px;position:absolute;top:81px;left:50%;z-index:10;font-size:38px;color:#fff;font-weight:bold; margin-left:-512px;height:100px;line-height:1em; text-align: left;}
+.investor span{font-family:"Arial";font-size:18px;color:#fa734f;display:block;line-height:3.5em;font-weight:nomal;}
+
+.content{background:url(../webimages/content_bg.jpg) repeat-y;position:relative;z-index:999;height:100%;width:100%;}
+.main{background:url(../webimages/index72.png) no-repeat;position:relative;left:50%;margin-left:-512px;width:998px;padding:14px 13px 0px 13px;top:-104px;}
+.bread{position:absolute;right:50%;margin-right:-512px;margin-top:-136px;z-index:999;color:#fff;}
+.bread a{color:#fff;display:inline-block;}
+.leftbar{background:#f8f8f8;width:185px;}
+.leftbar .column li{font-size:14px;border-bottom:1px solid #e9e9e9;display:block;width:185px; line-height:36px;}
+.leftbar li a{padding-left:12px; display:block;}
+.column li a.cur,.column li a:hover{border-bottom:none;background:url(../webimages/column_bg.jpg) no-repeat left top;color:#fff;}
+.column {margin-bottom:30px;}
+.contact{background:url(../webimages/contact_bg.jpg) no-repeat left top;width:175px;height:160px;font-size:16px;color:#888888;padding-top:28px;padding-left:20px; }
+.contact span{display:block;font-size:10px;}
+
+
+
+.footer{width:100%;background:#fff url(../webimages/footer_bg.jpg) no-repeat center bottom; position:absolute; bottom:0;z-index: 999; left:0px;}
+.foot{width:1024px;margin:0 auto;height:77px;line-height:77px;margin-bottom:13px;}
+.footer_nav{float:left;padding-top:32px;}
+.footer_nav li{float:left;height:13px;line-height:13px;padding-left:15px;padding-right:15px;border-right:1px solid #666;}
+.footer .contactus{border-right:none;}
+.footer .copyright{float:right; color: #666;}
+.bottom{width:100%;height:13px;margin-top:28px; overflow:hidden;}
+.footer img{margin:28px auto 0;height:13px;}
+
+/*关于新宏泽*/
+.main1 {background:#fff; width: 948px; padding: 25px;}
+.main1-l {width:509px;}
+.recommend h3 { color: #333; font-size: 20px;line-height: 28px; height: 28px; overflow: hidden;margin-bottom: 10px;}
+.recommend span {font-family: "Arial"; font-size: 13px;color: #999; display: block; line-height: 20px; height: 20px; overflow: hidden;margin-bottom: 30px;}
+.recommend p {font-size: 13px;color: #333;}
+.recommend p a {color:#d9450a;}
+.NoFollow {width:415px;height:415px;}
+.xiala {background:url(../webimages/index11.jpg) repeat-x;height:202px; width:100%; position: absolute; left: 0px;z-index: 9999;top: 153px; display: none;_padding:0 500px;}
+.xiala1 {width:1024px;margin: 0 auto;padding-top:32px; margin: 0 auto;}
+.xiala2 {width:265px;}
+.xiala2 h3 { font-size: 22px; color: #d9242a; line-height: 28px;margin-bottom: 20px;}
+.xiala2 p {width:265px; height: 88px; overflow: hidden;}
+.xiala3 {width: 752px;height: 150px;overflow: hidden; position: relative;}
+.xiala3 ul {position: absolute;width: 9999px;position: absolute;}
+.xiala3 ul li {display: block;float: left;text-align: center;width: 140px;height: 150px;margin-right: 29px;}
+.xiala3 ul li a:hover {border-bottom:none;color:#000;padding-bottom:0px;}
+.xiala3 ul li img {border: 1px solid #ccc;padding: 2px;}
+.zuo {background:url(../webimages/index16.jpg) no-repeat;width: 25px;height: 25px;position:absolute; left: 0px; top:50px;cursor:pointer;z-index: 9;}
+.you {background:url(../webimages/index17.jpg) no-repeat;width: 25px;height: 25px;position:absolute;  right: 0px; top: 50px;cursor:pointer; z-index: 9;}
+.xiala4 {width: 652px;margin:0 auto;height: 150px; overflow: hidden;position: relative; }
+
+/*董事长致辞*/
+.rightbar {width:740px;padding-top: 10px; overflow: hidden;}
+.wzbt h3,.qikanf h3 {color: #d9242a; font-size: 18px;font-weight:bold; line-height: 28px;margin-bottom: 20px;}
+.rightbar p span {font-size: 14px;font-weight:bold;color: #333;}
+
+/*公司简介*/
+.diyit {margin-left: 15px;margin-bottom: 10px;}
+.diyit1 {margin-right: 15px; margin-bottom: 10px;}
+
+/*荣誉公益*/
+.rongyu li {float: left;display:block; width:230px;height: 180px; text-align: center;margin-right: 20px; margin-bottom: 20px; cursor: pointer;}
+.rongyu li span {display:block;width:230px;height: 40px; overflow: hidden;}
+.zhez {background: #000;opacity: 0.6;filter:alpha(opacity=60);position: absolute;width: 100%;height: 100%;top: 0px;z-index: 1000; display: none;}
+.dat {width:697px;height:484px;background:#fff;padding: 20px;position: fixed;top: 50%;margin-top:-262px;left:50%;margin-left:-368px;z-index: 1000;display: none;}
+.guanbi {background:url(../webimages/index28.png) no-repeat;width:33px;height: 33px;display: inline-block;cursor: pointer;position: absolute;top: 0px;right:-45px;}
+
+/*战略远景*/
+.yuanj {border-bottom:1px solid #ccc;padding-bottom: 35px;margin-bottom: 35px;}
+.yuanj img {margin-left: 15px;}
+.yuanj1 li {width:227px; height:343px;border: 1px solid #e8e8e8;margin-right: 25px;float: left;}
+.yuanj1 li img {margin-bottom: 10px;}
+.yuanj1 li h3 {text-align: center;font-size: 18px; color: #1a1a1a;margin-bottom: 10px; line-height: 28px;}
+.yuanj1 li p {width: 165px;margin: 0 auto;color: #666;width:165px; height: 175px; overflow: hidden;}
+
+/*联系我们*/
+.lianxi li {display: block; border-bottom:1px solid #dfdfdf;height: 45px;line-height: 45px; font-size: 14px;color: #333;padding-left: 40px;}
+.lianxi1 {background:url(../webimages/index33.jpg)no-repeat left center;}
+.lianxi2 {background:url(../webimages/index34.jpg)no-repeat left center;}
+.lianxi3 {background:url(../webimages/index35.jpg)no-repeat left center;}
+.lianxi4 {background:url(../webimages/index36.jpg)no-repeat left center;}
+.lianxi5 {background:url(../webimages/index37.jpg)no-repeat left center;}
+.lianxi6 {background:url(../webimages/index38.jpg)no-repeat left center;}
+
+/*网站地图*/
+.Map4 ul li {text-align: left;margin-bottom: 15px;}
+.Map4 ul li strong {width: 720px;height: 35px;line-height: 35px;padding-left: 20px;color: #d9242a;font-size: 14px;display: block;background-color: #f5f5f5;}
+.Map4 ul li div {padding: 10px 0 0 20px;}
+
+/*公司期刊*/
+.qikanf a {color: #d9242a;font-size: 14px;}
+.qikan li {height:125px;overflow: hidden;margin-bottom: 35px;}
+.qikan1 {width: 585px;}
+.qikan1 a {font-size: 14px; color: #333; font-weight: bold;line-height: 28px; margin:10px 10px 10px 0; display: block;}
+.qikan1 .qikan2 {display:block;float: left;color: #d9242a;font-size: 13px;background:url(../webimages/index41.jpg) no-repeat left center; padding-left: 20px;margin-right: 15px;}
+.qikan1 .qikan3 {display:block;float: left;color: #d9242a;font-size: 13px;background:url(../webimages/index42.jpg) no-repeat left center; padding-left: 15px;}
+.qikan1 p {width: 585px;height: 44px; overflow: hidden;}
+.qikan1 .qikkk {height: 20px;color:#333;}
+
+/*文化活动*/
+.huod li {width:235px;height: 270px;margin-right: 15px;overflow: hidden;}
+.huod img {border:1px solid #e6e6e6;padding: 5px;width: 223px;height: 212px;}
+.xiangxiy {width:660px;margin: 0 auto;margin-bottom: 50px;}
+.xiangxiy h3 {font-size:16px;color: #333; text-align:center;margin-bottom: 20px;}
+.thi2 {width: 617px;overflow: hidden;text-align: center;border: 1px solid #e6e6e6;margin-bottom: 30px;padding-bottom: 50px;}
+.xiangxiy p {color: #4c4c4c;}
+.thi3 {width:700px;height:96px;position: relative;}
+.thi4 {width:632px;height:96px; margin: 0 auto;position: relative;overflow: hidden;}
+.thi4 ul {width: 9999px; position: absolute;}
+.thi4 ul li {float: left; margin: 0 10px;width: 138px;height: 99px;overflow: hidden;}
+.zuo1 {background:url(../webimages/index49.jpg) no-repeat;width: 7px; height: 15px; cursor: pointer;position: absolute;left: 0px; top: 38px;}
+.you1 {background:url(../webimages/index50.jpg) no-repeat;width: 7px; height: 15px; cursor: pointer;position: absolute;right: 0px; top: 38px;}
+
+/*在线留言*/
+.online p{font-size:14px;color:#333;margin:27px 50px;}
+.online span{display:block;font-weight:bold;}
+.online table{margin:27px 50px;}
+.online table tr td{padding-bottom:10px;}
+.online table th{width:74px;color:#808080;font-size:12px;font-weight:nomal;vertical-align:top;}
+.online table .star{background:url(../webimages/star.jpg) no-repeat left 8px;}
+.online table td input,.online table td textarea{border:1px solid #ccc;}
+.online table td .text {width:283px;height:30px;padding-left:5px;}
+.online table td textarea{padding-left:5px;}
+.online table td .checktext {width:111px;height:30px;padding-left:5px;}
+.online .checktd span{display:inline;font-weight:normal;}
+.online table .submit,.online table .reset{border:none;margin-right:20px;}
+
+/*晋升通道*/
+.promote p{font-size:14px;color:#333;margin:27px 0;}
+.promote dt span{display:block;}
+.promote dl{margin-bottom:25px;}
+.promote dt{width:70px;height:95px;padding-top:47px;float:left; font-size:18px; color:#fff; background:url(../webimages/promote_bg.jpg) no-repeat left center;margin-right:-20px; position:relative; z-index:10; text-align:center; font-weight:bold;}
+.promote dd{width:660px; height:142px; float:left; font-size:12px; color:#666; background:#f2f2f2;padding-left:25px;position:relative; z-index:9;}
+.promote dd ul{margin-top:30px;}
+.promote dd li{background:url(../webimages/promote_icon.jpg) no-repeat left 5px;padding-left:12px; line-height:20px;padding-right:5px; min-height:20px; height:auto !important; height:20px;}
+.promote .promote_last ul li{ font-size:18px; color:#d9242a;height:100px; line-height:100px; padding-left:12px;background:none;}
+
+/*股东回报*/
+.fright_title li{float:left;}
+.fright_title li a{color:#d9242a;font-weight:bold;font-size:16px; display:inline-block;background:#ebd0d0;padding:12px 25px;}
+.fright_title li a.cur,.fright_title li a:hover{background:#fff;}
+.investlist dt p{font-size:14px;font-weight:bold;color:#333;width:742px;margin:40px auto;text-align:center;}
+.investlist dt .danwei{float:right;}
+
+/*员工之声*/
+.yuangs p {height: 65px;}
+
+/*晋工招聘*/
+.rightbar .zpgg span {display: block;color: #d9242a; font-weight: normal; font-size: 12px;margin-top: 10px;}
+.zhaop1 {border-top:1px solid #e8e8e8;}
+.zhaop {border-bottom:1px solid #e8e8e8; height: 47px;line-height: 47px;cursor: pointer;}
+.zhaop a {font-size: 14px;color:#333;}
+.zhaop a.cur{color: #d9242a; font-weight: bold;}
+.zhaop span {background:url(../webimages/index51.jpg) no-repeat;width: 7px; height: 4px; margin-top: 20px;margin-right: 5px;}
+.yaoqiu {padding-left: 20px;padding-top: 10px;padding-bottom:10px;background:url(../webimages/index52.jpg) no-repeat 99% 10%; display: none; border-bottom:1px solid #e8e8e8;background: #fafafa;}
+
+/*搜索页*/
+.sousuoye li {overflow: hidden;_zoom:1; display: block;height: 40px; line-height: 40px;border-bottom:1px dashed #e1e1e1;}
+.sousuoye li a {display: block;background:url(../webimages/index53.jpg) no-repeat left center;padding-left: 10px;width: 630px; overflow: hidden;}
+.sousuoye li span {color: #999;}
+
+/*定期报告*/
+.dingqi1 {width:550px;font-size: 14px;color: #d9242a;}
+.dingqi2 {width:104px;font-size: 14px;color: #d9242a;}
+.dingqi3 {width:70px;font-size: 14px;color: #d9242a;}
+.dingq1 li .dingqlj {width:538px;}
+.dingq1 span {width: 104px;}
+.dingq1 i {background:url(../webimages/index41.jpg) no-repeat;width: 14px;height: 14px; display: block;margin-top: 13px;margin-right: 15px;}
+
+/*公司治理*/
+.dingqi4 {font-size: 0px;}
+.zhili a {display: block;width: 145px;height: 40px;text-align: center; line-height: 40px;font-size: 16px; font-weight: bold;color: #d9242a;float: left;background:#ebd0d0;}
+.zhili a.cur,.zhili a:hover {background:#f8f8f8;}
+.zhili1 {width:740px;height: 820px;overflow: hidden;}
+
+/*股东回报*/
+.zhili1 h3 {color: #333;font-weight: bold; font-size: 14px;text-align: center;}
+
+/*实时股价*/
+.gujia{width:520px; margin: 0 auto;}
+.gujia img {margin-bottom: 40px;}
+.gujia p {margin-left: 30px;}
+
+/*投资留言*/
+.online .touzly {margin: 27px 0;border-bottom:1px solid #e6e6e6;padding-bottom: 10px;}
+.touzly i {color: #999;font-size: 13px;}
+.submit1 {width:77px;height: 31px; text-align:center;line-height: 31px;display: block; background:#d9242a;color: #fff;font-size: 14px;cursor: pointer;}
+
+/*公司动态详细页*/
+.dongtx1x h3 {font-size: 16px; color: #333; font-weight: bold; line-height: 28px;height: 28px;overflow: hidden; text-align: center;border-bottom:1px solid #ddd;padding-bottom: 10px;}
+.dongtx1x span {display: block;margin-top: 5px;margin-bottom: 35px; text-align: center;color: #666;}
+
+/*媒体报道*/
+.meiti li {display: block; height: 231px;overflow: hidden;_zoom:1;margin-bottom: 50px;}
+.meiti1 {width:310px;height: 230px; float: left;position: relative;overflow: hidden; display: block;margin-right: 30px;}
+.bof {background:url(../webimages/index58.png) no-repeat;width: 68px; height: 67px;position: absolute;left: 50%;margin-left: -34px;top: 50%;margin-top: -33px;}
+.meiti2 {width: 400px;height: 230px;overflow: hidden; float: left;}
+.meiti2 h3 {font-size: 18px;color: #333;font-weight: bold;margin-bottom: 30px;height: 28px; line-height: 28px;overflow: hidden;}
+.meiti2 p {min-height: 150px;overflow: hidden;}
+.meiti3 {font-weight: bold;color: #c20026;display: block;}
+.dongtxx object {margin-left: 70px;}
+
+/*主营业务*/
+.yinc2 {display:none;}
+.leftbar .column .yinc2 a { font-size: 12px;color: #b81906;background:url(../webimages/index59.jpg) no-repeat 12% center;padding-left: 33px; border-bottom: 1px solid #e9e9e9; margin-bottom: 2px;}
+.column .yinc2 a:hover,.column .yinc2 a.cur {background:url(../webimages/index60.jpg);color: #b81906;}
+/*国际认证*/
+.guojirz li {height: 195px; overflow: hidden;_zoom:1;margin-bottom: 35px;}
+.guojirz li img {border:1px solid #e8e8e8;padding: 3px;}
+.qikan1 .meiti3 {font-weight: bold;color: #c20026;display: block;}
+.guoj1 p {height: 105px;}
+
+/*国际认证-详细页*/
+.guojxx {color: #333; font-size: 14px; font-weight: bold; text-align: center; margin-bottom: 30px;}
+.guoj2 {text-align: center;margin-bottom: 20px;}
+
+/*生产基地*/
+.aoyin {border-bottom: 1px solid #dcdcdc; padding-bottom:20px;margin-bottom: 20px;font-size: 13px;}
+
+/*市场网络*/
+.wangl img {margin-left: 10px;margin-bottom: 40px;}
+
+
+/*2014.8.16冷晋兵修改*/
+.dingqihg {background:#f8f8f8;padding-left: 10px;padding-bottom: 10px;padding-top: 10px;}
+.dingq1 .dingqlj1 {background:none;padding-left: 0px;width: 14px;display: inline;overflow: visible;}
+
+/*2014.8.18冷晋兵修改*/
+.gongsdsjc {margin-bottom: 50px;}
+.gongsdsjc span {float: left; display: block;font-size: 16px;font-weight: bold;color: #e94e10;margin-right: 10px;}
+.gongsdsjc1 {background:url(../webimages/index74.jpg) no-repeat left 20%; padding-left: 22px;font-size: 14px;color: #666;margin-bottom: 10px;width: 656px;line-height: 20px;}
+
+/*8.20冷晋兵修改*/
+.footer .contactus{background:url(../webimages/index75.png) no-repeat right center;position: relative;}
+.footer .contactus .contayc {width: 180px;border: 1px solid #eee;background:#fff;padding:10px 0px;position: absolute;bottom: 20px;left: 0px;display: none;}
+.footer .contactus .contayc a {display: block;height: 34px;line-height: 34px;text-indent: 10px;color: #666;}
+.footer .contactus .contayc a:hover {background:#f3f3f3;}
+
+/*8.22冷晋兵修改*/
+.yingdy {position: relative;}
+.footery {background:none;}
+.footery a {color: #fff;}
+.footery .copyright1 {color: #fff;}
+.footery .footer_nav li {border-right: 1px solid #fff;}
+.footer .contactus .contayc1 {border: none;background:url(../webimages/idenxd) repeat-x;}
+.footer .contactus .contayc1 a {color: #fff;}
+.footer .contactus .contayc1 a:hover {background:#f3f3f3;color: #aa0000;}
+
+#cnzz_stat_icon_1254129268{ width

@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>深宝动态</title>
+<meta name="keywords" content="深宝动态" />
+<meta name="description" content="深宝动态" />
+<meta name="viewport" content="width=1010" />
+<link href="template/zh-cn/css/css.css" type="text/css" rel="stylesheet" />
+<link href="template/zh-cn/css/jquery.jscrollpane.css" type="text/css" rel="stylesheet" />
+<script src="template/zh-cn/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/jquery.easing.min.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/dd_belatedpng.js" type="text/javascript"></script>
+<!--[if lt IE 7 ]>
+<script>
+    DD_belatedPNG.fix('div,img,a'); 
+</script>
+<![endif]-->
+<script src="template/zh-cn/js/jquery.jscrollpane.min.js" type="text/javascript"></script>
+<style>
+.jspScrollable {outline: none}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+
+<div class="wh_detail news">
+
+    <div class="left">
+        
+<div class="logo"><a href=""></a></div>
+        <div class="channel_name">
+        <span class="zh">深宝动态</span>
+        <span class="en">News</span>
+        </div>
+        <div class="news_head"><ul></ul>
+        </div>
+        <div class="zdh">
+<div class="zdh_t">主导航MENU</div>
+<div class="link"><a href="about/index.aspx" class="nol">走进深宝</a><a href="brand/index.aspx">深宝品牌</a><a href="news/index.aspx">深宝动态</a><a href="teaculture/index.aspx">茶&nbsp;·&nbsp;视界</a><a href="qywh/index.aspx">企业文化</a><a href="investor/index.aspx">投资者关系</a><a href="hr/index.aspx">人力资源</a><a href="contact/index.aspx">联系我们</a></div>
+</div>
+<script>
+$('.zdh').hover(function(){
+	$(this).find('.link').show();
+},function(){
+	$(this).find('.link').hide();
+});
+function resetlink(){
+	var linkheight=172;
+	var linkbottom=$(window).height()-$('.zdh').offset().top;
+	if(linkheight>linkbottom){
+		$('.zdh .link').css({'top':-(linkheight-linkbottom)+'px'});
+		$('.zdh .link').addClass('link_bg');
+	}else{
+		$('.zdh .link').css({'top':'0px'});
+		$('.zdh .link').removeClass('link_bg');
+	}
+}
+	$(window).resize(function(){
+		resetlink()
+	});
+	resetlink();
+</script>
+    </div>
+    
+    <div class="right">
+    	<div class="info_txt" style="background:none; padding-top:55px;"><div class="nowchannelname">深宝动态/</div>
+        <div id="scroll"><div class="pr40">
+        	<div class="news_list">
+            
+            	<div class="news_top">
+                </div>
+            
+                <div class="news_l_one">
+                	<div class="news_t_title"><a href="news/20160902/642.aspx">【企业新闻】产业+金融：平安银行助力深宝打造茶行业生态圈</a><span>2016-09-02</span></div>
+                	<div class="news_t_title"><a href="news/20160902/641.aspx">【企业新闻】促开放谋新篇   茶交中心恭迎八方贵宾</a><span>2016-07-18</span></div>
+                	<div class="news_t_title"><a href="news/20160623/625.aspx">【企业新闻】云南普洱交易中心产品正式上线</a><span>2016-05-31</span></div>
+                	<div class="news_t_title"><a href="news/20160622/623.aspx">【企业新闻】“福海堂”携手“简阅书吧” 正式落户深圳</a><span>2016-05-14</span></div>
+                	<div class="news_t_title"><a href="news/20160622/624.aspx">【企业新闻】中央调研组深入婺源聚芳永公司调研考察</a><span>2016-04-20</span></div>
+                	<div class="news_t_title"><a href="news/20160415/516.aspx">【企业新闻】全国政协领导白立忱等一行调研云南普洱交易中心</a><span>2016-02-15</span></div>
+                	<div class="news_t_title"><a href="news/20160415/515.aspx">【企业新闻】 深宝公司严把食品安全关  监管工作再上新台阶</a><span>2015-12-15</span></div>
+                	<div class="news_t_title"><a href="news/20151013/478.aspx">【企业新闻】云南普洱茶交易中心股份有限公司隆重开业</a><span>2015-09-25</span></div>
+                </div>
+                
+          
+            </div></div></div>
+            
+          
+          <div class="prev_next_1">
+            
+            <a href="news/2.aspx" class="next">下一页</a>
+          </div>
+          
+            
+        </div>
+        
+    </div>
+
+<div class="copy">Copyright&copy;2014 ShenBao</div>
+<script>
+$(function(){
+	if($('#scroll').size()>0){
+		$('#scroll').jScrollPane({
+			verticalDragMinHeight: 66,
+			verticalDragMaxHeight: 66,
+			autoReinitialise: true
+		});
+	}
+});
+</script>
+</div>
+
+</div>
+</body>
+</html>
+<script>
+var ww,wh;
+
+	function resize(){
+		ww=$(window).width();
+		wh=$(window).height();
+		$('.wh_detail,.wh_detail .left,.wh_detail .right,.wh_detail .right .info_thumb').height(wh);
+		$('.wh_detail .right .info_txt').height(wh-55);
+		$('#scroll').height(wh-55-80);
+	}
+	$(window).resize(function(){
+		resize()
+	});
+	resize();
+$(function(){
+	$('.news_t_title').hover(function(){
+		$(this).addClass('current');	
+	},function(){
+		$(this).removeClass('current');
+	});
+})
+</script>
+

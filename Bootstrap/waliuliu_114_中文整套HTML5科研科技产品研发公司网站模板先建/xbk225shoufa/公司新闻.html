@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+    <title>先健新闻</title>
+    <meta name="keywords" content="先健新闻" />
+    <meta name="description" content="先健新闻" />
+    <meta name="viewport" content="width=1024">
+<link rel="stylesheet" href="template/zh-cn/css/global.css">
+
+<link rel="stylesheet" href="template/zh-cn/css/layout.css">
+
+<script src="template/zh-cn/js/jquery-1.11.2.min.js"></script>
+<script src="template/zh-cn/js/jquery.easing.1.3.js"></script>
+<!--[if IE]>
+    <script type="text/javascript" src="template/zh-cn/js/html5.js"></script>
+    <script src="/api.html5media.info/1.1.8/html5media.min.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+    <script type="text/javascript" src="template/zh-cn/js/DD_belatedPNG_0.0.8a.min.js"></script>
+    <script>
+        DD_belatedPNG.fix('*');
+    </script>
+<![endif]-->
+<script>
+$(document).ready(function(){
+	//------友情链接弹出
+	var olian = $('#chaining_con');
+	var timer = null;
+	$('#chaining').on('click', function(){
+		olian.stop().slideToggle(500);
+	}).hover(function(){
+		clearTimeout(timer);
+	},function(){
+		timer = setTimeout(function(){
+			if (olian.css('display') != 'none') {
+				olian.slideUp();
+			}
+		},1500)
+	})
+	if($('#con_nav').size()>0){
+		var navTop = $('#con_nav').offset().top + $('#con_nav').height();
+		var navOff = 0;
+		$(window).on('scroll',function(){
+			if ($(window).scrollTop() > navTop && !navOff) {
+				$('#con_nav').addClass('fixed');
+				navOff = 1;
+			}else if($(window).scrollTop() < navTop && navOff){
+				$('#con_nav').removeClass('fixed');
+				navOff = 0;
+			}
+		})
+	}
+
+    //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
+    $(function(){  
+        $(window).scroll(function(){  
+            if ($(window).scrollTop()>100){  
+                $("#get_top").fadeIn(850);  
+            }  
+            else  
+            {  
+                $("#get_top").fadeOut(850);  
+            }  
+        });  
+        //当点击跳转链接后，回到页面顶部位置  
+        $("#get_top").click(function(){  
+            $('body,html').animate({scrollTop:0},1000);  
+            return false;  
+        });  
+    });  
+})
+</script>
+</head>
+<body>
+	
+  
+<button id="get_top"></button>
+<header id="header">
+    <a href="" id="logo"></a>
+    <nav id="nav">
+        <ul>
+            <li><a href="">首页</a><i></i></li>
+            <li><a href="product/index.aspx">产品介绍</a><i></i></li>
+            <li><a href="r_d/index.aspx">研发创新</a><i></i></li>
+            <li class="cur"><a href="news/n1/index.aspx">新闻资讯</a><i></i></li>
+            <li><a href="irm/n1/index.aspx">投资者关系</a><i></i></li>
+            <li><a href="about/index.aspx">关于我们</a><i></i></li>
+            <li><a href="hr/jobs/index.aspx">招聘职位</a><i></i></li>
+        </ul>
+        <div class="search">
+        <script>
+		function checkform(){
+			if($('#keywords').val()==''){
+				$('#keywords').focus();
+				return false;
+			}
+			return true;
+		}
+		</script>
+        	<form action="search.aspx" onsubmit="return checkform()">
+            	<input type="hidden" name="moduleid" value="2,34,35,36" />
+        		<input type="text" name="keywords" id="keywords" placeholder="搜索">
+        		<input type="submit" value=">">
+        	</form>
+        </div>
+    </nav>
+    <div id="zy">
+        <a href="en">EN</a>
+    </div>
+</header>
+
+
+	<section id="con_banner">
+		<img src="upload/2015/0820/18450882zl.jpg" />
+	</section>
+
+<section id="con_nav">
+    <ul>
+        <li class="cur"><a href="news/n1/index.aspx">先健新闻</a><b></b></li>
+        <li><a href="news/n2/index.aspx">公司动态</a><b></b></li>
+        <li><a href="news/n3/index.aspx">会议中心</a><b></b></li>
+        <li><a href="news/n4/index.aspx">视频中心</a><b></b></li>
+    </ul>
+</section>
+
+	<section id="news">
+		<div id="news_box">
+			<!-- <div class="news_bt">
+				<h2>先健新闻</h2>
+				<aside>Lifetech News</aside>
+			</div> -->
+			<ul class="pro_news">
+            
+				<li>
+					<aside>
+						<i>20</i>
+						<b>2017-03</b>
+					</aside>
+					<a href="news/n1/20170320/1799.aspx">
+						<h2>LKEP国际学术交流之走进广东省人民...</h2>
+						<p>2017年3月13日至15日，先健科技公司LKEP（LifeTech Knowledge Exchange Program）国际学术交流项目邀请阿根廷当地著名的心血管专家走进广东省人民医院心研所，与国内顶尖专家就先心病介入治疗进行国际友好学术交流。</p>
+					</a>
+				</li>
+            
+				<li>
+					<aside>
+						<i>20</i>
+						<b>2017-03</b>
+					</aside>
+					<a href="news/n1/20170320/1798.aspx">
+						<h2>破冰之旅，雪中送炭 ——记先健科...</h2>
+						<p>先健科技公司与加拿大当地心血管专家共同进行室间隔缺损封堵专题 Workshop,Cera VSD系列产品完成了六例封堵手术。这是先健科技公司首次踏上大洋彼岸，走进北美市场。</p>
+					</a>
+				</li>
+            
+				<li>
+					<aside>
+						<i>09</i>
+						<b>2017-03</b>
+					</aside>
+					<a href="news/n1/20170309/1793.aspx">
+						<h2>公司献礼表关怀 先健女神人心暖</h2>
+						<p>为感谢女员工们为公司发展做出的贡献，并让大家享有一个快乐、温馨的节日，先健科技公司精心筹备了一场惊喜送给所有的先健女神们。</p>
+					</a>
+				</li>
+            
+				<li>
+					<aside>
+						<i>09</i>
+						<b>2017-03</b>
+					</aside>
+					<a href="news/n1/20170309/1792.aspx">
+						<h2>先健科技携创新产品参加CSI ASIA P...</h2>
+						<p>2017年3月2日至4日，作为杰出的心血管微创介入医疗器械研发和生产企业，先健科技公司受邀参与CSI ASIA PACIFIC 2017，展示了其自主研发的LAmbre™左心耳封堵器系统和KONAR-MF™多功能封堵器卓越的产品性能和独特的术中优势。</p>
+					</a>
+				</li>
+            
+				<li>
+					<aside>
+						<i>20</i>
+						<b>2017-02</b>
+					</aside>
+					<a href="news/n1/20170220/1788.aspx">
+						<h2>先健科技用爱开启“心”希望</h2>
+						<p>先健科技公司联合菲律宾当地著名慈善组织Philippines Heart Foundation于菲律宾综合医院举办了以“关爱需要帮助的先心病儿童”为主题的先心病义务救治活动，为6位来自菲律宾贫困家庭的先心病患儿成功实施先心病封堵手术。</p>
+					</a>
+				</li>
+            
+				<li>
+					<aside>
+						<i>05</i>
+						<b>2017-02</b>
+					</aside>
+					<a href="news/n1/20170205/1780.aspx">
+						<h2>卓越设计，锻造完美 ——先健科技A...</h2>
+						<p>2017年1月24日，先健科技公司携其优秀的创新型外周血管介入产品首次亮相国际高端学术会议LINC，站在行业尖端向世界展示了其在外周血管介入领域的创新能力和产品实力。</p>
+					</a>
+				</li>
+            
+				<li>
+					<aside>
+						<i>19</i>
+						<b>2017-01</b>
+					</aside>
+					<a href="news/n1/20170119/1779.aspx">
+						<h2>“我的先健，World先健”  先健科...</h2>
+						<p>2017年1月11日，以“我的先健，World先健”为主题的先健科技公司2016年度表彰大会暨2017年会盛典圆满举行。先健科技公司近600名员工齐聚一堂，共同回顾和总结先健科技精彩纷呈的2016，一同分享收获的喜悦，共同谱写未来的梦想蓝图。</p>
+					</a>
+				</li>
+            
+				<li>
+					<aside>
+						<i>19</i>
+						<b>2017-01</b>
+					</aside>
+					<a href="news/n1/20170119/1778.aspx">
+						<h2>先健科技荣获金港股 “最具成长性...</h2>
+						<p>2017年1月13日，心血管微创介入医疗器械领军企业、行业创新的领跑者先健科技公司在2016年度“金港股”评选中获得“最具成长性上市公司” 殊荣。</p>
+					</a>
+				</li>
+            
+				<li>
+					<aside>
+						<i>12</i>
+						<b>2016-12</b>
+					</aside>
+					<a href="news/n1/20161212/1765.aspx">
+						<h2>大爱无疆，爱心同行 ——先健科技...</h2>
+						<p>四川大学华西第二医院牵手先健科技公司为四川藏区先心病患儿进行义务先心病手术治疗</p>
+					</a>
+				</li>
+            
+				<li>
+					<aside>
+						<i>28</i>
+						<b>2016-11</b>
+					</aside>
+					<a href="news/n1/20161128/1762.aspx">
+						<h2>先健科技LAmbre™左心耳封堵器系统...</h2>
+						<p>先健科技公司携创新产品LAmbre™左心耳封堵器系统应邀参加LAA CSI FOCUS 2016，与全球顶尖的心血管介入治疗领域医学大咖共同探讨左心耳封堵前沿技术。</p>
+					</a>
+				</li>
+            
+			</ul>
+             
+			<div class="paging" style="border-top:0;">
+				<ul style=" margin-top:0;">
+					<li class="prev"></li>
+					<li><a href="news/n1/1.aspx" class="cur">1</a><li><a href="news/n1/2.aspx" >2</a><li><a href="news/n1/3.aspx" >3</a><li><a href="news/n1/4.aspx" >4</a><li><a href="news/n1/5.aspx" >5</a><li><a href="news/n1/6.aspx" >6</a><li><a href="news/n1/7.aspx" >7</a>
+					<li class="prev"></li>
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+
+	<footer>
+		<section id="foot_nav">
+			<div id="foot_box">
+				<div class="foot_nav_fl">
+					<a href="fuzhulanmu/241.aspx">法律声明</a><i>|</i><a href="fuzhulanmu/410.aspx">联系我们</a><i>|</i><a href="hr/index.aspx">人才招聘</a><i>|</i><a href="fuzhulanmu/242.aspx">网站地图</a>
+				</div>
+				<div class="foot_nav_fr">
+					<a href=""><img src="template/zh-cn/img/index21.png" alt=""></a><a href=""><img src="template/zh-cn/img/index22.png" alt=""></a> --><a href=""><img src="template/zh-cn/img/index23.png" alt=""></a>
+				</div>
+			</div>
+		</section>
+		<section id="foot_con">
+			<div id="foot_box">
+				<div class="code">
+					<aside>
+						<img src="template/zh-cn/img/index24.jpg" alt="">
+						<p>先健科技官方微信</p>
+					</aside>
+					<aside>
+						<img src="template/zh-cn/img/index25.jpg" alt="">
+						<p>先健医刊</p>
+					</aside>
+				</div>
+				<div class="chaining">
+					<h2>友情链接</h2>
+					<aside id="chaining">
+						友情链接...
+						<ul id="chaining_con">
+							<li><a href="＃" target="_blank">其他子公司链接</a></li>
+							<li><a href="http://www.smallseashell.com" target="_blank">smallseashell</a></li>
+						</ul>
+						<i></i>
+					</aside>
+				</div>
+			</div>
+		</section>
+		<section id="copyright">
+			2008-2015 版权所有 粤ICP备09037700号<br />
+  
+		</section>
+	</footer>
+
+
+<!--<style>
+	.tanchuang_mask{
+		position: fixed;
+		top: 0;
+		left:0;
+		right:0;
+		bottom:0;
+		z-index: 10000;
+		background:#000;
+		opacity: .8;
+	}
+.tanchuang{
+	width:1000px;
+	height:450px;
+
+	background: url(template/zh-cn/img/tanchuang.jpg) no-repeat;
+	position:fixed;
+	top: 100px;
+	left: 100px;
+	z-index: 10005;
+}
+.tanchuang .close{
+ position: absolute;
+ right:15px;
+ top: 15px;
+ color: #666667;
+}
+.tanchuang span{
+ position: absolute;
+ bottom:15px;
+ right: 15px;
+ color: #666667;
+}
+.tanchuang .close:hover{
+	color: #0068b7;
+}
+</style>-->
+
+<div class="tanchuang">
+	<a href="#." class="close">X</a>
+	<span>8s</span>
+</div>
+<div class="tanchuang_mask"></div>
+
+<script>
+	$(function(e){
+			$('.tanchuang').css('left',( $(window).width() -  $('.tanchuang').width() ) / 2 );
+			$('.tanchuang').css('top',( $(window).height() -  $('.tanchuang').height() ) / 2 );
+$('.tanchuang .close').click(function(e){
+	e.preventDefault();
+	$('.tanchuang').hide();
+	$('.tanchuang_mask').hide();
+});
+			var t_total=8;
+		var tanchuang_interval=	window.setInterval (function(){
+				t_total--;
+ $('.tanchuang span').html(t_total+'s');
+ if(t_total<=0){
+	 $('.tanchuang').hide();
+	$('.tanchuang_mask').hide();
+window.clearInterval (tanchuang_interval);
+ }
+			},1000);
+	})
+</script>
+    
+</body>
+</html>

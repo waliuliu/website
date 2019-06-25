@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>投资者互动</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=1010" />
+<link href="template/zh-cn/css/css.css" type="text/css" rel="stylesheet" />
+<link href="template/zh-cn/css/jquery.jscrollpane.css" type="text/css" rel="stylesheet" />
+<script src="template/zh-cn/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/jquery.easing.min.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/dd_belatedpng.js" type="text/javascript"></script>
+<!--[if lt IE 7 ]>
+<script>
+    DD_belatedPNG.fix('div,img,a'); 
+</script>
+<![endif]-->
+<script src="template/zh-cn/js/jquery.jscrollpane.min.js" type="text/javascript"></script>
+<style>
+.jspScrollable {outline: none}
+</style>
+<style>
+.tzz .left .tzz_head .current ul li { padding-left:1em}
+.tzz .left .tzz_head .current ul li a { color:#2f2224; font-weight:normal}
+.tzz .left .tzz_head .current ul li.current a { color:#fff; font-weight:bold}
+
+
+.biaodan{ width:560px; padding-top:20px; margin:0 auto; }
+.biaodan h2{ line-height:20px; font-size:13px; padding-bottom:20px;}
+.hongse{ color:#e62d19;}
+.hongsec{ width:560px; clear:both; padding-top:10px;}
+.biaodan_c{ float:left; width:90px; padding-right:10px; text-align:right; display:block; line-height:22px;}
+.biaodan01{ float:left; width:410px; line-height:22px;}
+.biaodan01 input{ float:left;}
+.biaodan01 span{ float:left; padding-right:10px;}
+.biaodan02 input{ height:20px; line-height:20px; background:#fff; width:150px; border:1px solid #ccc; float:left;}
+.biaodan02 span{ float:left; padding-right:8px; padding-left:8px; display:block; line-height:20px;}
+.biaodan02 select{ float:left; width:60px;}
+.hongsec p{ padding-left:100px; line-height:22px; color:#666;}
+.biaodan01 textarea{ width:400px; height:120px; line-height:20px; border:1px solid #ccc;}
+.biaodan h3{ padding-top:20px; clear:both; padding-left:100px;}
+
+
+
+</style>
+<script src="tools/scripts/region.js"></script>
+
+</head>
+
+<body>
+<div class="wrapper">
+<script>
+	function refreshCc() {document.getElementById('checkCodeImg').src='Tools/VerifyImagePage.aspx?t=' + Math.random();}
+    function checkform(){
+		if(document.getElementById('nickname').value==''){
+			alert('名字不能为空');
+			document.getElementById('nickname').focus();
+			return false;
+		}
+		if(document.getElementById('phone').value==''){
+			alert('手机不能为空');
+			document.getElementById('phone').focus();
+			return false;
+		}
+		if(document.getElementById('email').value==''){
+			alert('电子邮箱不能为空');
+			document.getElementById('email').focus();
+			return false;
+		}
+		if(document.getElementById('content').value==''){
+			alert('留言不能为空');
+			document.getElementById('content').focus();
+			return false;
+		}
+		if(document.getElementById('verifycode').value==''){
+			alert('验证码不能为空');
+			document.getElementById('verifycode').focus();
+			return false;
+		}
+		
+		$('#procity').val($('#Province').val()+'-'+$('#City').val()+'-'+$('#orthercity').val());
+		$('#tel').val($('#tel_1').val()+'-'+$('#tel_2').val());
+		
+		return true;
+	}
+    </script>
+<div class="wh_detail tzz">
+
+    <div class="left">
+        
+<div class="logo"><a href=""></a></div>
+        <div class="channel_name">
+        <span class="zh">投资者关系</span>
+        <span class="en">Investor Relations</span>
+        </div>
+        <div class="tzz_head"><ul>
+    <li ><a href="investor/80.aspx">公司概况</a></li>
+    <li ><a href="investor/gszl/index.aspx">公司治理</a></li>
+    <li ><a href="investor/report/index.aspx">定期报告</a></li>
+    <li ><a href="investor/gsgg/index.aspx">公司公告</a></li>
+    <li ><a href="investor/96.aspx">主要会计数据和财务指标</a></li>
+    <li ><a href="investor/zqxx/index.aspx">证券信息</a></li>
+    <li ><a href="investor/tzzbh/index.aspx">投资者保护</a></li>
+    <li class="current"><a href="investor/50.aspx">投资者互动</a><ul></ul></li>
+    <li ><a href="investor/51.aspx">联系我们</a></li></ul>
+        </div>
+        <div class="zdh">
+<div class="zdh_t">主导航MENU</div>
+<div class="link"><a href="about/index.aspx" class="nol">走进深宝</a><a href="brand/index.aspx">深宝品牌</a><a href="news/index.aspx">深宝动态</a><a href="teaculture/index.aspx">茶&nbsp;·&nbsp;视界</a><a href="qywh/index.aspx">企业文化</a><a href="investor/index.aspx">投资者关系</a><a href="hr/index.aspx">人力资源</a><a href="contact/index.aspx">联系我们</a></div>
+</div>
+<script>
+$('.zdh').hover(function(){
+	$(this).find('.link').show();
+},function(){
+	$(this).find('.link').hide();
+});
+function resetlink(){
+	var linkheight=172;
+	var linkbottom=$(window).height()-$('.zdh').offset().top;
+	if(linkheight>linkbottom){
+		$('.zdh .link').css({'top':-(linkheight-linkbottom)+'px'});
+		$('.zdh .link').addClass('link_bg');
+	}else{
+		$('.zdh .link').css({'top':'0px'});
+		$('.zdh .link').removeClass('link_bg');
+	}
+}
+	$(window).resize(function(){
+		resetlink()
+	});
+	resetlink();
+</script>
+    </div>
+    
+    <div class="right">
+    	<div class="info_txt" style="padding-top:70px"><div class="nowchannelname">投资者互动/</div>
+		<div id="scroll"><div class="pr40">
+
+	
+
+<form name="form_1" id="form_1" action="formsave.aspx" method="post" onsubmit="return checkform()"><input type="hidden" name="formid" value="1" /><input type="hidden" name="contentid" value="46" />
+<div class="biaodan">
+	<h2>尊敬的投资者，欢迎使用在线留言功能！请您在在线留言系统写您的信息以及意见，我们会及时反馈。*为必填项，为了您能及时收到反馈，请准确填写。</h2>
+	<dl class="hongsec">
+		<dd class="biaodan_c"><span class="hongse">*</span>称呼：</dd>
+		<dt class="biaodan01"><input name="chengwei" type="radio" value="先生" checked="checked" /><span>先生</span><input name="chengwei" type="radio" value="女士" /><span>女士</span></dt>
+	</dl>
+	<dl class="hongsec">
+		<dd class="biaodan_c"><span class="hongse">*</span>名字：</dd>
+		<dt class="biaodan02">
+			<input name="nickname" id="nickname" type="text" />			
+		</dt>
+	</dl>
+	
+	<dl class="hongsec">
+		<p>任填写一项联系电话。请填写真实的联系电话，以便问题处理跟踪。</p>
+		<dd class="biaodan_c"><span class="hongse">*</span>手机：</dd>
+		<dt class="biaodan02">
+			<input name="phone" id="phone" type="text" />			
+		</dt>
+	</dl>
+	<dl class="hongsec">
+		<dd class="biaodan_c">固定电话：</dd>
+		<dt class="biaodan02">
+		<input type="hidden" name="tel" id="tel" />
+			<input style="width:60px;" name="tel_1" id="tel_1" type="text" /><span>-</span><input style="width:80px;" name="tel_2" id="tel_2" type="text" />			
+		</dt>
+	</dl>
+	<dl class="hongsec">
+		<p>请提写真实的电子邮箱，以便问题处理跟踪。</p>
+		<dd class="biaodan_c"><span class="hongse">*</span>电子邮箱：</dd>
+		<dt class="biaodan02">
+			<input name="email" id="email" type="text" />			
+		</dt>
+	</dl>
+	<dl class="hongsec">
+		<input type="hidden" name="procity" id="procity" />
+		<dd class="biaodan_c"><span class="hongse">*</span>所在城市：</dd>
+		<dt class="biaodan02"><select name="Province" id="Province">
+              <option selected="" value="0">省</option>
+            </select><span>省</span><select name="City" id="City">
+              <option selected="" value="0">市</option>
+            </select><span>市</span>
+		
+		<span>其他城市：</span><input name="orthercity" id="orthercity" type="text" />
+		</dt>
+	</dl>
+	
+	<dl class="hongsec">
+		<dd class="biaodan_c"><span class="hongse">*</span>问题类别：</dd>
+		<dt class="biaodan01"><input name="questiontype" type="radio" value="投诉" /><span>投诉</span><input name="questiontype" type="radio" value="咨询" / checked="checked"><span>咨询</span><input name="questiontype" type="radio" value="建议" /><span>建议</span></dt>
+	</dl>	
+	<dl class="hongsec">
+		<dd class="biaodan_c"><span class="hongse">*</span>留言：</dd>
+		<dt class="biaodan01"><textarea name="content" id="content" cols="" rows=""></textarea></dt>
+	</dl>
+	<dl class="hongsec">
+		<dd class="biaodan_c"><span class="hongse">*</span>验证码：</dd>
+	  <dt class="biaodan02"><input name="verifycode" id="verifycode" type="text" value="" /><span><img id="checkCodeImg" src="" onclick="refreshCc();" /></span><span><a href="javascript:;" onclick="refreshCc();">换一张</a></span></dt>
+	</dl>
+	<h3><input type="image" src="template/zh-cn/images/tj.jpg" border="0" /></a></h3>
+	
+</div>
+</form>
+        
+        </div></div>
+        </div>
+        
+    </div>
+    
+<div class="copy">Copyright&copy;2014 ShenBao</div>
+<script>
+$(function(){
+	if($('#scroll').size()>0){
+		$('#scroll').jScrollPane({
+			verticalDragMinHeight: 66,
+			verticalDragMaxHeight: 66,
+			autoReinitialise: true
+		});
+	}
+});
+</script>
+</div>
+
+</div>
+</body>
+</html><script>refreshCc();</script><script>_RegionDsy_1 = new __Region().set("_RegionDsy_1", { control: ['Province','City'], opt0: ['请选择省份','请选择城市'] });</script>
+
+
+<script>
+var ww,wh;
+
+$(function(){
+	function resize(){
+		ww=$(window).width();
+		wh=$(window).height();
+		$('.wh_detail,.wh_detail .left,.wh_detail .right,.wh_detail .right .info_thumb').height(wh);
+		$('.wh_detail .right .info_txt,#scroll').height(wh-70);
+		 
+	}
+	$(window).resize(function(){
+		resize()
+	});
+	resize();
+	 
+});
+</script>
+

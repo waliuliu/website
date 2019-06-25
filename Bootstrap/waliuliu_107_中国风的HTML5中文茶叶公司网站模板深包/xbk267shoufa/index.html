@@ -1,0 +1,464 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>深圳市深宝实业股份有限公司</title>
+<meta name="keywords" content="深宝，茶行业，茶，茶企业，深深宝，深宝股份，深宝实业，深宝股份，深宝茶" />
+<meta name="description" content="深圳市深宝实业股份有限公司成立于1975年，前身为宝安县罐头厂。公司于1991年12月改制为股份有限公司，并于1992年10月在深圳证券交易所主板上市（股票简称：深深宝A、深深宝B，股票代码：000019，200019），是中国茶行业首家上市公司，省市两级农业产业化龙头企业。" />
+<meta name="viewport" content="width=1010" />
+<link href="template/zh-cn/css/css.css" type="text/css" rel="stylesheet" />
+<link href="template/zh-cn/css/jquery.jscrollpane.css" type="text/css" rel="stylesheet" />
+<script src="template/zh-cn/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/jquery.easing.min.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="template/zh-cn/js/dd_belatedpng.js" type="text/javascript"></script>
+<!--[if lt IE 7 ]>
+<script>
+    DD_belatedPNG.fix('div,img,a'); 
+</script>
+<![endif]-->
+<script src="template/zh-cn/js/jquery.jscrollpane.min.js" type="text/javascript"></script>
+<style>
+.jspScrollable {outline: none}
+</style>
+<style>
+html,body{ overflow:hidden; background:#fff}
+</style>
+<link href="template/zh-cn/skin/pink.flag/jplayer.pink.flag.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="template/zh-cn/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	var stream = {
+	    title: "ABC Jazz",
+        
+	    mp3: "upload/2016/0921/1022jhlv68.mp3",
+    
+		loop:true
+	},
+	ready = false;
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function (event) {
+			ready = true;
+			$(this).jPlayer("setMedia", stream).jPlayer("play")
+		},
+		pause: function() {
+			$(this).jPlayer("clearMedia");
+		},
+		ended: function() { // The $.jPlayer.event.ended event
+			$(this).jPlayer("play"); // Repeat the media
+		  },
+		error: function(event) {
+			if(ready && event.jPlayer.error.type === $.jPlayer.error.URL_NOT_SET) {
+				// Setup the media stream again and play it.
+				$(this).jPlayer("setMedia", stream).jPlayer("play");
+			}
+		},
+		repeat: function(event) {
+		  if(event.jPlayer.options.loop) {
+			$(this).unbind(".jPlayerRepeat").bind($.jPlayer.event.ended + ".jPlayer.jPlayerRepeat", function() {
+			  $(this).jPlayer("play");
+			});
+		  } else {
+			$(this).unbind(".jPlayerRepeat");
+		  }
+		},
+		swfPath: "template/zh-cn/js",
+		supplied: "mp3",
+		muted: false,
+		preload: "none",
+		wmode: "window",
+		keyEnabled: true,
+		volume:1,
+		loop:true
+	});
+	//$("#jquery_jplayer_1").jPlayer('loop', true);
+	$('a.jp-repeat').click();
+});
+//]]>
+</script>
+<style>
+div.jp-type-single  .jp-play {
+	background-position:-25px -45px 
+}
+
+div.jp-type-single  .jp-play:hover {
+	background-position:-125px -45px  
+}
+
+div.jp-type-single  .jp-pause {
+	background-position:-25px -125px  
+}
+
+.jp-type-single  .jp-pause:hover {
+	background-position:-125px -125px  
+}
+  #store{font-size:13px;color:#333;margin-right:20px;}
+  #store:hover{color:#22912d;}
+</style>
+</head>
+
+<body style="position:relative">
+
+<div class="top">
+	<div class="logo"><a href=""></a></div>
+    <div class="top_small" style="display:none">
+    <div class="top_s_1ist"><div><img src="template/zh-cn/images/p2.jpg" width="45" height="46" /></div></div>
+    <div class="top_s_1ist"><div><img src="template/zh-cn/images/p1.jpg" width="45" height="46" /></div></div>
+    <div class="top_s_1ist"><div><img src="template/zh-cn/images/p3.jpg" width="45" height="46" /></div></div>
+    <div class="top_s_1ist"><div><img src="template/zh-cn/images/p2.jpg" width="45" height="46" /></div></div>
+    <div class="top_s_1ist"><div><img src="template/zh-cn/images/p3.jpg" width="45" height="46" /></div></div>
+    <div class="top_s_1ist"><div></div></div>
+    </div>
+  <div class="head_right"><div class="copy">
+     <a href="http://shop.sbsy.com.cn/" id="store" >深宝商城</a>
+    Copyright&copy;2014 <a href="">ShenBao</a></div><div class="menu"><div class="link"><a href="about/index.aspx" class="nol">走进深宝</a><a href="brand/index.aspx">深宝品牌</a><a href="news/index.aspx">深宝动态</a><a href="teaculture/index.aspx">茶&nbsp;·&nbsp;视界</a><a href="qywh/index.aspx">企业文化</a><a href="investor/index.aspx">投资者关系</a><a href="hr/index.aspx">人力资源</a><a href="contact/index.aspx">联系我们</a></div><span class="menu_open">Menu</span></div></div>
+    <div class="clear"></div>
+</div>
+
+<div class="banner_parent">
+	
+	<!--封面-->
+    <div class="banner" style="z-index:10">
+        <div class="banner_list">
+        	<div class=banner_list_img><img src="template/zh-cn/images/new/1.jpg" width="148" /></div>
+            <div class="hide_txt"><div class="banner_list_txt" style="display:none"><img src="template/zh-cn/images/new/1.png" /></div><div class="banner_list_txt" style="display:none"><img src="template/zh-cn/images/new/1_t.png" /></div></div>
+        </div>
+        <div class="small" style="display:none">
+        	
+        </div>
+    </div>
+    
+	<!--采茶-->
+    <div class="banner" style="z-index:0; display:none">
+        <div class="banner_list">
+        	<div class=banner_list_img><img src="template/zh-cn/images/new/2.jpg" width="148" /></div>
+            <div class="hide_txt"><div class="banner_list_txt" style="display:none"><img src="template/zh-cn/images/new/2.png" /></div><div class="banner_list_txt" style="display:none"><img src="template/zh-cn/images/new/2_t.png" /></div></div>
+        </div>
+        <div class="small" style="display:none">
+        	
+        </div>
+    </div>
+    
+	<!--工艺-->
+    <div class="banner" style="z-index:0; display:none">
+        <div class="banner_list">
+        	<div class=banner_list_img><img src="template/zh-cn/images/new/3.jpg" width="148" /></div>
+            <div class="hide_txt"><div class="banner_list_txt" style="display:none"><img src="template/zh-cn/images/new/3.png" /></div><div class="banner_list_txt" style="display:none"><img src="upload/2014/0603/17014dj8f0.png" /></div></div>
+        </div>
+        <div class="small" style="display:none">
+        	
+        </div>
+    </div>
+    
+	<!--茶园-->
+    <div class="banner" style="z-index:0; display:none">
+        <div class="banner_list">
+        	<div class=banner_list_img><img src="template/zh-cn/images/new/4.jpg" width="148" /></div>
+            <div class="hide_txt"><div class="banner_list_txt" style="display:none"><img src="template/zh-cn/images/new/4.png" /></div><div class="banner_list_txt" style="display:none"><img src="template/zh-cn/images/new/4_t.png" /></div></div>
+        </div>
+        <div class="small" style="display:none">
+        	
+        </div>
+    </div>
+    
+	<!--茶苗-->
+    <div class="banner" style="z-index:0; display:none">
+        <div class="banner_list">
+        	<div class=banner_list_img><img src="template/zh-cn/images/new/5.jpg" width="148" /></div>
+            <div class="hide_txt"><div class="banner_list_txt" style="display:none"><img src="template/zh-cn/images/new/5.png" /></div><div class="banner_list_txt" style="display:none"><img src="upload/2014/0603/17236d626t.png" /></div></div>
+        </div>
+        <div class="small" style="display:none">
+        	
+        </div>
+    </div>
+    
+	<!--精品茶-->
+    <div class="banner" style="z-index:0; display:none">
+        <div class="banner_list">
+        	<div class=banner_list_img><img src="template/zh-cn/images/new/6.jpg" width="148" /></div>
+            <div class="hide_txt"><div class="banner_list_txt" style="display:none"><img src="template/zh-cn/images/new/6.png" /></div><div class="banner_list_txt" style="display:none"><img src="template/zh-cn/images/new/6_t.png" /></div></div>
+        </div>
+        <div class="small" style="display:none">
+        	
+        </div>
+    </div>
+    
+</div>
+
+<div style="background:url(template/zh-cn/images/index_left.png) left top no-repeat; height:123px; width:85px; cursor:pointer; position:absolute; z-index:9999; left:0; top:50%; margin-top:-61px;" id="page_left"></div>
+<div style="background:url(template/zh-cn/images/index_right.png) left top no-repeat; height:123px; width:85px; cursor:pointer; position:absolute; z-index:9999; right:0; top:50%; margin-top:-61px;" id="page_right"></div>
+
+
+		<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+		<div id="jp_container_1" class="jp-audio-stream" style="padding:0; width:50px; position:absolute; top:5px; right:20px; z-index:99999; background:none; border:0">
+			<div class="jp-type-single" style=" background:none; border:0">
+				<div class="jp-gui jp-interface" style="padding:0; height:auto; width:50px;background:none; border:0">
+					<ul class="jp-controls" style="width:50px; height:24px;background:none; border:0">
+						<li><a href="javascript:;" class="jp-play" style="width:50px">play</a></li>
+						<li><a href="javascript:;" class="jp-pause" style="width:50px">pause</a></li>
+					</ul>
+					<ul class="jp-toggles">
+						<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+						<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+					</ul>
+
+
+				</div>
+			</div>
+		</div>
+        
+</body>
+</html>
+<script>
+$('.banner_list').each(function(index, element) {
+	$(this).children('.banner_list_img').last().append($(this).children('.hide_txt').html());
+});
+$('.small').each(function(index, element) {
+    $(this).find('img').each(function(index, element) {
+        $(this).attr('rel',index);
+		$(this).addClass('.small_list');
+    });
+});
+
+var ww,wh,nindex=0,settimeout,ison=false,topzindex=10,onscroll=false,bannerindex=0,scrolltime;
+	function onscrollfun(){
+		if(!onscroll){
+			return false;
+		}
+		window.clearTimeout(scrolltime);
+		nindex++;
+		$('.banner:eq('+bannerindex+') .small img').eq(nindex).click();
+		onscroll=true;
+		
+		scrolltime=setTimeout(function(){
+			onscrollfun()
+		},1000);
+	}
+$(function(){
+	function resize(){
+		ww=$(window).width();
+		wh=$(window).height()-108;
+		$('.banner_parent,.banner,.banner_list,.banner_list_img,.banner_list_txt').height(wh);
+		$('.banner,.banner_list_txt').width(ww);
+		$('.banner_list').css({'top':-(nindex*wh)+'px'});
+		
+		if(ww/wh>=1400/592){
+			$('.banner_list_img > img,.banner_list_txt > img').css({'width':ww,'height':'auto'});
+			
+			$('.banner_list').each(function(index, element) {
+			   $(this).height(wh*$(this).find('.banner_list_img').size()); 
+			});
+			
+			$('.banner_list_img').css({'margin-left':-ww/2+'px'})
+		}else{
+			$('.banner_list_img > img,.banner_list_txt > img').css({'width':'auto','height':wh});
+			
+			$('.banner_list').each(function(index, element) {
+			   $(this).height(wh*$(this).find('.banner_list_img').size()); 
+			});
+			
+			$('.banner_list_img').css({'margin-left':-(wh*1400/592)/2+'px'})
+		}
+	}
+	$(window).resize(function(){
+		resize()
+	});
+	resize();
+	$('.banner').each(function(index, element) {
+		$(this).find('.small img').click(function(){
+			nindex=$(this).attr('rel');
+			$(this).parent().prev('.banner_list').stop().animate({'top':-(nindex*wh)+'px'},600,function(){
+				if($(this).next('.small').find('img').size()==parseInt(nindex)+1){
+					$(this).children('.banner_list_img').last().children('.banner_list_txt:eq(0)').fadeIn(1600);	
+					setTimeout(function(thisobj){
+						return function(){
+							thisobj.fadeIn(800);
+						}	
+					}($(this).children('.banner_list_img').last().children('.banner_list_txt:eq(1)')),600);
+				}else{
+					$(this).children('.banner_list_img').last().children('.banner_list_txt').hide();
+				}
+//				$('.banner_list_txt').each(function(index){
+//					if(index==nindex)
+//						$(this).fadeIn();
+//					else
+//						$(this).fadeOut();
+//				});
+				
+					
+			});
+			onscroll=false;
+		})
+		$(this).find('.small img').hover(function(){
+			var hoverindex=$(this).attr('rel');
+			$(this).parent().children('img').each(function(){
+				if(hoverindex!=$(this).attr('rel'))
+					$(this).stop().animate({'width':'148px'},300,function(){});
+				else
+					$(this).stop().animate({'width':'160px'},300,function(){});
+			});
+		},function(){});
+		//$('.small img').eq(0).mouseenter();
+    });
+	
+
+	
+	$('.top_s_1ist').hover(function(){
+		window.clearTimeout(settimeout);
+		ison=true;
+		settimeout=setTimeout(function(thisobj){
+			return function(){
+				if(ison==false)return;
+				if(thisobj.hasClass('ison'))return;
+				if($('.ison').size()>0){
+					$('.ison img').stop().animate({'top':'40px'},300,function(){}).animate({'width':'45px'},300,function(){});			//$(this).parent().animate({'width':'45px'},300);$(this).parent().removeClass('ison');
+					setTimeout(function(obj){
+						return function(){
+							obj.animate({'width':'45px'},300);
+							//obj.removeClass('ison');
+						}
+					}($('.ison img').parent().parent()),300)
+				}
+				thisobj.stop().animate({'width':'96px'},100,function(){
+					$(this).addClass('ison');
+				});
+				thisobj.find('img').animate({'width':'96px'},100,function(){}).animate({'top':'0'},500,function(){});
+				thisobj.click();
+			}
+		}($(this)),200);
+	},function(){}).click(function(){
+				$('.top_s_1ist').removeClass('ison');
+				$(this).addClass('ison');
+	
+				var thisindex=$(this).index();
+				bannerindex=thisindex;
+				if(thisindex==0){
+					topzindex++;
+					$('.banner').eq(thisindex).css({'z-index':topzindex}).css({'opacity':0,'display':'block'}).animate({'opacity':1},3000);;
+					$('.banner:eq(0) .banner_list_img,.banner:eq(0) .banner_list_txt').hide();
+					
+					$('.banner:eq(0) .banner_list_img').show()//.fadeIn(1200);
+					setTimeout(function(obj){
+						return function(){
+						obj.children('.banner_list_txt:eq(0)').fadeIn(3000);	
+						setTimeout(function(thisobj){
+							return function(){
+								thisobj.fadeIn(800);
+							}	
+						}(obj.children('.banner_list_txt:eq(1)')),1000);
+						}
+					}($('.banner:eq(0) .banner_list_img')),600);
+					
+					$('.banner').each(function(index, element) {
+                        if(index!=thisindex){
+							$(this).children('.banner_list').stop();
+							$(this).stop().fadeOut(800,function(){
+								$(this).children('.banner_list').css({'top':'0'});
+								$(this).find('.small img').css({'width':'148px'});
+								$(this).find('.banner_list_img').last().children('.banner_list_txt').hide();	
+							});
+						}
+                    });
+				}else{
+					topzindex++;
+					$('.banner').eq(thisindex).css({'z-index':topzindex}).css({'opacity':0,'display':'block'}).animate({'opacity':1},3000);
+					$('.banner').each(function(index, element) {
+                        if(index!=thisindex){
+							$(this).children('.banner_list').stop();
+							$(this).stop().animate({'opacity':0},3000,function(){
+								$(this).children('.banner_list').css({'top':'0'});
+								$(this).find('.small img').css({'width':'148px'});
+								$(this).find('.banner_list_img').last().children('.banner_list_txt').hide();	
+							});
+							
+						}
+                    });
+					onscroll=true;
+					nindex=0;
+					//window.clearTimeout(scrolltime);
+					//scrolltime=setTimeout(function(){
+					//	onscrollfun()
+					//},1000);
+					
+					var thisbanner=$('.banner').eq(thisindex).children('.banner_list');
+					setTimeout(function(thisbanner){
+						return function(){
+					thisbanner.stop().animate({'top':-((thisbanner.find('.banner_list_img').size()-1)*wh)+'px'},10,function(){
+						$(this).children('.banner_list_img').last().children('.banner_list_txt:eq(0)').fadeIn(1600);	
+						setTimeout(function(thisobj){
+							return function(){
+								thisobj.fadeIn(800);
+							}	
+						}($(this).children('.banner_list_img').last().children('.banner_list_txt:eq(1)')),1000);
+						
+						nindex=thisbanner.find('.banner_list_img').size()-1;
+					});
+						}
+					}(thisbanner),1000);
+					
+				}
+		
+	});
+	$('.top_s_1ist').eq(0).mouseenter().click();
+	
+	
+	$('.menu_open').click(function(){
+		if($(this).hasClass('close')){
+			$('.link').stop().animate({'right':'0'},600);
+			$(this).removeClass('open close').addClass('open');
+		}else{
+			$('.link').stop().animate({'right':'-670px'},600);
+			$(this).removeClass('open close').addClass('close');
+		}
+	})
+	
+//	$('.link').hover(function(){
+//		$(this).stop().animate({'right':'0'},600);	
+//	},function(){
+//		$(this).stop().animate({'right':'-265px'},600);	
+//	});
+});
+var ani_time;
+function ani_start(){
+	if($('.top_small .ison').next('div').size()>0){
+		$('.top_small .ison').next('div').mouseenter().click();
+	}else{
+		$('.top_small > div').eq(0).mouseenter().click();
+	}
+	ani_time=setTimeout(ani_start,8000);
+}
+	ani_time=setTimeout(ani_start,8000)
+	$('#page_left').click(function(){
+		window.clearTimeout(ani_time);
+		if($('.top_small .ison').prev('div').size()>0){
+			$('.top_small .ison').prev('div').mouseenter().click();
+		}else{
+			$('.top_small > div').last().mouseenter().click();
+		}
+		ani_time=setTimeout(ani_start,8000);
+	});
+	$('#page_right').click(function(){
+		window.clearTimeout(ani_time);
+		if($('.top_small .ison').next('div').size()>0){
+			$('.top_small .ison').next('div').mouseenter().click();
+		}else{
+			$('.top_small > div').eq(0).mouseenter().click();
+		}
+		ani_time=setTimeout(ani_start,8000);
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+

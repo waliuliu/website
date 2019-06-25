@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>九大理由</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+      <meta charset="UTF-8">
+	<meta name="baidu-site-verification" content="AgSgPyT94L" />
+    <link rel="stylesheet" href="template/zh-cn/css/normalize.css">
+    <link rel="stylesheet" href="template/zh-cn/css/style.css">
+    <link rel="stylesheet" href="template/zh-cn/css/swiper.min.css">
+    <script src="template/zh-cn/js/jquery-1.12.4.min.js"></script>
+    <script src="template/zh-cn/js/zhiyi.js"></script>
+    <script src="template/zh-cn/js/swiper.jquery.min.js"></script>
+    <link rel="shortcut icon" href='template/zh-cn/img/icon/logo.ico' type="image/x-icon"> 
+    <script>
+        $(function(){
+            $('.tab02').hide();
+            $('.tab03').hide();
+             $('.why-title li').each(function(i,e){
+                $(this).click(function(){
+                   
+                $('#txt').text($(this).text());
+                $('.why-title li').removeClass('active');
+                $('.why-title li i').removeClass('on');
+                $(this).addClass('active');
+                $(this).find('i').addClass('on');
+                $('.why-art .tab').eq(i).fadeIn().siblings().hide();
+            });
+             });
+             $('.why-title li').eq(0).click();
+             
+            $(document).scroll(function (e) {
+                var pageOffsetTop = $(document).scrollTop();
+
+                if ($('.scroll-icon').offset().top < pageOffsetTop) {
+                    $('.scroll-icon .dots').addClass('fixed').css('left', $('.scroll-icon').offset().left - 7);
+                } else {
+                    $('.scroll-icon .dots').removeClass('fixed').css('left', 0);
+                }
+
+                $('.scroll-icon .tab01-art').each(function (e) {
+
+                    var offsetTop = $(this).offset().top;
+                    var itemIndex = $(this).index() - 1;
+
+                    //  console.log(itemIndex + " " + offsetTop + " " + pageOffsetTop);
+
+                    if (offsetTop >= pageOffsetTop + 20 * itemIndex) {
+
+                        $('.scroll-icon .dots a:eq(' + itemIndex + ')').css('display', 'none');
+
+                    } else {
+                        $('.scroll-icon .dots a:eq(' + itemIndex + ')').css('display', 'block');
+                    }
+
+                });
+
+            });
+
+            $('.scroll-icon .dots a').on('click', function (e) {
+                var index = $(this).index();
+
+                var offsetTop = $('.scroll-icon .tab01-art:eq(' + index + ')').offset().top;
+
+                $('html,body').stop().animate({ scrollTop: offsetTop }, 'fast');
+                e.preventDefault();
+            });
+        })
+    </script>
+</head>
+<body>
+
+    <div class="head-nav">
+        <div class="container content">
+            <ul class="pull-left nav-ul01">
+              <li><a href="about/index.aspx">关于纸艺展示</a></li>
+              <li><a href="case/index.aspx">合作案例</a></li>
+              <li><a href="product/index.aspx">产品</a></li>
+            </ul>
+            <!--<li style="height:90px;">
+                    <a href="index.html " class="index-logo"><img src="img/icon/logo.png " alt=" "></a>
+                </li>-->
+            <ul class="pull-right nav-ul02">
+              <li><a href="why/index.aspx" class="on">为什么选择 “纸艺”</a></li>
+              <li><a href="faq/index.aspx">答疑解惑</a></li>
+              <li ><a href="contact.aspx">联系我们</a></li>
+            </ul>
+            <div class="logo"><a href="" ><img src="template/zh-cn/img/icon/logo.png " alt=" "></a></div>
+        </div>
+    </div>
+<style>
+    .color{color:#a1cc51 !important;}
+</style><div class="now">
+    <div class="container">
+    <a href="">首页</a> <span>－</span> <a href="why/index.aspx">为什么选择 “纸艺”</a> <span>－</span> <a href="why/index.aspx" class="current">九大理由</a>
+        
+        <p class="pull-right"><a href="about/438.aspx">6个您需要用我们产品的原因</a></p>
+        
+    </div>
+</div>
+<script>
+if($('.now .container a').size()>2)
+{
+	if($('.now .container a').last().attr('href')==$('.now .container a').eq(1).attr('href')){
+		$('.now .container a').last().remove();
+		$('.now .container span').last().remove();
+	}
+}
+</script>
+    
+    <div class="banner-why"></div>
+    <div class="container why-content">
+        <ul class="content why-title">
+            
+            <li>九大理由<i></i></li>
+            
+            <li>我们如何工作<i></i></li>
+            
+            <li>我们对您的承诺<i></i></li>
+            
+        </ul>
+    </div>
+    <div class="container why-art">
+        
+            
+            <div class="tab tab01 pad">
+            <h3 class="txt-center">9点让您和您客户都满意的优势</h3><p class="title-p">10+年以上工作经验结构工程师团队的我们，有着丰富的产品定制、生产、运输的相关经验以及众多真实合作的品牌案例。但这些都无法很好地回答您为什么必须需要选择我们--”纸艺展示”？ 或许以下我们的九点优势可以给您答案。</p><p><br/></p>
+            <div class="scroll-icon">
+                <div class="dots" >
+                    
+                    <a href="#."><span></span>大厂房</a>
+                
+                    <a href="#."><span></span>报价优势</a>
+                
+                    <a href="#."><span></span>胶水粘性</a>
+                
+                    <a href="#."><span></span>安全的支付方式</a>
+                
+                    <a href="#."><span></span>进口印刷机器，环保油墨</a>
+                
+                    <a href="#."><span></span>专业工人</a>
+                
+                    <a href="#."><span></span>真实品牌案例</a>
+                
+                    <a href="#."><span></span>纸张强度</a>
+                
+                    <a href="#."><span></span>高效样品切割机器</a>
+                
+                </div>
+
+                    
+                <div class="tab01-art">
+                    <h4>大厂房</h4>
+                    <p>我们拥有9132㎡生产、仓储的厂房，可以保证您产品在安全的生产环境中生产，达到出色、稳定的产品质量。您可以放心批量生产中货物的品质问题。</p><p><img alt="" src="template/zh-cn/img/tab01.png"></p>
+                </div>
+                
+                <div class="tab01-art">
+                    <h4>报价优势</h4>
+                    <p>1.我们专业的结构工程师会用心对待每一份报价，对于纸展示项目用料进行精确到毫米（MM）的部件拆分，不会浪费过多的尾料，可以节省更多的材料帮您科学省钱，让您所花出的每一分钱都有价值。</p><p><img alt="" src="upload/2016/1107/1832884p00.png" title="902 2.png"></p><p>2.公司自主研发了一套核价系统，全自动化审查用料尺寸参数。更加高效，可以99%避免传统单纯依靠手工核价时误操作带来的报价不准确，单价昂贵的问 题。报价系统也会及时更新各个物料的价格情况，集成算法，给您反馈精准合理的报价。</p><p><img alt="" src="upload/2016/1107/1829l6z6v4.png" style="white-space: normal;"></p>
+                </div>
+                
+                <div class="tab01-art">
+                    <h4>胶水粘性</h4>
+                    <p>我们采用PH值6-8无毒无污染的水性环保胶水，具有高固含量分子，有着比普通工厂胶水更加牢固的粘合力。可以持久保持产品粘合一体的强度， 在长时间的使用过程中也不会出现粘合活性失效造成纸展架，纸彩盒脱胶分离的情况。</p><p><img alt="" src="template/zh-cn/img/tab03.png"></p>
+                </div>
+                
+                <div class="tab01-art">
+                    <h4>安全的支付方式</h4>
+                    <p>我们可以提供支付宝、微信、银联等多种安全、高效的付款方式。可以保证您与我们合作的过程中的资金安全，不会被钓鱼网站或病毒窃取而造成财 产的损失。与我们合作会很安全无风险。</p><p><img alt="" src="template/zh-cn/img/tab04.png"></p>
+                </div>
+                
+                <div class="tab01-art">
+                    <h4>进口印刷机器，环保油墨</h4>
+                    <p>我们引进顶尖KBA（高宝）专业进口印刷机，采用高品质的环保油墨。拥有出色的色彩管理软件以及专业的色差检测设备，执行ISO12647-2印刷标准及CIP3数据标准，可以将色差控制在9.8%以内，过硬的印刷质量能够更加细致入微地还原您品牌设计的颜色表现力。</p><p><img alt="" src="template/zh-cn/img/tab05.png"></p>
+                </div>
+                
+                <div class="tab01-art">
+                    <h4>专业工人</h4>
+                    <p>我们一线生产员工拥有15年以上的粘合经验，我们乐意用心去做好您的每张订单（无关金额、数量的大小），认真负责监督每道工序，保证产出给您的产品都是高品质的。</p><p><img alt="" src="template/zh-cn/img/tab09.png"></p>
+                </div>
+                
+                <div class="tab01-art">
+                    <h4>真实品牌案例</h4>
+                    <p>我们跟可口可乐、迪士尼、娃哈哈、雀巢、百事可乐，飞利浦等众多品牌有着真实的合作案例。我们有着丰富的经验，可以满足您想要定制的产品、高品 质生产、安全的交付。您可以像他们那样地信任我们。</p><p><img alt="" src="template/zh-cn/img/tab06.png"></p>
+                </div>
+                
+                <div class="tab01-art">
+                    <h4>纸张强度</h4>
+                    <p>我们采购S级环保加硬材质，采用足克重180G高密度A级牛皮纸+170G高强度瓦楞纸。上乘的原材料保证了品质的基础。让您的产品可以拥有更优越 的承重能力，不容易变形，使用时间可以达到2年以上。</p><p><img alt="" src="template/zh-cn/img/tab07.png"></p>
+                </div>
+                
+                <div class="tab01-art">
+                    <h4>高效样品切割机器</h4>
+                    <p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">公司引进全新切割机。先进的切割模组可以使得最大加工速度可达</span>1000MM/s,<span style="font-family:宋体">切割精度</span></span><span style=";font-family:宋体;font-size:14px">≤</span><span style=";font-family:宋体;font-size:14px">0.1MM <span style="font-family:宋体">重复精度</span></span><span style=";font-family:宋体;font-size:14px">≤</span><span style=";font-family:宋体;font-size:14px">0.1MM<span style="font-family:宋体">，更加精准的切割可以保证您样品切口更加平整。高效的生产效率可以快速地交付样品给您，及时出样进行结构等系列测试，也可以第一时间提供对样品给出合理性的建议或者是修改方案给您参考。</span></span></p><p><img alt="" src="template/zh-cn/img/tab08.png"><br/></p>
+                </div>
+                
+            </div>
+
+            </div>
+            
+        
+            
+
+            <div class="tab tab02 pad">
+                <h3 class="txt-center">我们如何工作</h3>
+                <div class="play relative">
+                        
+                </div>
+            </div>
+
+            
+        
+            
+
+            <div class="tab tab03 pad">
+                <h3 class="txt-center">我们对您的承诺</h3>
+                <div class="play relative">
+                    <ul class="content list-paddingleft-2"><li><p class="pull-left"><img alt="" src="template/zh-cn/img/icon/icon09.png"></p><p>24小时以内反馈您的电子邮件，解决您定制纸展示产品问题</p></li><li><p class="pull-left"><img alt="" src="template/zh-cn/img/icon/icon10.png"></p><p>专业的结构工程师团队会为免费为您产品定制化展示方案</p></li><li><p class="pull-left"><img alt="" src="template/zh-cn/img/icon/icon11.png"></p><p>无责任，免费为您提供报价</p></li><li><p class="pull-left"><img alt="" src="template/zh-cn/img/icon/icon12.png"></p><p style="line-height:18px;padding-top:10px;">安全、快速地交付高品质产品质量及准确的生产数量</p></li><li><p class="pull-left"><img alt="" src="template/zh-cn/img/icon/icon13.png"></p><p>为您提供专业高效的沟通，节约您的时间</p></li><li><p class="pull-left"><img alt="" src="template/zh-cn/img/icon/icon14.png"></p><p style="line-height:18px;padding-top:10px;">保护您的隐私，您的相关个人信息（姓名、电话、地址、邮箱等）以及合作的原始设计图案素材对于我们来说是神圣的，我们永远都不会出售给第三方或滥用它，完全私有化</p></li><li><p class="pull-left"><img alt="" src="template/zh-cn/img/icon/icon15.png"></p><p>不使用童工</p></li><li><p class="pull-left"><img alt="" src="template/zh-cn/img/icon/icon16.png"></p><p style="line-height:18px;padding-top:15px;">在生产制造、包装、储存、运输、施工过程中注意环境的保护可持续发展</p></li></ul>    
+                </div>
+            </div>
+
+            
+        
+
+
+    </div>
+
+<div class="foot ">
+	<div class="foot-nav container ">
+		<a href="about/index.aspx">关于纸艺展示</a><a href="case/index.aspx">合作案例</a><a href="product/index.aspx">产品</a><a href="why/index.aspx">为什么选择 “纸艺”</a><a href="faq/index.aspx">答疑解惑</a><a href="contact.aspx">联系我们</a>
+		<select class="pull-right " id="lang_select">
+                <option value="">中文</option>
+                <option value="http://popdisplay.me/">English</option>
+              </select><script type="text/javascript">
+                $('#lang_select').change(function(){
+                  window.location.href=$(this).val();
+                })
+              </script>
+	</div>
+	<div class="copy ">
+		<p class="txt-center container ">Copyright © 2016 POPdisplay All Rights Reserved 粤ICP备12005035号</p>
+	</div>
+</div>
+<div class="fixed">
+	<!--<a href="javascript:;"><img src="img/icon/QQ.png" alt=""></a>-->
+	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=443074454&site=qq&menu=yes" alt="点击我联系在线客服" title="点击我联系在线客服"><img border="0" src="template/zh-cn/img/icon/QQ.png" />
+		<p>在线客服</p>
+	</a>
+	<div class="totop"><img src="template/zh-cn/img/icon/to-top.png" alt=""></div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "/hm.baidu.com/hm.js?36cae4242993a989542bfb4043fd4041";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
+<script>
+$('.tab02 .play').html('<video src="template/zh-cn/img/video/HOWWEWORK.mp4" width="1000" height="400"  poster="template/zh-cn/img/img02.jpg" controls="controls">your browser does not support the video tag</video>');
+</script>
+<script>
+    <!--$(function(){
+       $('.tab02 .play').click(function(){
+           $('.tab02 .play img').hide();
+           $('.tab02 .play video').play();
+       })
+    })-->
+</script>

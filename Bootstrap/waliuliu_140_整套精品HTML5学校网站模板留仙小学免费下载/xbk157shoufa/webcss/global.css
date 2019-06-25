@@ -1,0 +1,29 @@
+/*网站基本定义*/
+div,form,img,ul,ol,li,dl,dt,dd,p,tr,td,body,strong,span,pre,input{margin:0; padding:0; border:0; background-repeat:no-repeat; -webkit-appearance:none; border-radius:none;}
+h1,h2,h3,h4,h5,h6,p{ margin:0; padding:0; font-weight:normal;}
+body{font-family:"微软雅黑";font-size:12px;margin:0px;padding:0px;color:#1a1a1a;line-height:24px;height:auto;clear:both; -webkit-appearance:none;}
+img{border:0px;}
+ul,li{ list-style:none;}
+em,i{ font-style:normal;}
+a{ text-decoration:none; color:#1a1a1a; outline:none; cursor:pointer;}
+a:hover{ background-repeat:no-repeat; color:#00a1e9;}
+.del_float{ clear:both; line-height:0; height:0; font-size:0;}
+a,area{blr:expression(this.onFocus=this.blur())}
+
+/*网站基本定义*/
+
+.clearfix:after{visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{*zoom:1;}
+
+.web{width:1180px;margin:auto;}
+.box{width:1180px;margin:auto;background:url(../webimages/index_57.gif) repeat-y #ffffff;
+box-shadow: -1px 0 3px rgba(0,0,0,0.1), 0 -2px 0 rgba(255,255,255,1),0 4px 3px rgba(0,0,0,0.1),1px 0 3px rgba(0,0,0,0.1);
+  -moz-box-shadow: -1px 0 3px rgba(0,0,0,0.1), 0 -2px 0 rgba(255,255,255,1),0 4px 3px rgba(0,0,0,0.1),1px 0 3px rgba(0,0,0,0.1);
+  -ms-box-shadow: -1px 0 3px rgba(0,0,0,0.1), 0 -2px 0 rgba(255,255,255,1),0 4px 3px rgba(0,0,0,0.1),1px 0 3px rgba(0,0,0,0.1);
+  -o-box-shadow: -1px 0 3px rgba(0,0,0,0.1), 0 -2px 0 rgba(255,255,255,1),0 4px 3px rgba(0,0,0,0.1),1px 0 3px rgba(0,0,0,0.1);
+  -webkit-box-shadow: -1px 0 3px rgba(0,0,0,0.1), 0 -2px 0 rgba(255,255,255,1),0 4px 3px rgba(0,0,0,0.1),1px 0 3px rgba(0,0,0,0.1);
+}
+.webbg{background:#fafafa; padding:35px 0px;}
+
+.webleft{float:left;width:281px;}
+.webright{float:right; width:835px; padding:30px 30px 30px 0px;}

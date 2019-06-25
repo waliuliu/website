@@ -1,0 +1,8 @@
+if(typeof JSON =='undefined')document.writeln("<script type='text/javascript' src='/js/json2.js'></script>");
+var CommonTool={};CommonTool.OutLogin=function(){var argsArray=[];for(var i=0;i<arguments.length-1;i++)argsArray[i]=JSON.stringify(arguments[i]);this.ajax({method:'OutLogin',args:JSON.stringify(argsArray)},arguments[arguments.length-1]);};
+CommonTool.AddCollection=function(){var argsArray=[];for(var i=0;i<arguments.length-1;i++)argsArray[i]=JSON.stringify(arguments[i]);this.ajax({method:'AddCollection',args:JSON.stringify(argsArray)},arguments[arguments.length-1]);};
+CommonTool.CalculateUsePonts=function(){var argsArray=[];for(var i=0;i<arguments.length-1;i++)argsArray[i]=JSON.stringify(arguments[i]);this.ajax({method:'CalculateUsePonts',args:JSON.stringify(argsArray)},arguments[arguments.length-1]);};
+CommonTool.showShoppingList=function(){var argsArray=[];for(var i=0;i<arguments.length-1;i++)argsArray[i]=JSON.stringify(arguments[i]);this.ajax({method:'showShoppingList',args:JSON.stringify(argsArray)},arguments[arguments.length-1]);};
+CommonTool.AddShoppingCat=function(){var argsArray=[];for(var i=0;i<arguments.length-1;i++)argsArray[i]=JSON.stringify(arguments[i]);this.ajax({method:'AddShoppingCat',args:JSON.stringify(argsArray)},arguments[arguments.length-1]);};
+CommonTool.ClearSettlementCollection=function(){var argsArray=[];for(var i=0;i<arguments.length-1;i++)argsArray[i]=JSON.stringify(arguments[i]);this.ajax({method:'ClearSettlementCollection',args:JSON.stringify(argsArray)},arguments[arguments.length-1]);};
+CommonTool.ajax=function(data,callback){jQuery.ajax({url:this.ajaxUrl,type:'POST',dataType:'json',data:jQuery.extend({act:'method'},data),success:callback});};CommonTool.ajaxUrl='/ajax/CommonTool.ashx';

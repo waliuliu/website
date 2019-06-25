@@ -1,0 +1,29 @@
+.wp-pagenavi {
+	padding: 10px 20px 10px !important;
+	display:block !important;
+	clear:both !important;
+}
+.wp-pagenavi a ,.wp-pagenavi span.pages, .wp-pagenavi span.extend {
+		width:28px;
+		height:28px;
+		text-align:center;
+		padding:9px 14px 7px 10px !important;
+		background: url("/wp-content/themes/tiebeike/images/pagenot.gif") no-repeat ;
+		color:#bbc0c4
+}
+.wp-pagenavi a:hover {
+		color:#00ce9e !important;
+		background: url("/wp-content/themes/tiebeike/images/pageon.gif") no-repeat ;
+}
+ .wp-pagenavi span.current{
+		width:28px;
+		height:28px;
+		text-align:center;
+		padding:9px 14px 7px 10px !important;
+		background: url("/wp-content/themes/tiebeike/images/pageon.gif") no-repeat ;
+		color:#00ce9e;
+	}
+.pages{display:none}
+.wp-pagenavi previouspostslink{
+background:url();
+}

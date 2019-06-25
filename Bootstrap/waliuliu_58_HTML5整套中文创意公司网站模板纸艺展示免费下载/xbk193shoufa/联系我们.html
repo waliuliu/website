@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>联系我们</title>
+  <meta name="keywords" content="联系我们" />
+  <meta name="description" content="联系我们" />
+      <meta charset="UTF-8">
+	<meta name="baidu-site-verification" content="AgSgPyT94L" />
+    <link rel="stylesheet" href="template/zh-cn/css/normalize.css">
+    <link rel="stylesheet" href="template/zh-cn/css/style.css">
+    <link rel="stylesheet" href="template/zh-cn/css/swiper.min.css">
+    <script src="template/zh-cn/js/jquery-1.12.4.min.js"></script>
+    <script src="template/zh-cn/js/zhiyi.js"></script>
+    <script src="template/zh-cn/js/swiper.jquery.min.js"></script>
+    <link rel="shortcut icon" href='template/zh-cn/img/icon/logo.ico' type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="head-nav">
+        <div class="container content">
+            <ul class="pull-left nav-ul01">
+              <li><a href="about/index.aspx">关于纸艺展示</a></li>
+              <li><a href="case/index.aspx">合作案例</a></li>
+              <li><a href="product/index.aspx">产品</a></li>
+            </ul>
+            <!--<li style="height:90px;">
+                    <a href="index.html " class="index-logo"><img src="img/icon/logo.png " alt=" "></a>
+                </li>-->
+            <ul class="pull-right nav-ul02">
+              <li><a href="why/index.aspx">为什么选择 “纸艺”</a></li>
+              <li><a href="faq/index.aspx">答疑解惑</a></li>
+              <li ><a href="contact.aspx" class="on">联系我们</a></li>
+            </ul>
+            <div class="logo"><a href="" ><img src="template/zh-cn/img/icon/logo.png " alt=" "></a></div>
+        </div>
+    </div>
+<style>
+    .color{color:#a1cc51 !important;}
+</style><div class="now">
+    <div class="container">
+    <a href="">首页</a> <span>－</span> <a href="contact.aspx" class="current">联系我们</a>
+        
+    </div>
+</div>
+<script>
+if($('.now .container a').size()>2)
+{
+	if($('.now .container a').last().attr('href')==$('.now .container a').eq(1).attr('href')){
+		$('.now .container a').last().remove();
+		$('.now .container span').last().remove();
+	}
+}
+</script>
+
+    <div  style="border-bottom:1px solid #8fc31f">
+    <div class="container link">
+        <h3 class="txt-center">我们很乐意与您合作</h3>
+        <ul class="pull-left list-paddingleft-2"><li><p>深圳办公室/工厂地址：深圳市宝安区西乡旭生大厦银田文乐</p></li><li><p>联系电话：0755-23504042</p></li><li><p>传真：0755-23504042</p></li><li><p>个人电话：13510706835 （销售经理：黄经理）</p></li><li><p>邮政编码：518102</p></li><li><p>邮箱：info@popdisplay.me</p></li><li><p><br/></p></li><li><p>香港服务中心：香港九龙旺角花园街2-16号好景商业中心10楼1005室</p></li><li><p>联系电话：（00852）27716565</p></li><li><p>传真：（00852）27718200</p></li></ul><p><br/></p><ul class="pull-left list-paddingleft-2"><li><p>上班时间：</p></li><li><p>星期一至星期五： &nbsp;9：00 - 12：00（AM） &nbsp; &nbsp; &nbsp;13：30 - 18：00(PM)</p></li><li><p>星期六：9：00 -12：00(AM)</p></li><li><p>星期日和法定节假日休息</p></li></ul>
+        <div class="brush"></div>
+    </div>
+    </div>
+    <div style="background:#f5f5f5">
+        <form name="form_1" id="form_1" action="formsave.aspx" method="post" onsubmit="return checkform()" ><input type="hidden" name="formid" value="1" /><input type="hidden" name="contentid" value="830" />
+        <script type="text/javascript">
+        function checkform()
+        {
+            if($('#truename').val()=='')
+            {
+                $('#truename').focus();
+                return false;
+            }
+            if($('#mobile').val()=='')
+            {
+                $('#mobile').focus();
+                return false;
+            }
+            if($('#email').val()=='')
+            {
+                $('#email').focus();
+                return false;
+            }
+            if($('#msg_content').val()=='')
+            {
+                $('#msg_content').focus();
+                return false;
+            }
+            return true;
+        }
+        </script>
+        <div class="container submit">
+            <h3 class="txt-center">在线提交您的需求</h3>
+            <p class="txt-center">(我们承诺在24小时内回复您的邮件，节假日除外)</p>
+            <p style="margin-right:-10px">
+                <input type="text" placeholder="您的姓名" id="truename" name="truename">
+                <input type="text" placeholder="您的手机" id="mobile" name="mobile">
+                <input type="text" placeholder="您的邮箱" id="email" name="email">
+            </p>
+             <textarea  cols="" rows="5" placeholder="填写您的需求（尽可能的详细）" id="msg_content" name="content"></textarea>
+             <p class="submit-btn"> <button type="submit" class="txt-center">提交</button><span>以上信息是神圣的，我们决不会透露给第三方</span></p> 
+        </div>
+        </form>
+    </div>
+
+<div class="foot ">
+	<div class="foot-nav container ">
+		<a href="about/index.aspx">关于纸艺展示</a><a href="case/index.aspx">合作案例</a><a href="product/index.aspx">产品</a><a href="why/index.aspx">为什么选择 “纸艺”</a><a href="faq/index.aspx">答疑解惑</a><a href="contact.aspx">联系我们</a>
+		<select class="pull-right " id="lang_select">
+                <option value="">中文</option>
+                <option value="http://popdisplay.me/">English</option>
+              </select><script type="text/javascript">
+                $('#lang_select').change(function(){
+                  window.location.href=$(this).val();
+                })
+              </script>
+	</div>
+	<div class="copy ">
+		<p class="txt-center container ">Copyright © 2016 POPdisplay All Rights Reserved 粤ICP备12005035号</p>
+	</div>
+</div>
+<div class="fixed">
+	<!--<a href="javascript:;"><img src="img/icon/QQ.png" alt=""></a>-->
+	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=443074454&site=qq&menu=yes" alt="点击我联系在线客服" title="点击我联系在线客服"><img border="0" src="template/zh-cn/img/icon/QQ.png" />
+		<p>在线客服</p>
+	</a>
+	<div class="totop"><img src="template/zh-cn/img/icon/to-top.png" alt=""></div>
+</div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "/hm.baidu.com/hm.js?36cae4242993a989542bfb4043fd4041";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+
+</html>

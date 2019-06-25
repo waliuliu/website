@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+    <title>公司资料</title>
+    <meta name="keywords" content="公司资料" />
+    <meta name="description" content="公司资料" />
+    <meta name="viewport" content="width=1024">
+<link rel="stylesheet" href="template/zh-cn/css/global.css">
+
+<link rel="stylesheet" href="template/zh-cn/css/layout.css">
+
+<script src="template/zh-cn/js/jquery-1.11.2.min.js"></script>
+<script src="template/zh-cn/js/jquery.easing.1.3.js"></script>
+<!--[if IE]>
+    <script type="text/javascript" src="template/zh-cn/js/html5.js"></script>
+    <script src="/api.html5media.info/1.1.8/html5media.min.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+    <script type="text/javascript" src="template/zh-cn/js/DD_belatedPNG_0.0.8a.min.js"></script>
+    <script>
+        DD_belatedPNG.fix('*');
+    </script>
+<![endif]-->
+<script>
+$(document).ready(function(){
+	//------友情链接弹出
+	var olian = $('#chaining_con');
+	var timer = null;
+	$('#chaining').on('click', function(){
+		olian.stop().slideToggle(500);
+	}).hover(function(){
+		clearTimeout(timer);
+	},function(){
+		timer = setTimeout(function(){
+			if (olian.css('display') != 'none') {
+				olian.slideUp();
+			}
+		},1500)
+	})
+	if($('#con_nav').size()>0){
+		var navTop = $('#con_nav').offset().top + $('#con_nav').height();
+		var navOff = 0;
+		$(window).on('scroll',function(){
+			if ($(window).scrollTop() > navTop && !navOff) {
+				$('#con_nav').addClass('fixed');
+				navOff = 1;
+			}else if($(window).scrollTop() < navTop && navOff){
+				$('#con_nav').removeClass('fixed');
+				navOff = 0;
+			}
+		})
+	}
+
+    //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失  
+    $(function(){  
+        $(window).scroll(function(){  
+            if ($(window).scrollTop()>100){  
+                $("#get_top").fadeIn(850);  
+            }  
+            else  
+            {  
+                $("#get_top").fadeOut(850);  
+            }  
+        });  
+        //当点击跳转链接后，回到页面顶部位置  
+        $("#get_top").click(function(){  
+            $('body,html').animate({scrollTop:0},1000);  
+            return false;  
+        });  
+    });  
+})
+</script>
+</head>
+<body>
+	
+  
+<button id="get_top"></button>
+<header id="header">
+    <a href="" id="logo"></a>
+    <nav id="nav">
+        <ul>
+            <li><a href="">首页</a><i></i></li>
+            <li><a href="product/index.aspx">产品介绍</a><i></i></li>
+            <li><a href="r_d/index.aspx">研发创新</a><i></i></li>
+            <li><a href="news/n1/index.aspx">新闻资讯</a><i></i></li>
+            <li class="cur"><a href="irm/n1/index.aspx">投资者关系</a><i></i></li>
+            <li><a href="about/index.aspx">关于我们</a><i></i></li>
+            <li><a href="hr/jobs/index.aspx">招聘职位</a><i></i></li>
+        </ul>
+        <div class="search">
+        <script>
+		function checkform(){
+			if($('#keywords').val()==''){
+				$('#keywords').focus();
+				return false;
+			}
+			return true;
+		}
+		</script>
+        	<form action="search.aspx" onsubmit="return checkform()">
+            	<input type="hidden" name="moduleid" value="2,34,35,36" />
+        		<input type="text" name="keywords" id="keywords" placeholder="搜索">
+        		<input type="submit" value=">">
+        	</form>
+        </div>
+    </nav>
+    <div id="zy">
+        <a href="en">EN</a>
+    </div>
+</header>
+
+
+	<section id="con_banner">
+		<img src="upload/2015/0820/18444288dp.jpg" />
+	</section>
+
+<section id="con_nav">
+    <ul>
+        <li class="cur"><a href="irm/n1/index.aspx">公司资料</a><b></b></li>
+        <li><a href="irm/n2/index.aspx">财务报告</a><b></b></li>
+        <li><a href="irm/n3/index.aspx">公告及通知</a><b></b></li>
+        <li><a href="irm/contact.aspx">IR联系方式</a><b></b></li>
+    </ul>
+</section>
+
+	<section id="news">
+		<div id="news_box">
+			<!-- <div class="news_bt">
+				<h2>公司资料</h2>
+				<aside>Company information</aside>
+			</div> -->
+			<ul class="firm">
+            
+				<li>
+					<aside>
+						
+						<b>2016-03-28</b>
+					</aside>
+					<article>
+						<h2><a href="upload/2016/0328/19150rf86r.pdf" target=_blank>董事名單與其角色和職能</a></h2>
+						<b>阅读<span>13</span></b>
+						<p></p>
+					</article>
+					<a href="upload/2016/0328/19150rf86r.pdf" class="down" target=_blank>&nbsp;</a>
+				</li>
+            
+				<li>
+					<aside>
+						
+						<b>2016-01-29</b>
+					</aside>
+					<article>
+						<h2><a href="upload/2016/0129/1214x62tb2.pdf" target=_blank>董事名單與其角色和職能</a></h2>
+						<b>阅读<span>6</span></b>
+						<p></p>
+					</article>
+					<a href="upload/2016/0129/1214x62tb2.pdf" class="down" target=_blank>&nbsp;</a>
+				</li>
+            
+				<li>
+					<aside>
+						
+						<b>2015-12-30</b>
+					</aside>
+					<article>
+						<h2><a href="upload/2015/1230/1628dbddlp.pdf" target=_blank>審核委員會職權範圍</a></h2>
+						<b>阅读<span>14</span></b>
+						<p></p>
+					</article>
+					<a href="upload/2015/1230/1628dbddlp.pdf" class="down" target=_blank>&nbsp;</a>
+				</li>
+            
+				<li>
+					<aside>
+						
+						<b>2015-08-27</b>
+					</aside>
+					<article>
+						<h2><a href="upload/2015/1209/1402t8lfrl.pdf" target=_blank>董事名單與其角色和職能</a></h2>
+						<b>阅读<span>1</span></b>
+						<p>董事名單與其角色和職能</p>
+					</article>
+					<a href="upload/2015/1209/1402t8lfrl.pdf" class="down" target=_blank>&nbsp;</a>
+				</li>
+            
+				<li>
+					<aside>
+						
+						<b>2015-03-27</b>
+					</aside>
+					<article>
+						<h2><a href="upload/2015/1209/1401h2j8j2.pdf" target=_blank>董事名單與其角色和職能</a></h2>
+						<b>阅读<span>0</span></b>
+						<p>董事名單與其角色和職能</p>
+					</article>
+					<a href="upload/2015/1209/1401h2j8j2.pdf" class="down" target=_blank>&nbsp;</a>
+				</li>
+            
+				<li>
+					<aside>
+						
+						<b>2015-03-02</b>
+					</aside>
+					<article>
+						<h2><a href="upload/2015/1209/1400p4408n.pdf" target=_blank>董事名單與其角色和職能</a></h2>
+						<b>阅读<span>0</span></b>
+						<p>董事名單與其角色和職能</p>
+					</article>
+					<a href="upload/2015/1209/1400p4408n.pdf" class="down" target=_blank>&nbsp;</a>
+				</li>
+            
+				<li>
+					<aside>
+						
+						<b>2014-05-28</b>
+					</aside>
+					<article>
+						<h2><a href="upload/2015/1209/13592xjd64.pdf" target=_blank>组织章程大纲</a></h2>
+						<b>阅读<span>0</span></b>
+						<p>组织章程大纲</p>
+					</article>
+					<a href="upload/2015/1209/13592xjd64.pdf" class="down" target=_blank>&nbsp;</a>
+				</li>
+            
+				<li>
+					<aside>
+						
+						<b>2014-04-01</b>
+					</aside>
+					<article>
+						<h2><a href="upload/2015/1209/13572p4t8l.pdf" target=_blank>董事名单与其角色和职能</a></h2>
+						<b>阅读<span>0</span></b>
+						<p>董事名单与其角色和职能</p>
+					</article>
+					<a href="upload/2015/1209/13572p4t8l.pdf" class="down" target=_blank>&nbsp;</a>
+				</li>
+            
+				<li>
+					<aside>
+						
+						<b>2013-11-08</b>
+					</aside>
+					<article>
+						<h2><a href="upload/2015/1209/135662pjxh.pdf" target=_blank>審核委員會職權範圍</a></h2>
+						<b>阅读<span>0</span></b>
+						<p>審核委員會職權範圍</p>
+					</article>
+					<a href="upload/2015/1209/135662pjxh.pdf" class="down" target=_blank>&nbsp;</a>
+				</li>
+            
+				<li>
+					<aside>
+						
+						<b>2013-11-08</b>
+					</aside>
+					<article>
+						<h2><a href="upload/2015/1209/13562r0x60.pdf" target=_blank>董事名單與其角色和職能</a></h2>
+						<b>阅读<span>0</span></b>
+						<p>董事名單與其角色和職能</p>
+					</article>
+					<a href="upload/2015/1209/13562r0x60.pdf" class="down" target=_blank>&nbsp;</a>
+				</li>
+            
+			</ul>
+             
+			<div class="paging" style="border-top:0;">
+				<ul style=" margin-top:0;">
+					<li class="prev"></li>
+					<li><a href="irm/n1/1.aspx" class="cur">1</a><li><a href="irm/n1/2.aspx" >2</a>
+					<li class="prev"></li>
+				</ul>
+			</div>
+			
+			
+		</div>
+	</section>
+
+
+	<footer>
+		<section id="foot_nav">
+			<div id="foot_box">
+				<div class="foot_nav_fl">
+					<a href="fuzhulanmu/241.aspx">法律声明</a><i>|</i><a href="fuzhulanmu/410.aspx">联系我们</a><i>|</i><a href="hr/index.aspx">人才招聘</a><i>|</i><a href="fuzhulanmu/242.aspx">网站地图</a>
+				</div>
+				<div class="foot_nav_fr">
+					<a href=""><img src="template/zh-cn/img/index21.png" alt=""></a><a href=""><img src="template/zh-cn/img/index22.png" alt=""></a> --><a href=""><img src="template/zh-cn/img/index23.png" alt=""></a>
+				</div>
+			</div>
+		</section>
+		<section id="foot_con">
+			<div id="foot_box">
+				<div class="code">
+					<aside>
+						<img src="template/zh-cn/img/index24.jpg" alt="">
+						<p>先健科技官方微信</p>
+					</aside>
+					<aside>
+						<img src="template/zh-cn/img/index25.jpg" alt="">
+						<p>先健医刊</p>
+					</aside>
+				</div>
+				<div class="chaining">
+					<h2>友情链接</h2>
+					<aside id="chaining">
+						友情链接...
+						<ul id="chaining_con">
+							<li><a href="＃" target="_blank">其他子公司链接</a></li>
+							<li><a href="http://www.smallseashell.com" target="_blank">smallseashell</a></li>
+						</ul>
+						<i></i>
+					</aside>
+				</div>
+			</div>
+		</section>
+		<section id="copyright">
+			2008-2015 版权所有 粤ICP备09037700号<br />
+  
+		</section>
+	</footer>
+
+
+<!--<style>
+	.tanchuang_mask{
+		position: fixed;
+		top: 0;
+		left:0;
+		right:0;
+		bottom:0;
+		z-index: 10000;
+		background:#000;
+		opacity: .8;
+	}
+.tanchuang{
+	width:1000px;
+	height:450px;
+
+	background: url(template/zh-cn/img/tanchuang.jpg) no-repeat;
+	position:fixed;
+	top: 100px;
+	left: 100px;
+	z-index: 10005;
+}
+.tanchuang .close{
+ position: absolute;
+ right:15px;
+ top: 15px;
+ color: #666667;
+}
+.tanchuang span{
+ position: absolute;
+ bottom:15px;
+ right: 15px;
+ color: #666667;
+}
+.tanchuang .close:hover{
+	color: #0068b7;
+}
+</style>-->
+
+<div class="tanchuang">
+	<a href="#." class="close">X</a>
+	<span>8s</span>
+</div>
+<div class="tanchuang_mask"></div>
+
+<script>
+	$(function(e){
+			$('.tanchuang').css('left',( $(window).width() -  $('.tanchuang').width() ) / 2 );
+			$('.tanchuang').css('top',( $(window).height() -  $('.tanchuang').height() ) / 2 );
+$('.tanchuang .close').click(function(e){
+	e.preventDefault();
+	$('.tanchuang').hide();
+	$('.tanchuang_mask').hide();
+});
+			var t_total=8;
+		var tanchuang_interval=	window.setInterval (function(){
+				t_total--;
+ $('.tanchuang span').html(t_total+'s');
+ if(t_total<=0){
+	 $('.tanchuang').hide();
+	$('.tanchuang_mask').hide();
+window.clearInterval (tanchuang_interval);
+ }
+			},1000);
+	})
+</script>
+    
+</body>
+</html>

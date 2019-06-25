@@ -1,0 +1,40 @@
+div,form,img,ul,ol,li,dl,dt,dd,p,tr,td,input,body,strong,span,pre{margin:0; padding:0; border:0; background-repeat:no-repeat;}
+h1,h2,h3,h4,h5,h6,p{ margin:0; padding:0; font-weight:normal;}
+body{font-size:14px;font-family:"微软雅黑";margin:0px;padding:0px;color:#4c4c4c;line-height:24px;height:auto;clear:both;}
+img{border:0px;}
+ul,li{ list-style:none;}
+em,i{ font-style:normal;}
+a{ text-decoration:none;color:#333;}
+a:hover{ background-repeat:no-repeat;color:#fabe00;}
+a,area{blr:expression(this.onFocus=this.blur())}
+.indx { width:100%;height:100%; overflow:hidden;_position: relative;}
+.del_float{ clear:both; line-height:0; height:0; font-size:0;}
+
+/*通用样式*/
+
+.qf { clear:both;}
+.fleft {float:left;}
+.fright {float:right}
+.none {display: none;}
+.qc:after{visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.qc{*zoom:1;}
+input,button,select,textarea{outline:none; border:none;}
+
+
+
+
+.mt10 {margin-top: 10px;}
+.mb5 {margin-bottom: 5px;}
+.mb10 {margin-bottom: 10px;}
+.mb20 {margin-bottom: 20px;}
+.mb25 {margin-bottom: 25px;}
+.mb30 {margin-bottom: 30px;}
+.mb15 {margin-bottom: 15px;}
+.mb50 {margin-bottom: 50px;}
+
+
+/*****lcj***/
+.clearfix:after{visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{*zoom:1;}
+
+

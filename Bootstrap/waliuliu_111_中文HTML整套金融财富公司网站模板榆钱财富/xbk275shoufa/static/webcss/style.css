@@ -1,0 +1,274 @@
+/*--默认链接颜色--*/
+a{color:#1a1a1a;}
+a:hover{color:;}
+
+/*--全局body--*/
+body{color:#1a1a1a;}
+
+.web{width:1180px;}
+.box{width:1180px;}
+
+.webleft{width:281px;}
+.webright{width:835px;}
+
+/*--左边--*/
+
+.lefttitle{background:;}
+.lefttitle h3{color:#fff;}
+.lefttitle h4{color:#fff;}
+
+.leftclass ul li{background-color:#e3e7ea;border-bottom:1px solid #d1d7dc;}
+.leftclass ul li h3 a:hover{background-color:;color:#fff;}
+.leftclass ul li h3 a.cur{background-color:;color:#fff;}
+
+.leftaisle{ background:#e8e8e8;}
+.leftaisle dl dd{color:#666}
+.leftaisle dl dd h3{color:#1a1a1a;}
+.leftaisle dl dd p a{ color:;}
+.leftaisle dl dd p a:hover{ color:;}
+
+.leftclass2 ul li h3 a:hover,.leftclass2 ul li h3 a.cur{background-color:;border-bottom: 1px solid ;}
+
+/*--标题颜色--*/
+
+.righttitle{border-top:1px solid #d3d9de;border-bottom:1px solid #d3d9de; color:#1a1a1a;}
+
+/*--关于我们颜色--*/
+
+.SinglePage{color:#1a1a1a;}
+.SinglePage h3.SinglePagetitle{color:;}
+.SinglePage h4.SinglePagetitle{color:#999999;}
+
+.aboutclass{background:#FFF;}
+
+/*--新闻列表颜色--*/
+
+.companynewstop dl dd h3 a{color:;}
+.companynewstop dl dd p.companynewstopTime{color:#999;}
+.companynewstop dl dd p.companynewstopDescription{color:#666;}
+.companynewstop dl dd p.companynewstopmore a{color:;}
+
+.companynews ul{border-top:1px solid #cccccc;}
+.companynews ul li{border-bottom:1px solid #cccccc;}
+.companynews ul li em{background:url(../webimages/index_68.png) no-repeat ;}
+
+
+
+/*--新闻详细颜色--*/
+
+.commonDetailed{background:#FFF; padding:0px;}
+
+.commonDetailedtitle{ border-bottom:1px solid #cccccc; padding-bottom:10px;}
+.commonDetailedtitle h3{ font-size:26px; text-align:center; font-weight:bold; line-height:32px; color:#000; padding:50px 0px 0px;}
+
+.commonDetailedtitleTimeAuthor{ text-align:center; color:#666; font-size:13px; padding:15px 0px;}
+.commonDetailedtitleTimeAuthor span{ padding-right:10px;}
+
+
+.commonDetailedContents{color:#666;}
+.commonDetailedContentsfoot p a{background:;color:#FFF;}
+.commonDetailedContentsfoot p a:hover{background:;color:#FFF;}
+.commonDetailedContentsfoot dl{border:1px solid #cccccc;border-left:none; border-right:none;}
+.commonDetailedContentsfoot dl span{background:#f2f2f2; color:#1a1a1a;}
+
+/*--人才招聘--*/
+.Recruitmentlist ul{border-top:1px solid #e6e6e6;}
+.Recruitmentlist ul li{border-bottom:1px solid #dbdbdb;}
+.Recruitmentlist ul li h3.Recruitmenttitle{color:#4e4e4e;background:url(../webimages/index_69.gif) no-repeat 5px 20px;}
+.Recruitmentlist ul li span{background:url(../webimages/index_71.gif) no-repeat;}
+.RecruitmentContent{color:#4c4c4c;background:#fafafa;}
+.RecruitmentContent h4.Rtconttitle{color:#4c4c4c;}
+.Recruitmentlist ul li.cur h3{ background:url(../webimages/index_70.gif) no-repeat 5px 20px; color:;}
+.Recruitmentlist ul li.cur span{background:url(../webimages/index_72.gif) no-repeat;}
+
+.RecruitmentReturn a{background:;color:#fff;}
+.RecruitmentReturn a:hover{color:#fff;}
+
+
+/*--留言反馈--*/
+
+.ComplaintsDescription{border-bottom:1px solid #d9d9d9;}
+.ComplaintsDescription span{color:;}
+
+.Complaints dl dt{color:#1a1a1a;}
+.Complaints dl dt label{border:1px solid #dcdcdc;}
+.Complaints dl dt label input{color:#999}
+
+.Complaints dl dd{color:#1a1a1a;}
+.Complaints dl dd label{border:1px solid #dcdcdc;}
+.Complaints dl dd label input{color:#999}
+.Complaints ul label.textarea{border:1px solid #dcdcdc;}
+.Complaints ul label.textarea textarea{color:#999}
+.Complaints span{color:;}
+.Complaintsbutton input{background:;color:#fff;}
+
+
+/*--联系我们--*/
+
+.Contact h3.contacttitle{color:;}
+.Contact h4.contactentitle{color:#999999;}
+.Contact dl{border-bottom:1px solid #d9d9d9;}
+.Contact dl dt p{color:#1a1a1a;}
+.Contact dl dt p.add{ background:url(../webimages/lianxi1.png) no-repeat 0px 5px;}
+.Contact dl dt p.tel{ background:url(../webimages/lianxi2.png) no-repeat 0px 5px;}
+.Contact dl dt p.fax{ background:url(../webimages/lianxi3.png) no-repeat 0px 5px;}
+.Contact dl dt p.Email{ background:url(../webimages/lianxi4.png) no-repeat 0px 5px;}
+.ContactStation dl dt{color:;}
+
+
+/*--搜索--*/
+
+.Searchlist dl{ background:#f5f5f5;}
+.Searchlist dl h3 a{color:#1a1a1a;}
+.Searchlist dl h3 a span{color:;}
+.Searchlist dl h3 a:hover{color:;}
+.Searchlist dl dd{color:#666;}
+.Searchlist dl dd p.Searchclass{color:#999;}
+.Searchlist dl dd p.Searchclass a{color:#999;}
+.Searchlist dl dd p.Searchclass a:hover{color:;}
+
+
+/*--网站地图--*/
+
+.ditu ul h3{ border-bottom:1px solid ;}
+.ditu ul li{color:#333333;}
+
+/*--图片展示--*/
+
+.photolist ul li{border:1px solid #e8e8e8;}
+
+
+.photoGallery h3{color:;}
+.photoGallerylist ul li.cur span{border:4px solid ;}
+
+.photointroduce{border-bottom:1px solid #e8e8e8;}
+
+.bigleft{ background:url(../webimages/pic6.png) no-repeat;}
+.bigright{background:url(../webimages/pic7.png) no-repeat;}
+
+
+.photoGallery a.Smallleft{ background:url(../webimages/pic8.png) no-repeat;}
+.photoGallery a.Smallleft:hover{ background:url(../webimages/pic08.png) no-repeat;}
+
+.photoGallery a.Smallright{ background:url(../webimages/pic9.png) no-repeat;}
+.photoGallery a.Smallright:hover{ background:url(../webimages/pic09.png) no-repeat;}
+
+/*--返回--*/
+
+
+.commonreturn a{background:;color:#FFF;}
+
+
+/*--下载--*/
+
+.Download dl{border-bottom:1px solid #e8e8e8;}
+.Download dl h3{color:;}
+.Download dl h3 a{color:;}
+.Download dl h3 a:hover{color:;}
+.Download dl dd{color:#666666;}
+.Download dl a.Downloadlink{background:url(../webimages/index_01.png) no-repeat;color:;}
+
+
+/*--视频--*/
+
+.videointroduce{border-bottom:1px solid #e8e8e8;}
+
+/*--解决方案--*/
+
+.Program ul li{background:#f5f5f5;}
+.Program ul li p{color:#666;}
+.Program ul li a{color:;}
+.Program ul li a:hover{color:;}
+
+/*--常见问题--*/
+
+.commonproblem ul li{ border-bottom:1px solid #e8e8e8;}
+.commonproblem ul li h3{ background:url(../webimages/changjian1.gif) no-repeat;}
+.commonproblem ul li h3 a{color:;}
+.commonproblem ul li p{color:#1a1a1a;}
+.commonproblem ul li p a{ color:#999999;}
+.commonproblem ul li p a:hover{ color:;}
+.commonproblem ul li p.commonA{ background:url(../webimages/changjian2.gif) no-repeat;}
+
+/*--2015-10-23新加的模版--*/
+
+.newslist01 dl{border-bottom:1px solid #d0d0d0;}
+.newslist01 dl dt{color:#999999;}
+.newslist01 dl dd h3{color:;}
+.newslist01 dl dd p{color:#666666;}
+.newslist01 dl.cur{background-color:;}
+.newslist01 dl.cur dt{ color:#e7ecf1;}
+.newslist01 dl.cur dd h3{color:#fff;}
+.newslist01 dl.cur dd p{color:#fff;}
+
+.Team dl{border-bottom:1px solid #d3d9de;}
+.Team dl dd h3{color:#454545;}
+.Team dl dd h4{ background:; color:#fff;}
+.Team dl dd p{color:#333333;}
+
+.yezi{background-color:;}
+.developmentbox{ border-left:1px solid ;}
+.developmentboxleft{background-color:;color:;}
+
+.Brand dl{border-left:2px solid ;}
+.Brand dl dt{background-color:;color:#fff;}
+.Brand dl dd{background-color:#e7ecf1;}
+.Brand dl dd h3{color:;}
+.Brand dl dd p{ color:#4c4c4c;}
+
+.BrandleftArrow{background-color:#e7ecf1;}
+.BrandArrow{background-color:;}
+
+.Recruitmenttext dl dt h3{color:;}
+.Recruitmenttext dl dt p{color:#1a1a1a;}
+.Recruitmenttext dl dt p a{color:;}
+.Recruitmenttext dl dt p a:hover{color:;}
+.Recruitmenttext dl dd{background-color:;}
+
+.Recruitmentsearch{background-color:#f2f2f2;}
+.Recruitmentsearch dl dt{color:;}
+.Recruitmentsearch dl dt span{background-color:;}
+.Recruitmentsearch dl dd label {border:1px solid #d9d9d9; background:#fff; }
+.Recruitmentsearch dl dd label input.Recruitmentsearchsubmit{background-color:;}
+
+.newslist02 dl{border-bottom:1px solid #e8e8e8;}
+.newslist02 dl dt img{ border:1px solid #efefef;}
+.newslist02 dl dt p{color:#999999;}
+.newslist02 dl dt p span{border-bottom:1px solid #c9c9c9;}
+.newslist02 dl dd p a.newslistmore{ color:;}
+.newslist02 dl dd span{background:#c9c9c9;}
+
+.contact01 h3{color:;}
+.contact01 h4{color:#999999;}
+.contact01 dl dt{color:#666666;}
+.contact01 dl dt p{background-color:;}
+.contact01 dl dd{color:#333333;}
+
+.Productslist ul li img{border:1px solid #d9d9d9;}
+.Productslist ul li h3{color:#1a1a1a;}
+.Productslist ul li p{color:#666666;}
+
+
+.Products_Detailedtopright h3{color:; border-bottom:1px solid #dadada;}
+.Products_Detailedtopright p{ color:#333333;}
+
+.Products_DetailedtopSmallpic ul li img{border:1px solid #dcdcdc;}
+.Products_DetailedtopSmallpic ul li.cur img{ border:1px solid ;}
+
+.Products_Detailedtopbigpic{ border:1px solid #dadada;}
+div.zoomdiv {background:#ffffff;border:1px solid #CCCCCC;}
+div.jqZoomPup {border: 1px solid #aaa;background: #ffffff ;}
+
+
+.Products_Detailedclass{background-color:;}
+.Products_Detailedclass span a{color:#fff;}
+.Products_Detailedclass span a.border{border-right:1px solid #fff;border-left:1px solid #fff;}
+.Products_Detailedclass span.cur{background-color:#fff;}
+.Products_Detailedclass span.cur a{ color:;}
+
+.Products_Related h3{ background-color:; color:#fff;}
+.Products_Related ul li img{border:1px solid #d9d9d9;}
+.Products_Related ul li h4{color:#1a1a1a;}
+
+.Products_Return a{background-color:; color:#fff; }
+.Products_Return a:hover{ color:#fff;}
